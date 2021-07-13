@@ -11,9 +11,10 @@ super + shift + Return
 ##---------- Rofi Launcher & Menus ----------##
 
 # Rofi App Launcher
-alt + F1
-	sh ~/.config/bspwm/rofi/bin/launcher
-
+#alt + F1
+#	sh ~/.config/bspwm/rofi/bin/launcher
+#alt + F1
+	#dmenu_run
 # Rofi Network Menu
 super + n
 	nmd

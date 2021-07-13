@@ -7,16 +7,15 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'airblade/vim-gitgutter'
-Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'morhetz/gruvbox'
-Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline-themes'
-" for telescope to work
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -43,6 +42,7 @@ nmap <leader>gs :G<CR>
 nmap <C-n> :NERDTreeToggle<CR>
 vmap cc <Plug>NERDCommenterToggle
 nmap cc <Plug>NERDCommenterToggle
+set scrolloff=999 " this basically makes the cursor stick to the center of the screen all the fucking time
 
 "open NERDTree automatically
 "autocmd StdinReadPre * let s:std_in=1
@@ -68,20 +68,15 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Unknown'   :'?',
                 \ }
 
-"vim-prettier
 let g:prettier#quickfix_enabled = 0
 let g:prettier#quickfix_auto_focus = 0
-"prettier command for coc
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
-"run prettier on save
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html,*.py PrettierAsync
 
 
-"ctrlp
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
-"j/k will move virtual lines (lines that wrap)
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
@@ -106,8 +101,6 @@ set shiftwidth=4
 colorscheme gruvbox
 set background=dark
 
-"sync open file with NERDTree
-"Check if NERDTree is open or active
 function! IsNERDTreeOpen()        
   return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
 endfunction
