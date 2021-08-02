@@ -1,0 +1,35 @@
+alias clock='tty-clock -sxcbtB'
+alias getclassname='xprop | grep WM_CLASS'
+alias searchpkg='sudo pacman -Ss'
+alias l='exa -lahF --color=always --icons --sort=size --group-directories-first'
+alias ls='exa -lhF --color=always --icons --sort=size --group-directories-first'
+alias gshell='gcloud alpha cloud-shell ssh'
+alias lst='exa -lahFT --color=always --icons --sort=size --group-directories-first'
+alias e='exit'
+alias q='exit'
+alias m='mocp'
+alias g='gotop'
+alias cat='bat'
+alias vim='nvim'
+alias mcserver='ssh 176.9.65.47 -p 2201 -l aakash'
+alias botserver='ssh 176.9.65.47 -p 2200 -l bot'
+alias neofetch='/usr/bin/cat ~/.config/neofetch/neofetchcache'
+alias r='lf'
+alias listkeys="gpg --list-keys --keyid-format LONG"
+alias vlc='devour vlc'
+alias mpv='devour mpv'
+alias zathura='devour zathura'
+copy() {cp -v "$1" "$(cat ~/.config/bspwm/bmdirs | fzf | sed "s|~|$HOME|")";}
+alias cc=copy
+lfcd () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+    fi
+}
+bindkey -s '^o' 'lfcd\n'
+alias cpu="ps axch -o cmd:15,%cpu --sort=-%cpu | head"
+alias mem="ps axch -o cmd:15,%mem --sort=-%mem | head"
