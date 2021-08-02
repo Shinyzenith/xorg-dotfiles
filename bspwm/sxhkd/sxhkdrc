@@ -13,7 +13,7 @@ super + e
 
 #dmenu
 super +  d
-	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+	dmenu_run -h 30 -i
 
 #Firefox
 super + w
@@ -21,19 +21,24 @@ super + w
 
 #PDF manual
 super + m
-	bash /home/$USER/.config/bspwm/scripts/mansplain
+	alacritty -e mocp
 
 #gotop
 super + g
 	alacritty -e gotop
 
+#bashtop
+super + b
+	alacritty -e bashtop 
+
 #arcolinux-logout
 super + x
     arcolinux-logout
 
-#Rofi theme selector
+#recording my screen (No audio)
 super + r
-	alacritty -e ranger
+	$HOME/.config/bspwm/scripts/record-screen.sh
+# to record from the webcam set your input file to /dev/video<filenumber>
 
 #Pavucontrol
 #super + v
@@ -69,10 +74,13 @@ super + shift + d
 super + shift + s
 	pkill -USR1 -x sxhkd
 
-#Keyboard dependent
-#super + shift + KP_Enter
-#	thunar
+#config selector
+super + shift + c
+	/home/$USER/.config/bspwm/scripts/configselector
 
+#manual execution
+super + shift + m
+	bash /home/$USER/.config/bspwm/scripts/mansplain
 
 #################################################################
 # CONTROL + ALT KEYS
@@ -109,10 +117,6 @@ ctrl + alt + g
 #Firefox
 ctrl + alt + f
      brave
-
-#Nitrogen
-ctrl + alt + i
-     nitrogen
 
 #arcolinux-logout
 ctrl + alt + k
@@ -181,17 +185,17 @@ ctrl + shift + Escape
 #     SCREENSHOTS
 #################################################################
 
-#Scrot
-super + Print
-    scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
+#maim selection type screenshot
+Print
+	maim -s | tee ~/Pictures/screenshots/$(date | sed 's/\s/-/g').png | xclip -selection clipboard -t image/png ; notify-send 'Screenshot Successful!' 'Screenshot has been saved \nand copied to your clipboard' -a 'Screenshot script' -u critical
+
+#maim screenshot
+super + Print 
+	maim | tee ~/Pictures/screenshots/$(date | sed 's/\s/-/g').png | xclip -selection clipboard -t image/png ; notify-send 'Screenshot Successful!' 'Screenshot has been saved \nand copied to your clipboard' -a 'Screenshot script' -u critical
 
 #OBS-STUDIO
 ctrl + Print
 	obs & 
-
-#Flameshot
-Print 
-	flameshot &
 
 #################################################################
 #     FUNCTION KEYS
@@ -206,48 +210,44 @@ F12
 #     MULTIMEDIA KEYS
 #################################################################
 
-#Raises volume
+XF86AudioPlay
+	playerctl play-pause
+
+XF86AudioNext
+	playerctl next
+
+XF86AudioPrev
+	playerctl previous
+
+XF86AudioStop
+	playerctl stop
+
+# mocp controls
+
+super + c
+	mocp -G
+
+#XF86AudioNext
+	#mocp --next
+
+#XF86AudioPrev
+	#mocp -r
+
+#XF86AudioPrev
+	#mocp -s
+
 XF86AudioRaiseVolume
     amixer set Master 10%+
 
-#Lowers volume
 XF86AudioLowerVolume
     amixer set Master 10%-
 
-#Mute
 XF86AudioMute
     amixer -D pulse set Master 1+ toggle
 
-#Playerctl works for Pragha, Spotify and others
-#Delete the line for playerctl if you want to use mpc
-#and replace it with the corresponding code
-#mpc works for e.g.ncmpcpp
-#mpc toggle
-#mpc next
-#mpc prev
-#mpc stop
-
-#PLAY
-XF86AudioPlay
-    playerctl play-pause
-
-#Next
-XF86AudioNext
-    playerctl next
-
-#previous
-XF86AudioPrev
-    playerctl previous
-
-#Stop
-XF86AudioStop
-    playerctl stop
-
-#Brightness up
 XF86MonBrightnessUp
     brightnessctl set 10%+
 
-#Brightness down
 XF86MonBrightnessDown
     brightnessctl set 10%-
 
@@ -281,13 +281,13 @@ ctrl + alt + o
 super + f
 	bspc node --state \~fullscreen
 
-#kill
-super + c
-	bspc node -c
-
-#second kill command
+# kill command
 super + q
 	bspc node -c
+
+#Kill polybar
+super + z
+	pkill polybar
 
 #################################################################
 # SUPER KEYS
@@ -310,8 +310,11 @@ super + space
     bspc node -t "~"{floating,tiled}
 
 # Pseudo Tiled & tiled mode
-super + {p,t}
-    bspc node -t {pseudo_tiled,tiled}
+super + ctrl + p
+    bspc node -t pseudo_tiled
+
+super + t
+	bspc node -t tiled
 
 # Set the node flags
 super + ctrl + {m,x,s,z}
@@ -387,7 +390,7 @@ super + ctrl + {e,r,t,y}
 	bspc node --focus @{parent,brother,first,second}
 
 # Preselect the splitting area for next window on leaf/parent
-super + ctrl + {u,i,o,p}
+super + {u,i,o,p}
 	bspc node --presel-dir \~{west,south,north,east}
 
 # Define splitting ratio for next window on leaf/parent
@@ -416,7 +419,11 @@ alt + space
 
 # Expand tiled space
 alt + shift + {h,j,k,l}
-	bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
+	bspc node {@west -r -30,@south -r +30,@north -r -30,@east -r +30}
+
+# Expand tiled space but in the opposite direction
+alt + {h,j,k,l}
+	bspc node {@east -r -30,@north -r +30,@south -r -30,@west -r +30}
 
 #################################################################
 # CTRL + ALT KEYS
@@ -448,14 +455,6 @@ ctrl + alt + Down
 #Focus selected desktop FOR QWERTY KEYBOARDS
 super + {1-9,0}
 	bspc desktop -f '^{1-9,10}'
-
-#Focus selected desktop	FOR BELIGIAN AZERTY KEYBOARDS
-#super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
-#    bspc desktop -f '^{1-9,10}'
-
-#Focus selected desktop	FOR FRNECH AZERTY KEYBOARDS
-#super + {ampersand,eacute,quotedbl,apostrophe,parenleft,minus,egrave,underscore,ccedilla,agrave}
-#    bspc desktop -f '^{1-9,10}'
 
 #################################################################
 

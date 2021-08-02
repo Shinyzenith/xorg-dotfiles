@@ -1,3 +1,2 @@
 #!/bin/sh
-choice=$(man -k . | awk '{print $1}' | dmenu -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14' -p 'Manual PDF:')
-xargs man -Tps $choice | zathura - &
+echo $(find /usr/share/man/man1 -type f | awk -F '/' '/1/ {print $6}' | sed 's/.1.gz//g') $(man -k . | awk '{print $1}') | sed 's/\s/\n/g' | awk '!seen[$0]++'| dmenu -c -l 15 -h 30 -i -p 'Manual PDF:' | xargs man -Tps | zathura - &
