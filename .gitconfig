@@ -1,3 +1,10 @@
 [user]
-	email = AakashSharma7269@users.noreply.github.com
+	email = aakashsensharma@gmail.com
 	name = AakashSharma7269
+	signingkey = aakashsensharma@gmail.com
+
+[commit]
+	gpgsign = true
+
+[tag]
+	pgpSign = true

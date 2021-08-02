@@ -19,7 +19,7 @@ alias listkeys="gpg --list-keys --keyid-format LONG"
 alias vlc='devour vlc'
 alias mpv='devour mpv'
 alias zathura='devour zathura'
-copy() {cp -v "$1" "$(cat ~/.config/bspwm/bmdirs | fzf | sed "s|~|$HOME|")";}
+copy() {cp -vr "$1" "$(cat ~/.config/bspwm/bmdirs | fzf | sed "s|~|$HOME|")";}
 alias cc=copy
 lfcd () {
     tmp="$(mktemp)"
