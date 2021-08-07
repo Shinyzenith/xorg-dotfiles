@@ -19,7 +19,11 @@ super +  d
 super + w
     brave
 
-#PDF manual
+#clear my clipboard
+super + BackSpace
+	printf '' | xclip -selection clipboard
+
+# MOCP
 super + m
 	alacritty -e mocp
 
