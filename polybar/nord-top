@@ -14,12 +14,12 @@ ws-icon-8 = 9;9
 
 label-focused = %icon%
 label-focused-underline = ${colors.primary-alt}
-label-focused-foreground = ${colors.nord7}
+label-focused-foreground = ${colors.nord10}
 label-focused-padding = 2
 
 label-occupied = %icon%
 label-occupied-underline = ${colors.primary-alt}
-label-occupied-foreground = ${colors.nord9}
+label-occupied-foreground = ${colors.nord8}
 label-occupied-padding = 2
 
 label-empty = %icon%
@@ -46,7 +46,8 @@ date = %H:%M
 date-alt = %Y-%m-%d %a
 
 format = <label>
-label =  %date%
+; label =  %date%
+label = %date%
 label-margin = 1
 label-underline = ${colors.primary-alt}
 
@@ -80,40 +81,6 @@ label-full = 
 label-full-foreground = ${colors.success}
 label-full-underline = ${colors.primary-alt}
 
-[module/backlight]
-;https://github.com/jaagr/polybar/wiki/Module:-backlight
-
-type = internal/backlight
-format-prefix = "   "
-
-; Use the following command to list available cards:
-; $ ls -1 /sys/class/backlight/
-card = intel_backlight
-
-; Available tags:
-;   <label> (default)
-;   <ramp>
-;   <bar>
-format = <label>
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
-
-; Available tokens:
-;   %percentage% (default)
-label = %percentage%%
-
-; Only applies if <ramp> is used
-ramp-0 = 🌕
-ramp-1 = 🌔
-ramp-2 = 🌓
-ramp-3 = 🌒
-ramp-4 = 🌑
-
-; Only applies if <bar> is used
-bar-width = 10
-bar-indicator = |
-bar-fill = ─
-bar-empty = ─
 ########################################################################
 
 [module/uptime]
@@ -124,7 +91,7 @@ interval = 100
 label = %output%
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-prefix = " "
+; format-prefix = " "
 format-prefix-foreground = ${colors.nord1}
 format-underline = ${colors.primary-alt}
 
@@ -155,3 +122,14 @@ menu-0-2-foreground = ${colors.warning}
 menu-0-2-padding = 2
 menu-0-2-exec = systemctl suspend
 
+[module/backlight]
+;https://github.com/jaagr/polybar/wiki/Module:-backlight
+type = internal/backlight
+format-prefix = " "
+; Use the following command to list available cards:
+; $ ls -1 /sys/class/backlight/
+card = intel_backlight
+format = <label>
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+label = %percentage%%

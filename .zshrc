@@ -22,7 +22,7 @@ SAVEHIST=50000
 HISTFILE=~/.zsh_history
 HIST_STAMPS="mm/dd/yyyy"
 # Applying pywal color scheme automatically
-(cat ~/.cache/wal/sequences &)
+#(cat ~/.cache/wal/sequences &)
 plugins=(
 	git
 	npm

@@ -9,7 +9,7 @@ monitor = ${env:MONITOR:eDP-1}
 width = 99%
 height = 30
 offset-x = 10
-offset-y = 10
+offset-y = 7
 radius = 0.0
 
 fixed-center = true
@@ -44,7 +44,7 @@ wm-restack = bspwm
 
 # Top modules
 top-left = powermenu bspwm xwindow
-top-right = date battery backlight uptime
+top-right = alsa date battery backlight uptime
 
 systray-top = right
 systray-bottom = none

@@ -1,0 +1,5 @@
+nerd-fonts-source-code-pro
+alacritty
+picom-ibhagwan-git
+ttf-font-awesome
+otf-font-awesome
