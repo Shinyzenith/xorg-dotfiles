@@ -31,5 +31,6 @@ lfcd () {
     fi
 }
 bindkey -s '^o' 'lfcd\n'
+bindkey -s '^e' 'lf\n'
 alias cpu="ps axch -o cmd:15,%cpu --sort=-%cpu | head"
 alias mem="ps axch -o cmd:15,%mem --sort=-%mem | head"

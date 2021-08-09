@@ -2,7 +2,7 @@
 set previewer ~/scripts/lf/preview
 set preview true
 set incsearch true
-#set hidden true
+set hidden true
 set drawbox true
 set icons true
 set ignorecase true
@@ -104,14 +104,11 @@ map f search
 
 # Movement
 map gp cd ~/Pictures
-
+map gs cd ~/.dotfiles
 map gw cd /usr/share/backgrounds
 map gd cd ~/Downloads
-
 map gD cd ~/Documents
 map ge cd ~/Desktop
-
-map gs cd ~/.config/bspwm/scripts
 map gc cd ~/.config
 
 map \;j cd ~

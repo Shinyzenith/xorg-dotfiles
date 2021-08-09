@@ -1,15 +1,14 @@
 nerd-fonts-source-code-pro
+ttf-nerd-fonts-symbols-mono
 alacritty
 picom-ibhagwan-git
 ttf-font-awesome
+cherry-font-git
 otf-font-awesome
 maim
 alacritty
 nord-darker-theme
-
-
-
-
-######################################################
-Stow for dotfile management
-######################################################
+stow
+bashtop
+lf
+neovim
