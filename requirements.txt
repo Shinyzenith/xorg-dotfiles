@@ -3,3 +3,6 @@ alacritty
 picom-ibhagwan-git
 ttf-font-awesome
 otf-font-awesome
+maim
+alacritty
+nord-darker-theme
