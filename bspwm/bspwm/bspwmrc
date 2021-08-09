@@ -13,10 +13,14 @@ $HOME/.config/bspwm/autostart.sh
 #bspc config border_radius       8
 bspc config border_width         2
 bspc config window_gap           10
-bspc config top_padding          30
+
+################# Screen specific config ########################
+bspc config top_padding			 39
+bspc config left_padding         3
+bspc config right_padding        3
+#################################################################
+
 bspc config bottom_padding       10
-bspc config left_padding         10
-bspc config right_padding        10
 bspc config single_monocle       false
 #bspc config click_to_focus       true
 bspc config split_ratio          0.50
@@ -84,7 +88,6 @@ bspc rule -a Xfce4-terminal state=floating
 #Tiled applications
 bspc rule -a Gnome-disks state=tiled
 bspc rule -a Xfce4-settings-manager state=tiled
-
 #open applications on specific workspaces
 #bspc rule -a Firefox desktop='^1' follow=on
 #bspc rule -a Google-chrome desktop='^1' follow=on

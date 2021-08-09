@@ -6,3 +6,10 @@ otf-font-awesome
 maim
 alacritty
 nord-darker-theme
+
+
+
+
+######################################################
+Stow for dotfile management
+######################################################

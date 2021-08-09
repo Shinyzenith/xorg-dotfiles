@@ -45,16 +45,6 @@ cmd sudomkfile ${{
   sudo $EDITOR $ans
 }}
 
-cmd fzf_jump ${{
-  res="$(find . -maxdepth 5 | fzf --reverse --header='Jump to location')"
-  if [ -f "$res" ]; then
-    cmd="select"
-  elif [ -d "$res" ]; then
-    cmd="cd"
-  fi
-  lf -remote "send $id $cmd \"$res\""
-}}
-
 # Archive bindings
 cmd unarchive ${{
   case "$f" in
@@ -75,7 +65,6 @@ cmd tarbz2 %tar cjvf "$f.tar.bz2" "$f"
 # Remove some defaults
 map m
 map o
-map n
 map "'"
 map '"'
 map d
@@ -108,20 +97,18 @@ map r rename
 map H top
 map L bottom
 map R reload
-map <esc> quit
+map <esc> unselect
 map C clear
 map U unselect
-map F fzf_jump
 map f search
 
 # Movement
-map gp. cd ~/Pictures
-map gps cd ~/Pictures/screenshots
+map gp cd ~/Pictures
 
 map gw cd /usr/share/backgrounds
-map gd cd ~/Documents
+map gd cd ~/Downloads
 
-map gD cd ~/Downloads
+map gD cd ~/Documents
 map ge cd ~/Desktop
 
 map gs cd ~/.config/bspwm/scripts

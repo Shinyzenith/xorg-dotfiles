@@ -1,0 +1,268 @@
+ 
+New instance of bashtop version: 0.9.25 Pid: 8332
+ 
+New instance of bashtop version: 0.9.25 Pid: 8432
+ 
+New instance of bashtop version: 0.9.25 Pid: 5660
+ 
+New instance of bashtop version: 0.9.25 Pid: 10167
+ 
+New instance of bashtop version: 0.9.25 Pid: 10443
+ 
+New instance of bashtop version: 0.9.25 Pid: 14647
+ 
+New instance of bashtop version: 0.9.25 Pid: 19500
+ 
+New instance of bashtop version: 0.9.25 Pid: 29624
+ 
+New instance of bashtop version: 0.9.25 Pid: 29697
+ 
+New instance of bashtop version: 0.9.25 Pid: 29819
+ 
+New instance of bashtop version: 0.9.25 Pid: 29954
+ 
+New instance of bashtop version: 0.9.25 Pid: 30171
+ 
+New instance of bashtop version: 0.9.25 Pid: 61260
+ 
+New instance of bashtop version: 0.9.25 Pid: 20773
+ 
+New instance of bashtop version: 0.9.25 Pid: 33887
+ 
+New instance of bashtop version: 0.9.25 Pid: 43936
+ 
+New instance of bashtop version: 0.9.25 Pid: 53097
+ 
+New instance of bashtop version: 0.9.25 Pid: 60318
+ 
+New instance of bashtop version: 0.9.25 Pid: 60473
+ 
+New instance of bashtop version: 0.9.25 Pid: 280921
+ 
+New instance of bashtop version: 0.9.25 Pid: 28910
+ 
+New instance of bashtop version: 0.9.25 Pid: 59182
+ 
+New instance of bashtop version: 0.9.25 Pid: 22450
+/usr/bin/bashtop: line 1337: ((: Tree:    Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":    Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1347: ((: Tree:    Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":    Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1353: ((: Tree:    Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":    Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1334: ((: Tree:    Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":    Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1353: ((: Tree:    Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":    Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1334: ((: Tree:    Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":    Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 3037: Tree:    Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":    Threads: User:    Mem%       Cpu%")
+ 
+New instance of bashtop version: 0.9.25 Pid: 6400
+ 
+New instance of bashtop version: 0.9.25 Pid: 12288
+/usr/bin/bashtop: line 2201: 1:17: syntax error in expression (error token is ":17")
+02:44:55 AM ERROR: On line 1887 
+02:44:55 AM ERROR: On line 1887 (MUTED!)
+02:44:55 AM ERROR: On line 1879 
+02:44:55 AM ERROR: On line 1879 (MUTED!)
+ 
+New instance of bashtop version: 0.9.25 Pid: 14423
+/usr/bin/bashtop: line 1334: ((: Tree:                                                   Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":                                                   Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1334: ((: Tree:                                                   Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":                                                   Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1465: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1466: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1465: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1466: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1465: ((: ├─: syntax error: operand expected (error token is "├─")
+/usr/bin/bashtop: line 1466: ((: ├─: syntax error: operand expected (error token is "├─")
+/usr/bin/bashtop: line 1467: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 1468: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 1469: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 3037: Tree:                                                   Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":                                                   Threads: User:    Mem%       Cpu%")
+ 
+New instance of bashtop version: 0.9.25 Pid: 348007
+ 
+New instance of bashtop version: 0.9.25 Pid: 348017
+ 
+New instance of bashtop version: 0.9.25 Pid: 362425
+ 
+New instance of bashtop version: 0.9.25 Pid: 548235
+ 
+New instance of bashtop version: 0.9.25 Pid: 33245
+ 
+New instance of bashtop version: 0.9.25 Pid: 394000
+ 
+New instance of bashtop version: 0.9.25 Pid: 412944
+ 
+New instance of bashtop version: 0.9.25 Pid: 441489
+ 
+New instance of bashtop version: 0.9.25 Pid: 27864
+ 
+New instance of bashtop version: 0.9.25 Pid: 208373
+ 
+New instance of bashtop version: 0.9.25 Pid: 229946
+ 
+New instance of bashtop version: 0.9.25 Pid: 298962
+/usr/bin/bashtop: line 1334: ((: Tree:                                                   Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":                                                   Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1334: ((: Tree:                                                   Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":                                                   Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1465: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1466: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1465: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1466: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1465: ((: ├─: syntax error: operand expected (error token is "├─")
+/usr/bin/bashtop: line 1466: ((: ├─: syntax error: operand expected (error token is "├─")
+/usr/bin/bashtop: line 1467: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 1468: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 1469: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 3037: Tree:                                                   Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":                                                   Threads: User:    Mem%       Cpu%")
+ 
+New instance of bashtop version: 0.9.25 Pid: 307222
+/usr/bin/bashtop: line 1334: ((: 0 2964732968 0 0 0 0 0 0 0 165958800: syntax error in expression (error token is "2964732968 0 0 0 0 0 0 0 165958800")
+/usr/bin/bashtop: line 1334: ((: 0 2964732968 0 0 0 0 0 0 0 165958800: syntax error in expression (error token is "2964732968 0 0 0 0 0 0 0 165958800")
+/usr/bin/bashtop: line 3037: 0 2964732968 0 0 0 0 0 0 0 165958800: syntax error in expression (error token is "2964732968 0 0 0 0 0 0 0 165958800")
+ 
+New instance of bashtop version: 0.9.25 Pid: 309638
+/usr/bin/bashtop: line 1334: ((: Tree:                                                   Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":                                                   Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1334: ((: Tree:                                                   Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":                                                   Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1465: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1466: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1465: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1466: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1465: ((: ├─: syntax error: operand expected (error token is "├─")
+/usr/bin/bashtop: line 1466: ((: ├─: syntax error: operand expected (error token is "├─")
+/usr/bin/bashtop: line 1467: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 1468: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 1469: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 3037: Tree:                                                   Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":                                                   Threads: User:    Mem%       Cpu%")
+ 
+New instance of bashtop version: 0.9.25 Pid: 312056
+/usr/bin/bashtop: line 1334: ((: Tree:    Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":    Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1334: ((: Tree:    Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":    Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1465: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1466: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1465: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1466: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1465: ((: ├─: syntax error: operand expected (error token is "├─")
+/usr/bin/bashtop: line 1466: ((: ├─: syntax error: operand expected (error token is "├─")
+/usr/bin/bashtop: line 1467: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 1468: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 1469: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 3037: Tree:    Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":    Threads: User:    Mem%       Cpu%")
+ 
+New instance of bashtop version: 0.9.25 Pid: 323379
+ 
+New instance of bashtop version: 0.9.25 Pid: 5081
+/usr/bin/bashtop: line 1334: ((: Tree:                                                   Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":                                                   Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1334: ((: Tree:                                                   Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":                                                   Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1465: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1466: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1465: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1466: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1465: ((: ├─: syntax error: operand expected (error token is "├─")
+/usr/bin/bashtop: line 1466: ((: ├─: syntax error: operand expected (error token is "├─")
+/usr/bin/bashtop: line 1467: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 1468: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 1469: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 3037: Tree:                                                   Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":                                                   Threads: User:    Mem%       Cpu%")
+ 
+New instance of bashtop version: 0.9.25 Pid: 45819
+/usr/bin/bashtop: line 1334: ((: Tree:    Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":    Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1334: ((: Tree:    Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":    Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1465: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1466: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1465: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1466: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1465: ((: ├─: syntax error: operand expected (error token is "├─")
+/usr/bin/bashtop: line 1466: ((: ├─: syntax error: operand expected (error token is "├─")
+/usr/bin/bashtop: line 1467: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 1468: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 1469: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 3037: Tree:    Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":    Threads: User:    Mem%       Cpu%")
+ 
+New instance of bashtop version: 0.9.25 Pid: 56537
+/usr/bin/bashtop: line 1334: ((: Tree:    Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":    Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1334: ((: Tree:    Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":    Threads: User:    Mem%       Cpu%")
+/usr/bin/bashtop: line 1465: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1466: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1465: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1466: ((: 0.0: syntax error: invalid arithmetic operator (error token is ".0")
+/usr/bin/bashtop: line 1465: ((: ├─: syntax error: operand expected (error token is "├─")
+/usr/bin/bashtop: line 1466: ((: ├─: syntax error: operand expected (error token is "├─")
+/usr/bin/bashtop: line 1467: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 1468: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 1469: [[: ─: syntax error: operand expected (error token is "─")
+/usr/bin/bashtop: line 3037: Tree:    Threads: User:    Mem%       Cpu%: syntax error in expression (error token is ":    Threads: User:    Mem%       Cpu%")
+ 
+New instance of bashtop version: 0.9.25 Pid: 57527
+ 
+New instance of bashtop version: 0.9.25 Pid: 47054
+ 
+New instance of bashtop version: 0.9.25 Pid: 125800
+ 
+New instance of bashtop version: 0.9.25 Pid: 128893
+ 
+New instance of bashtop version: 0.9.25 Pid: 148849
+ 
+New instance of bashtop version: 0.9.25 Pid: 303768
+ 
+New instance of bashtop version: 0.9.25 Pid: 387133
+ 
+New instance of bashtop version: 0.9.25 Pid: 8564
+ 
+New instance of bashtop version: 0.9.25 Pid: 23997
+ 
+New instance of bashtop version: 0.9.25 Pid: 2207
+ 
+New instance of bashtop version: 0.9.25 Pid: 7525
+ 
+New instance of bashtop version: 0.9.25 Pid: 12751
+ 
+New instance of bashtop version: 0.9.25 Pid: 1789
+ 
+New instance of bashtop version: 0.9.25 Pid: 40471
+ 
+New instance of bashtop version: 0.9.25 Pid: 80681
+ 
+New instance of bashtop version: 0.9.25 Pid: 166563
+ 
+New instance of bashtop version: 0.9.25 Pid: 3926
+ 
+New instance of bashtop version: 0.9.25 Pid: 17206
+ 
+New instance of bashtop version: 0.9.25 Pid: 197215
+ 
+New instance of bashtop version: 0.9.25 Pid: 27226
+ 
+New instance of bashtop version: 0.9.25 Pid: 27568
+ 
+New instance of bashtop version: 0.9.25 Pid: 37478
+ 
+New instance of bashtop version: 0.9.25 Pid: 45598
+stty: 'standard input': Input/output error
+ 
+New instance of bashtop version: 0.9.25 Pid: 92815
+ 
+New instance of bashtop version: 0.9.25 Pid: 168158
+ 
+New instance of bashtop version: 0.9.25 Pid: 2104
+ 
+New instance of bashtop version: 0.9.25 Pid: 2357
+ 
+New instance of bashtop version: 0.9.25 Pid: 84082
+ 
+New instance of bashtop version: 0.9.25 Pid: 144647
+ 
+New instance of bashtop version: 0.9.25 Pid: 145287
+ 
+New instance of bashtop version: 0.9.25 Pid: 49231
+ 
+New instance of bashtop version: 0.9.25 Pid: 21984
+ 
+New instance of bashtop version: 0.9.25 Pid: 33990
+ 
+New instance of bashtop version: 0.9.25 Pid: 42383
+ 
+New instance of bashtop version: 0.9.25 Pid: 42666
+ 
+New instance of bashtop version: 0.9.25 Pid: 22118
+ 
+New instance of bashtop version: 0.9.25 Pid: 22508
+ 
+New instance of bashtop version: 0.9.25 Pid: 23339
+ 
+New instance of bashtop version: 0.9.25 Pid: 24389

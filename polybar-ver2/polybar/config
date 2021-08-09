@@ -73,7 +73,7 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 index-sort = true
 enable-click = true
-reverse-scroll = false
+reverse-scroll = true
 
 label-focused = %index%
 label-focused-underline = ${colors.foreground}
@@ -163,6 +163,7 @@ label-open-background = "#BF616A"
 label-open-padding = 3
 label-close = 
 label-close-foreground = ${colors.foreground}
+label-close-background = "#BF616A"
 label-close-padding = 4
 
 menu-0-0 = 
