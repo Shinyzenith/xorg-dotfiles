@@ -11,6 +11,7 @@ declare -a options=(
 "Sxhkd keybinds - $HOME/.config/bspwm/sxhkd/sxhkdrc"
 "AutoStart Script - $HOME/.config/bspwm/autostart.sh"
 "NeoVim Snippets - $HOME/.config/nvim/UltiSnips"
+"Picom config - $HOME/.config/bspwm/picom.conf"
 )
 
 choice=$(printf '%s\n' "${options[@]}"| dmenu -i -c -l 15 -h 30 -p 'Edit config:')
