@@ -66,6 +66,7 @@ cmd tarbz2 %tar cjvf "$f.tar.bz2" "$f"
 map m
 map o
 map "'"
+map w
 map '"'
 map d
 map c
@@ -110,5 +111,6 @@ map gd cd ~/Downloads
 map gD cd ~/Documents
 map ge cd ~/Desktop
 map gc cd ~/.config
+map gm cd ~/Music
 
 map \;j cd ~
