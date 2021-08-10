@@ -10,7 +10,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'joshdick/onedark.nvim'
+Plug 'arcticicestudio/nord-vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
@@ -55,7 +55,7 @@ vmap cc <Plug>NERDCommenterToggle
 nmap cc <Plug>NERDCommenterToggle
 set scrolloff=999
 "let g:airline_powerline_fonts=1
-let g:airline_theme='onedark'
+let g:airline_theme='nord'
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:NERDTreeGitStatusUseNerdFonts = 1
 let g:NERDTreeGitStatusShowIgnored = 1
@@ -104,7 +104,7 @@ set cindent
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
-colorscheme onedark
+colorscheme nord
 set background=dark
 function! IsNERDTreeOpen()        
   return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
