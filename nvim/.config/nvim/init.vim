@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'psliwka/vim-smoothie'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -55,7 +56,8 @@ vmap cc <Plug>NERDCommenterToggle
 nmap cc <Plug>NERDCommenterToggle
 set scrolloff=999
 "let g:airline_powerline_fonts=1
-let g:airline_theme='nord'
+let g:airline_theme = 'nord'
+let g:smoothe_enabled = 1
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:NERDTreeGitStatusUseNerdFonts = 1
 let g:NERDTreeGitStatusShowIgnored = 1
