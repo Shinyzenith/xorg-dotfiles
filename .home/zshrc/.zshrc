@@ -293,8 +293,7 @@ alias personal='cp -Rf /personal/* ~'
 #create a file called .zshrc-personal and put all your personal aliases
 #in there. They will not be overwritten by skel.
 [[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
-panes
-#find /home/$USER/.config/bspwm/scripts/color-scripts -type f | shuf | head -n 1 | xargs bash
+find /home/$USER/.config/bspwm/scripts/color-scripts -type f | shuf | head -n 1 | xargs bash
 # Starting the starship prompt
 eval "$(starship init zsh)"
 #runs neofetch (btw this is the alias of neofetch just from ~/.zshrc-personal alias called neofetch)
