@@ -1,9 +1,7 @@
 syntax on
 call plug#begin('~/.vim/plugged')
-################################################## EXPERIMENTAL PLUGINS ########################################################
 Plug 'puremourning/vimspector'
 Plug 'szw/vim-maximizer'
-################################################## EXPERIMENTAL PLUGINS ########################################################
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -31,6 +29,7 @@ vnoremap / /\v
 autocmd BufWritePost *.tex silent! !pdflatex %
 nnoremap Y y$
 nnoremap <C-p> <cmd>Telescope find_files<cr>
+nnoremap <C-s> :w<CR>
 nnoremap <C-G> <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>p "*yy

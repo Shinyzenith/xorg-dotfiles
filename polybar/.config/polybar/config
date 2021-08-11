@@ -46,8 +46,8 @@ font-5=IPAGothic:size=11;2
 font-6=Source Code Nerd Font
 modules-left = powermenu launcher battery cpu 
 modules-center = bspwm
-modules-right =  temperature time pulseaudio
-scroll-up = bspwn-wsnext
+modules-right =  temperature time backlight pulseaudio 
+scroll-up = bspwn-wsnext 
 scroll-down = bspwn-wsprev
 override-redirect = false
 wm-restack = bspwm
@@ -65,6 +65,17 @@ content-foreground=${colors.foreground}
 ;content-background = "#D08770"
 content-padding=7
 click-left=dmenu_run -h 39 -i
+
+[module/backlight]
+type = internal/backlight
+format-prefix = " "
+; Use the following command to list available cards:
+; $ ls -1 /sys/class/backlight/
+card = intel_backlight
+format = <label>
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+label = %percentage%%
 
 [module/bspwm]
 type = internal/bspwm
