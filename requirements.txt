@@ -2,7 +2,7 @@ alacritty
 picom-ibhagwan-git
 maim
 alacritty
-nord-darker-theme
+nordic-darker-theme
 stow
 bashtop
 lf
