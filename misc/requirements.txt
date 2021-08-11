@@ -15,12 +15,11 @@ arcolinux-fonts-git
 awesome-terminal-fonts
 cherry-font-git
 gsfonts
-nerd-fonts-source-code-pro
 noto-fonts
 otf-font-awesome
 terminus-font
 ttf-font-awesome
 ttf-mac-fonts
 ttf-ms-fonts
-ttf-nerd-fonts-symbols-mono
 ttf-ubuntu-font-family
+nerd-fonts-jetbrains-mono

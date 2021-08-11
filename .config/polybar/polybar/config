@@ -44,7 +44,6 @@ font-2=Font Awesome 5 Free Regular:size=8;2
 font-3=Font Awesome 5 Brands:size=8;2
 font-4=font\-logos:size=10;2
 font-5=IPAGothic:size=11;2
-font-6=Source Code Nerd Font
 modules-left = powermenu launcher battery cpu 
 modules-center = bspwm
 modules-right =  temperature time backlight pulseaudio 
