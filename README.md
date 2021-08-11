@@ -4,3 +4,5 @@
 ![rice4](https://github.com/AakashSharma7269/dotfiles/blob/master/_rice-pics/oned1.png?raw=true)
 ![rice5](https://github.com/AakashSharma7269/dotfiles/blob/master/_rice-pics/oned2.png?raw=true)
 ![rice6](https://github.com/AakashSharma7269/dotfiles/blob/master/_rice-pics/one3.png?raw=true)
+![rice7](https://github.com/AakashSharma7269/dotfiles/blob/master/_rice-pics/rajesh.png?raw=true)
+![rice7](https://github.com/AakashSharma7269/dotfiles/blob/master/_rice-pics/rajesh1.png?raw=true)
