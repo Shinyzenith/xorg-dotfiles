@@ -13,7 +13,8 @@
 
 [colors]
 
-background = ${xrdb:background:#e92E3440}
+;background = ${xrdb:background:#e92E3440}
+background = ${xrdb:background:#ff2E3440}
 foreground = ${xrdb:color7:#ff5555}
 
 ;  _                    
