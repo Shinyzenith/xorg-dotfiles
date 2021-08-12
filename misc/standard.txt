@@ -14,3 +14,4 @@ ttf-font-awesome
 spotify
 obs-studio
 stow
+alacritty
