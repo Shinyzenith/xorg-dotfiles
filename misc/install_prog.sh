@@ -1,5 +1,3 @@
 #!/bin/sh
-reqs=$(cat ./aur.txt)
-yay -S $reqs --noconfirm
-reqs=$(cat ./standard.txt)
-pacman -S $reqs --noconfirm
+cat ./aur.txt|xargs -I {} yay -S {} --noconfirm
+cat ./requirements.txt|xargs -I {} pacman -S {} --noconfirm
