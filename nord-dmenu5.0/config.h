@@ -6,14 +6,17 @@ static int centered = 0;  /*use the -c flag to get it to center*/
 static int min_width = 750;
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"NotoMonoRegular:bold:pixelsize=15"
+	"JetBrainsMono:regular:pixelsize=15"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#eceff4", "#2e3440" },
-	[SchemeSel] = { "#eceff4", "#5E81AC" },
-	[SchemeOut] = { "#eceff4", "#8FBCBB" },
+	//[SchemeNorm] = { "#eceff4", "#2e3440" },
+	//[SchemeSel] = { "#eceff4", "#5E81AC" },
+	//[SchemeOut] = { "#eceff4", "#8FBCBB" },
+	[SchemeNorm] = { "#bbbbbb", "#2E3440" },
+	[SchemeSel] =  { "#eeeeee", "#5E81AC" },
+	[SchemeOut] =  { "#D8DEE9", "#00ffff" },
 	[SchemeSelHighlight] = {"#B48EAD","#1d2021"},
 	[SchemeNormHighlight] = {"#2E3440","#81A1C1"},
 };
