@@ -90,35 +90,11 @@ super + shift + m
 # CONTROL + ALT KEYS
 #################################################################
 
-#arcolinux-welcome-app
-ctrl + alt + w
-     arcolinux-welcome-app
-
 #arcolinux-tweak-tool
 ctrl + alt + e
     arcolinux-tweak-tool
 
-#conky-rotate
-ctrl + alt + Next
-     conky-rotate -n
-
-#conky-rotate
-ctrl + alt + Prior
-    conky-rotate -p
-
-#File-Manager
-ctrl + alt + b
-     thunar
-
-#Catfish
-ctrl + alt + c
-     catfish
-
-#Chromium
-ctrl + alt + g
-    chromium -no-default-browser-check
-
-#Firefox
+#brave
 ctrl + alt + f
      brave
 
@@ -129,10 +105,6 @@ ctrl + alt + k
 #arcolinux-logout
 ctrl + alt + l
     arcolinux-logout
-
-#Pamac-manager
-ctrl + alt + p
-    pamac-manager
 
 #Xfce4-settings-manager
 ctrl + alt + m
