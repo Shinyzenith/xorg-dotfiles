@@ -4,7 +4,7 @@
 #################################################################################################################
 echo "Updating your system!!!"
 yay -Syu --noconfirm
-yay -Rns conky --noconfirm
+yay -Rns vivaldi pamac-all --noconfirm
 cd ~/.dotfiles/misc/;bash install_prog.sh
 echo "Installed dependencies"
 cd ~/.dotfiles/nord-dmenu5.0/; sudo make install
@@ -15,5 +15,6 @@ cd ~/.dotfiles/.config/;bash install.sh
 echo "Symlinked all .config files"
 cd ~/.dotfiles/.home/;bash install.sh
 echo "Symlinked all .home files"
+~/.config/bspwm/bspwmrc
 sudo chsh -s $(which zsh)
-bash ~/.dotfiles/installscripts/setupshell.sh
+sudo bash ~/.dotfiles/installscripts/setupshell.sh
