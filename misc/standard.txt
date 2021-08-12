@@ -1,0 +1,16 @@
+maim
+sxiv
+neovim
+brave-bin
+gotop
+bashtop
+pulsemixer
+pcmanfm
+zathura
+zathura-pdf-mupdf
+zathura-ps
+otf-font-awesome
+ttf-font-awesome
+spotify
+obs-studio
+stow

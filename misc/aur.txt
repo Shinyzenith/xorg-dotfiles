@@ -1,0 +1,7 @@
+lf
+cherry-font-git
+ttf-mac-fonts
+nerd-fonts-jetbrains-mono
+discord-canary
+nordic-darker-theme
+
