@@ -1,7 +1,5 @@
 #!/bin/sh
-cd ~/.dotfiles/misc/;bash install_prog.sh
-echo "Installed dependencies"
-cd ~/.dotfiles/misc/;bash clean_env.sh
+cd ~/.dotfiles/installscripts/;bash clean_env.sh
 echo "Removed any config files which may cause conflicts."
 cd ~/.dotfiles/.config/;bash install.sh
 echo "Symlinked all .config files"
