@@ -15,4 +15,5 @@ cd ~/.dotfiles/.config/;bash install.sh
 echo "Symlinked all .config files"
 cd ~/.dotfiles/.home/;bash install.sh
 echo "Symlinked all .home files"
+sudo chsh -s $(which zsh)
 bash ~/.dotfiles/installscripts/setupshell.sh
