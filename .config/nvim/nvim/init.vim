@@ -1,7 +1,5 @@
 syntax on
 call plug#begin('~/.vim/plugged')
-Plug 'puremourning/vimspector'
-Plug 'szw/vim-maximizer'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'Xuyuanp/nerdtree-git-plugin'

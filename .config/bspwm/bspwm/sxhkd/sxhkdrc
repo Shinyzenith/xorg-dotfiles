@@ -68,7 +68,7 @@ super + shift + Escape
 
 #File-Manager
 super + shift + f
-	pcmanfm
+	freetube
 
 #discord
 super + shift + d
