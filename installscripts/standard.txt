@@ -16,3 +16,4 @@ obs-studio
 stow
 alacritty
 exa
+nitrogen

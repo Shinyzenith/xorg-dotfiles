@@ -1,6 +1,5 @@
 #!/bin/sh
-echo $(cd ~/.dotfiles/.config/;/usr/bin/ls -d */ | sed 's|\/$||'| sed 's|\(.*\)\w*|\~/.config/\1|') | xargs -I {} rm -rf {}
-echo $(cd ~/.dotfiles/.home/;/usr/bin/ls -d */ | sed 's|\/$||'| sed 's|\(.*\)\w*|\~/.\1|') | xargs -I {} rm -rf {}
+bash ~/.dotfiles/installscripts/clean.sh
 echo "Removed any config files which may cause conflicts."
 cd ~/.dotfiles/.config/;bash install.sh
 echo "Symlinked all .config files"

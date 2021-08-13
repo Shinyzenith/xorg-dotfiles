@@ -5,3 +5,4 @@ do
 	stow -D $dot -t ~/
 	stow $dot -t ~/
 done
+~/.config/bspwm/bspwmrc
