@@ -8,3 +8,4 @@ cd ~/.dotfiles/.home/;bash install.sh
 echo "Symlinked all .home files"
 cd ~/.dotfiles/nord-dmenu5.0/; sudo make install
 echo "Built dmenu from source"
+~/.config/bspwm/bspwmrc
