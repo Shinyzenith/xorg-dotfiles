@@ -1,8 +1,9 @@
 #!/bin/sh
-nitrogen --set-scaled ~/.dotfiles/misc/wallpaper/wallpaper.png --save
-echo "Set the wallpaper"
+git clone https://github.com/AakashSharma7269/dotfiles ~/.dotfiles
 cd ~/.dotfiles/installscripts/;bash installdependencies.sh
 echo "Installed dependencies"
+nitrogen --set-scaled ~/.dotfiles/misc/wallpaper/wallpaper.png --save
+echo "Set the wallpaper"
 cd ~/.dotfiles/nord-dmenu5.0/; sudo make install
 echo "Built dmenu from source"
 bash ~/.dotfiles/installscripts/clean.sh
