@@ -1,4 +1,2 @@
-#!/bin/sh
-yay
-echo $(cat ./standard.txt)|xargs -I {} sudo pacman -S {} --noconfirm
-echo $(cat ./aur.txt)|xargs -I {} yay -S {} --noconfirm
+sudo pacman -S maim sxiv blueberry neovim bashtop pulsemixer pcmanfm zathura zathura-pdf-mupdf zathura-ps otf-font-awesome ttf-font-awesome obs-studio stow alacritty exa nitrogen brightnessctl pcmanfm git xorg-xmodmap xorg-xsetroot networkmanager xfce4-notifyd xfce4-power-manager polkit polkit-gnome neofetch numlockx
+yay -S lf brave-bin spotify gotop cherry-font-git ttf-mac-fonts nerd-fonts-jetbrains-mono discord-canary nordic-darker-theme picom-ibhagwan-git freetube-bin
