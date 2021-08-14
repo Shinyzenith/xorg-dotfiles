@@ -44,11 +44,9 @@ font-2=Font Awesome 5 Free Regular:size=8;2
 font-3=Font Awesome 5 Brands:size=8;2
 font-4=font\-logos:size=10;2
 font-5=JetBrainsMono Nerd Font:size=11;2
-font-6=NotoSerif Nerd Font:style=Regular
-
-modules-left = powermenu launcher battery cpu 
+modules-left = powermenu launcher battery cpu temperature
 modules-center = bspwm
-modules-right =  temperature time backlight pulseaudio 
+modules-right =  time backlight pulseaudio 
 scroll-up = bspwn-wsnext 
 scroll-down = bspwn-wsprev
 override-redirect = false
@@ -64,7 +62,7 @@ type=custom/text
 content = 
 content-font=5
 content-foreground=${colors.foreground}
-;content-background = "#81A1C1"
+;content-background = "#D08770"
 content-padding=7
 click-left=dmenu_run -h 39 -i
 
@@ -102,7 +100,7 @@ label-urgent-padding = 2
 label-urgent-foreground = ${colors.background}
 label-urgent-background = ${colors.foreground}
 label-urgent-overline = ${colors.background}
-label-urgent-font = 2
+label-urgent-font = 5
 
 [module/cpu]
 type = internal/cpu
@@ -167,12 +165,12 @@ ramp-2 = 
 
 [module/powermenu]
 type = custom/menu
-expand-right = true
-label-open-background = "#BF616A"
-label-open =
-label-open-center=true
-label-open-font=5
+
+expand-left = true
+
+label-open = 
 label-open-foreground = ${colors.foreground}
+label-open-background = "#BF616A"
 label-open-padding = 3
 label-close = 
 label-close-foreground = ${colors.foreground}
@@ -187,17 +185,19 @@ menu-0-1 = 
 menu-0-1-foreground = ${colors.foreground}
 menu-0-1-padding = 2
 menu-0-1-exec = reboot
-menu-0-2 = 
+menu-0-2 = ⏾
 menu-0-2-foreground = ${colors.foreground}
 menu-0-2-padding = 2
 menu-0-2-exec = systemctl suspend
 
 [module/battery]
 type = internal/battery
-full-at = 100
-battery = BAT1
-adapter = AC
-format-charging-padding=9
+
+full-at = ${config.battery-full-at}
+
+battery = ${config.battery-bat}
+adapter = ${config.battery-adp}
+
 format-charging = <animation-charging> <label-charging>
 format-charging-underline = ${colors.primary-alt}
 animation-charging-0 = 
@@ -223,7 +223,20 @@ label-full-underline = ${colors.primary-alt}
 
 [settings]
 screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = true
+
+[config]
+battery-full-at = 100
+battery-bat = BAT1
+battery-adp = AC
+
 
 [global/wm]
 margin-top = 0
 margin-bottom = 0
+
+; vim:ft=dosini
