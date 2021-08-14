@@ -43,7 +43,9 @@ font-1=Font Awesome 5 Free Solid:size=8;2
 font-2=Font Awesome 5 Free Regular:size=8;2
 font-3=Font Awesome 5 Brands:size=8;2
 font-4=font\-logos:size=10;2
-font-5=JetBrainsMono:size=11;2
+font-5=JetBrainsMono Nerd Font:size=11;2
+font-6=NotoSerif Nerd Font:style=Regular
+
 modules-left = powermenu launcher battery cpu 
 modules-center = bspwm
 modules-right =  temperature time backlight pulseaudio 
@@ -59,10 +61,10 @@ wm-restack = bspwm
                                          
 [module/launcher]
 type=custom/text
-content = 
+content = 
 content-font=5
 content-foreground=${colors.foreground}
-;content-background = "#D08770"
+;content-background = "#81A1C1"
 content-padding=7
 click-left=dmenu_run -h 39 -i
 
@@ -165,12 +167,12 @@ ramp-2 = 
 
 [module/powermenu]
 type = custom/menu
-
-expand-left = true
-
-label-open = 
-label-open-foreground = ${colors.foreground}
+expand-right = true
 label-open-background = "#BF616A"
+label-open =
+label-open-center=true
+label-open-font=5
+label-open-foreground = ${colors.foreground}
 label-open-padding = 3
 label-close = 
 label-close-foreground = ${colors.foreground}
@@ -192,12 +194,10 @@ menu-0-2-exec = systemctl suspend
 
 [module/battery]
 type = internal/battery
-
-full-at = ${config.battery-full-at}
-
-battery = ${config.battery-bat}
-adapter = ${config.battery-adp}
-
+full-at = 100
+battery = BAT1
+adapter = AC
+format-charging-padding=9
 format-charging = <animation-charging> <label-charging>
 format-charging-underline = ${colors.primary-alt}
 animation-charging-0 = 
@@ -223,24 +223,7 @@ label-full-underline = ${colors.primary-alt}
 
 [settings]
 screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-;pseudo-transparency = true
-
-[config]
-# when the current battery capacity excess this value,
-# the full-capacity format will be displayed.
-battery-full-at = 100
-
-# battery and adapter
-battery-bat = BAT1
-battery-adp = AC
-
 
 [global/wm]
 margin-top = 0
 margin-bottom = 0
-
-; vim:ft=dosini
