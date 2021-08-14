@@ -1,8 +1,6 @@
 maim
 sxiv
 neovim
-brave-bin
-gotop
 bashtop
 pulsemixer
 pcmanfm
@@ -11,7 +9,6 @@ zathura-pdf-mupdf
 zathura-ps
 otf-font-awesome
 ttf-font-awesome
-spotify
 obs-studio
 stow
 alacritty
@@ -28,3 +25,4 @@ xfce4-power-manager
 polkit
 polkit-gnome
 neofetch
+numlockx

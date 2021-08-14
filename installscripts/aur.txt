@@ -1,4 +1,7 @@
 lf
+brave-bin
+spotify
+gotop
 cherry-font-git
 ttf-mac-fonts
 nerd-fonts-jetbrains-mono
