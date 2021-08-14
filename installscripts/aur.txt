@@ -5,3 +5,5 @@ nerd-fonts-jetbrains-mono
 discord-canary
 nordic-darker-theme
 picom-ibhagwan-git
+freetube-bin
+blueberry

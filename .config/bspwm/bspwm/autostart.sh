@@ -29,7 +29,6 @@ mocicon &
 #draw your wallpaper
 nitrogen --restore
 
-dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 xsetroot -cursor_name left_ptr &
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 

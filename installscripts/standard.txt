@@ -17,3 +17,14 @@ stow
 alacritty
 exa
 nitrogen
+brightnessctl
+pcmanfm
+git
+xorg-xmodmap
+xorg-xsetroot
+networkmanager
+xfce4-notifyd
+xfce4-power-manager
+polkit
+polkit-gnome
+neofetch

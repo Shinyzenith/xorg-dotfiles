@@ -22,7 +22,11 @@ case "$1" in
 	*.doc) catdoc "$1" ;;
 	*.docx) docx2txt "$1" - ;;
 	*.csv) cat "$1" | sed s/,/\\n/g ;;
-	*.pdf) zathura "$1";;
+	*.pdf)
+		CACHE=$(mktemp /tmp/thumbcache.XXXXX)
+		pdftoppm -png -f 1 -singlefile "$1" "$CACHE"
+		$HOME/.config/lf/image draw "$CACHE.png" $num 1 $numb $numc
+		;;
 	*.epub)
 		CACHE=$(mktemp /tmp/thumbcache.XXXXX)
 		epub-thumbnailer "$1" "$CACHE" 1024
