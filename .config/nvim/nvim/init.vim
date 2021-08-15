@@ -26,6 +26,8 @@ nnoremap / /\v
 vnoremap / /\v
 autocmd BufWritePost *.tex silent! !pdflatex %
 nnoremap Y y$
+autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+	inoremap <expr> <Tab> pumvisible() ? "\<C-y>" : "\<Tab>"
 nnoremap <C-p> <cmd>Telescope find_files<cr>
 nnoremap <C-s> :w<CR>
 nnoremap <C-G> <cmd>Telescope live_grep<cr>
