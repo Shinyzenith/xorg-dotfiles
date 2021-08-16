@@ -13,16 +13,12 @@ alias g='gotop'
 alias p='pcmanfm .'
 alias cat='bat'
 alias vim='nvim'
-alias mcserver='ssh 176.9.65.47 -p 2201 -l aakash'
-alias botserver='ssh 176.9.65.47 -p 2200 -l bot'
 alias neofetch='/usr/bin/cat ~/.config/neofetch/neofetchcache'
 alias r='lf'
 alias listkeys="gpg --list-keys --keyid-format LONG"
 alias vlc='devour vlc'
 alias mpv='devour mpv'
 alias zathura='devour zathura'
-copy() {cp -vr "$1" "$(cat ~/.config/bspwm/bmdirs | fzf | sed "s|~|$HOME|")";}
-alias cc=copy
 lfcd () {
     tmp="$(mktemp)"
     lf -last-dir-path="$tmp" "$@"
