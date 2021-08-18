@@ -86,6 +86,9 @@ super + shift + c
 super + shift + m
 	bash /home/$USER/.config/bspwm/scripts/mansplain
 
+#notray 
+super + shift + z
+	pkill polybar;polybar -c ~/.config/bspwm/polybar/notray -rq bar &
 #################################################################
 # CONTROL + ALT KEYS
 #################################################################

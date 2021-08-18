@@ -6,7 +6,7 @@ declare -a options=(
 "NeoVim Config - $HOME/.config/nvim/init.vim"
 "Zshrc - $HOME/.zshrc"
 "Zsh aliases - $HOME/.zhrc-personal"
-"Polybar config - $HOME/.config/polybar/config"
+"Polybar config - $HOME/.config/bspwm/polybar/config"
 "Bspwm - $HOME/.config/bspwm/bspwmrc"
 "Sxhkd keybinds - $HOME/.config/bspwm/sxhkd/sxhkdrc"
 "AutoStart Script - $HOME/.config/bspwm/autostart.sh"
