@@ -28,6 +28,7 @@ mocicon &
 
 #draw your wallpaper
 nitrogen --restore
+betterlockscreen -u $(cat ~/.config/nitrogen/bg-saved.cfg | grep file | sed 's/file=//g') # sets the currently saved wallpaper as the betterlockscreen cache image
 
 xsetroot -cursor_name left_ptr &
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &

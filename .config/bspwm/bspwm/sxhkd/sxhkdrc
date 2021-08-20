@@ -38,10 +38,6 @@ super + g
 super + b
 	alacritty -e bashtop 
 
-# Arcolinux logout tool
-super + x
-    arcolinux-logout
-
 # Quickly record your screen with ffmpeg
 super + r
 	$HOME/.config/bspwm/scripts/record-screen.sh
@@ -224,6 +220,10 @@ alt + shift + Tab
 # Rotate desktop
 alt + space
 	bspc node @/ --rotate {90,-90}
+
+# Lock your computer
+alt + l
+	betterlockscreen -l blur
 
 # Expand tiled space
 alt + shift + {h,j,k,l}
