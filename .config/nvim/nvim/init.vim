@@ -123,6 +123,7 @@ endfunction
 autocmd BufEnter * call SyncTree()
 let g:coc_global_extensions = [
   \ 'coc-snippets',
+  \ 'coc-discord-rpc',
   \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-eslint', 
