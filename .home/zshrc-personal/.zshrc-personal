@@ -1,4 +1,8 @@
 alias clock='tty-clock -sxcbtB'
+alias kp='~/.config/bspwm/scripts/killprocess'
+alias killp='~/.config/bspwm/scripts/killprocess'
+alias killprocess='~/.config/bspwm/scripts/killprocess'
+alias piratesong='~/.config/bspwm/scripts/piratesong'
 alias l='exa -lahF --color=always --icons --sort=size --group-directories-first'
 alias ls='exa -lhF --color=always --icons --sort=size --group-directories-first'
 alias lst='exa -lahFT --color=always --icons --sort=size --group-directories-first'
