@@ -1,8 +1,7 @@
 #!/bin/sh
 
-## Environtment
+# Environtment
 export EDITOR="/usr/bin/nvim"
-#export MANPAGER="/bin/sh -c \"col -b | nvim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
 
 #LAUNCHERS
 $HOME/.config/bspwm/autostart.sh

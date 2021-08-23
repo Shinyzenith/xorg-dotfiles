@@ -1,5 +1,4 @@
 #!/bin/bash
-
 function run {
   if ! pgrep $1 ;
   then
@@ -46,4 +45,5 @@ neofetch > /home/$USER/.config/neofetch/neofetchcache
 
 # vim navigation rates
 xset r rate 350 60
-betterlockscreen -u $(cat ~/.config/nitrogen/bg-saved.cfg | grep file | sed 's/file=//g') # sets the currently saved wallpaper as the betterlockscreen cache image
+# sets the currently saved wallpaper as the betterlockscreen cache image
+betterlockscreen -u $(cat ~/.config/nitrogen/bg-saved.cfg | grep file | sed 's/file=//g')
