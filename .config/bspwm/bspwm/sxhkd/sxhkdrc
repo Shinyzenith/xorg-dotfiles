@@ -1,4 +1,4 @@
-# NeoVim
+# Opens the NeoVim text editor
 super + e
     alacritty -e nvim
 
@@ -14,11 +14,11 @@ super + z
 super + c
 	mocp -G
 
-# Dmenu
+# Opens dmenu prompt
 super +  d
 	dmenu_run -h 35 -i
 
-# Browser
+# Opens brave browser
 super + w
     brave
 
