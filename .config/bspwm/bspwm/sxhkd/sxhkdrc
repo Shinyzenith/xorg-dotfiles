@@ -55,6 +55,10 @@ super + Return
 super + shift + i
 	/home/$USER/.config/bspwm/scripts/winmask
 
+# Set wallpaper with feh and sxiv
+super + shift + w
+	/home/$USER/.config/bspwm/scripts/setwallpaper.sh
+
 # XKill - kills any x window
 super + shift + Escape
     xkill
@@ -169,6 +173,10 @@ super + alt + {_,shift + }{Left,Down,Up,Right}
 # Reload bspwm
 super + shift + r
 	~/.config/bspwm/bspwmrc
+
+# quickly kill any process with dmenu
+super + shift + k
+	~/.config/bspwm/scripts/killprocess
 
 # Focus/swap windows by direction
 super + {_,shift + }{h,j,k,l}

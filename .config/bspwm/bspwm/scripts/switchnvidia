@@ -1,5 +1,0 @@
-#!/bin/sh
-sudo optimus-manager --switch nvidia --no-confirm
-prime-offload
-sudo prime-switch
-startx
