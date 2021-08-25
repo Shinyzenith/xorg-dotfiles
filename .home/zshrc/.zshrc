@@ -36,6 +36,5 @@ if [ -d "$HOME/.local/bin" ] ;
 fi
 
 [[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
-#find /home/$USER/.config/bspwm/scripts/color-scripts -type f | shuf | head -n 1 | xargs bash
-panes
+#find /home/$USER/.config/bspwm/scripts/color-scripts -type f | shuf | head -n 1 | xargs bash -c
 eval "$(starship init zsh)"

@@ -1,5 +1,5 @@
 #!/bin/sh
-rm -rf ~/.profile ~/.xinitrc ~/.config/alacritty ~/.config/bashtop ~/.config/bspwm ~/.config/lf ~/.config/nvim ~/.config/bspwm/polybar ~/.config/zathura ~/.gitconfig ~/.gtkrc-2.0.mine ~/.tmux.conf ~/.zshrc ~/.zshrc-personal
+rm -rf ~/.config/dunst/ ~/.zprofile ~/.xinitrc ~/.config/alacritty ~/.config/bashtop ~/.config/bspwm ~/.config/lf ~/.config/nvim ~/.config/bspwm/polybar ~/.config/zathura ~/.gitconfig ~/.gtkrc-2.0.mine ~/.tmux.conf ~/.zshrc ~/.zshrc-personal
 echo "Removed any config files which may cause conflicts."
 cd ~/.dotfiles/.config/;bash install.sh
 echo "Symlinked all .config files"

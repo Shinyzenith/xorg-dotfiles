@@ -1,5 +1,5 @@
 #!/bin/sh
-choice=$(devour sxiv -o /usr/share/backgrounds/)
+choice=$(sxiv -rto /usr/share/backgrounds/)
 echo $choice
 if [[ ! $choice ]]; then
 	echo "Choose an image to set as the wallpaper"; exit 1

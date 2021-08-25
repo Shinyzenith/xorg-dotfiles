@@ -4,7 +4,7 @@ super + e
 
 # Take a screenshot of your entire screen
 super + Print 
-	maim | tee ~/Pictures/screenshots/$(date | sed 's/\s/-/g').png | xclip -selection clipboard -t image/png ; notify-send 'Screenshot Successful!' 'Screenshot has been saved \nand copied to your clipboard' -a 'Screenshot script' -u critical
+	maim | tee ~/Pictures/screenshots/$(date | sed 's/\s/-/g').png | xclip -selection clipboard -t image/png ; notify-send 'Screenshot has been saved and copied to your clipboard' -a 'Screenshot script' -u critical -t 2000
 
 # Kill polybar
 super + z
@@ -97,7 +97,7 @@ ctrl + m
 
 # Screenshot a particular area of your screen
 Print
-	maim -s | tee ~/Pictures/screenshots/$(date | sed 's/\s/-/g').png | xclip -selection clipboard -t image/png ; notify-send 'Screenshot Successful!' 'Screenshot has been saved \nand copied to your clipboard' -a 'Screenshot script' -u critical
+	maim -s | tee ~/Pictures/screenshots/$(date | sed 's/\s/-/g').png | xclip -selection clipboard -t image/png;notify-send 'Screenshot has been saved and copied to your clipboard' -a 'Screenshot script' -u critical -t 2000
 
 XF86AudioPlay
 	playerctl play-pause
@@ -241,6 +241,10 @@ alt + shift + {h,j,k,l}
 # Expand tiled space but in the opposite direction
 alt + {h,j,k,l}
 	bspc node {@east -r -30,@north -r +30,@south -r -30,@west -r +30}
+
+# Pixel color picker
+alt + c
+	/home/$USER/.config/bspwm/scripts/pixelcolor
 
 # Focus next/previous window
 ctrl + alt + Left
