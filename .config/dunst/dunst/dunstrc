@@ -2,9 +2,9 @@
     font = JetBrainsMono 9
 	class = Dunst
 	corner_radius=9
-	mouse_left_click = do_action
+	mouse_left_click = close_all
 	max_icon_size = 50
-	mouse_middle_click = close_all
+	mouse_middle_click = do_action
 	title = Dunst
     # allow a small subset of html markup:
     # <b>bold</b>
