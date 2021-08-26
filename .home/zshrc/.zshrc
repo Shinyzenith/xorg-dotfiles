@@ -6,10 +6,10 @@
 #                     |___/
 
 export KEYTIMEOUT=1
+export ZSH=/usr/share/oh-my-zsh/
 source $ZSH/oh-my-zsh.sh
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
-export ZSH=/usr/share/oh-my-zsh/
 
 SAVEHIST=50000
 HISTFILE=~/.zsh_history
