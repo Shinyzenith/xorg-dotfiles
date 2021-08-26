@@ -12,7 +12,7 @@ import coloredlogs
 log = logging.getLogger("${0:cogname}")
 coloredlogs.install(logger=log)
 
-class ${1:cogname}(commands.Cog)
+class ${1:cogname}(commands.Cog):
 	"""
 	"""
 	
@@ -21,7 +21,7 @@ class ${1:cogname}(commands.Cog)
 	
 	@commands.Cog.listener()
 	async def on_ready(self):
-		log.warn(f"{self.__class__.__name__ Cog has been loaded}")
+		log.warn(f"{self.__class__.__name__} Cog has been loaded")
 
 def setup(bot):
 	bot.add_cog(${2:cogname}(bot))
