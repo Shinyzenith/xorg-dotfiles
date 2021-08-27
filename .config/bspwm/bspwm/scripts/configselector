@@ -8,6 +8,7 @@ declare -a options=(
 "Zsh aliases - $HOME/.zhrc-personal"
 "Polybar config - $HOME/.config/bspwm/polybar/config"
 "Bspwm - $HOME/.config/bspwm/bspwmrc"
+"Bspwm scripts - $HOME/.config/bspwm/scripts/"
 "Sxhkd keybinds - $HOME/.config/bspwm/sxhkd/sxhkdrc"
 "AutoStart Script - $HOME/.config/bspwm/autostart.sh"
 "NeoVim Snippets - $HOME/.config/nvim/UltiSnips"

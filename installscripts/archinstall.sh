@@ -5,7 +5,7 @@ rm -rf /tmp/yay-git-cloned
 cd ~/.dotfiles
 yes | sudo pacman -S xorg-server xorg-init xorg-modmap xorg-xsetroot
 # might consider using xfce4-notifyd instead of dunst
-yes | sudo pacman -S ripgrep optimus-manager-qt	imagemagick intel-ucode network-manager-applet python3 python-pip nodejs npm bspwm sxhkd zsh lxappearance maim sxiv blueberry neovim bashtop pulsemixer pcmanfm zathura zathura-pdf-mupdf zathura-ps otf-font-awesome ttf-font-awesome obs-studio stow alacritty exa nitrogen brightnessctl git networkmanager dunst xfce4-power-manager polkit polkit-gnome neofetch numlockx
+yes | sudo pacman -S wmname ripgrep optimus-manager-qt	imagemagick intel-ucode network-manager-applet python3 python-pip nodejs npm bspwm sxhkd zsh lxappearance maim sxiv blueberry neovim bashtop pulsemixer pcmanfm zathura zathura-pdf-mupdf zathura-ps otf-font-awesome ttf-font-awesome obs-studio stow alacritty exa nitrogen brightnessctl git networkmanager dunst xfce4-power-manager polkit polkit-gnome neofetch numlockx
 yay -S lf bitwarden-bin polybar betterlockscreen brave-bin paper-icon-theme gotop cherry-font-git ttf-mac-fonts nerd-fonts-jetbrains-mono discord-canary nordic-darker-theme picom-ibhagwan-git freetube-bin ttf-font-logos otf-font-awesome-5-free bat adobe-source-han-sans-cn-fonts adobe-source-han-sans-jp-fonts adobe-source-han-sans-kr-fonts adobe-source-sans-fonts awesome-terminal-fonts cherry-font-git gsfonts nerd-fonts-jetbrains-mono nerd-fonts-source-code-pro noto-fonts otf-font-awesome terminus-font ttf-font-awesome ttf-mac-fonts ttf-ubuntu-font-family
 sudo python3 -m pip install neovim
 sudo npm install neovim --global
@@ -19,6 +19,4 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions /usr/share/zsh/plugins/zsh-autosuggestions
 sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/share/zsh/plugins/zsh-syntax-highlighting
 echo "Installed oh-my-zsh and plugins"
-sh -c "$(curl -fsSL https://starship.rs/install.sh)"
-echo "Installed starship prompt"
 cd ~/.dotfiles/installscripts;bash install.sh

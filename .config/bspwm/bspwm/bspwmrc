@@ -2,8 +2,11 @@
 
 # Environtment
 export EDITOR="/usr/bin/nvim"
+export _JAVA_AWT_WM_NONREPARENTING=1
+export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true"
 
 #LAUNCHERS
+wmname LG3D
 $HOME/.config/bspwm/autostart.sh
 #fix for moving spotify to specific workspace
 #bspc config external_rules_command ~/.config/bspwm/scripts/external_rules_command

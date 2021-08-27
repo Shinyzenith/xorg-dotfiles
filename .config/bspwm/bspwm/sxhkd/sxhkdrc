@@ -6,6 +6,10 @@ super + e
 super + Print 
 	maim | tee ~/Pictures/screenshots/$(date | sed 's/\s/-/g').png | xclip -selection clipboard -t image/png ; notify-send 'Screenshot has been saved and copied to your clipboard' -a 'Screenshot script' -u critical -t 2000
 
+# Disable the touchpad
+super + Delete
+	~/.config/bspwm/scripts/disabletouchpad.sh
+
 # Kill polybar
 super + z
     polybar-msg cmd toggle
@@ -98,6 +102,10 @@ ctrl + m
 # Screenshot a particular area of your screen
 Print
 	maim -s | tee ~/Pictures/screenshots/$(date | sed 's/\s/-/g').png | xclip -selection clipboard -t image/png;notify-send 'Screenshot has been saved and copied to your clipboard' -a 'Screenshot script' -u critical -t 2000
+
+# Re-enable the touchpad
+Delete
+	~/.config/bspwm/scripts/enabletouchpad.sh
 
 XF86AudioPlay
 	playerctl play-pause

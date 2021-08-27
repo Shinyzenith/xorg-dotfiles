@@ -37,4 +37,6 @@ fi
 
 [[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
 #find /home/$USER/.config/bspwm/scripts/color-scripts -type f | shuf | head -n 1 | xargs bash -c
-eval "$(starship init zsh)"
+fpath+=~/.dotfiles/pure
+autoload -U promptinit; promptinit
+prompt pure
