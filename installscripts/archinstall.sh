@@ -19,4 +19,5 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions /usr/share/zsh/plugins/zsh-autosuggestions
 sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/share/zsh/plugins/zsh-syntax-highlighting
 echo "Installed oh-my-zsh and plugins"
+# git clone https://github.com/sindresorhus/pure ~/.dotfiles
 cd ~/.dotfiles/installscripts;bash install.sh
