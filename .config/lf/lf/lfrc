@@ -98,7 +98,7 @@ map r rename
 map H top
 map L bottom
 map R reload
-map <esc> unselect
+map <esc> clear
 map C clear
 map U unselect
 map f search

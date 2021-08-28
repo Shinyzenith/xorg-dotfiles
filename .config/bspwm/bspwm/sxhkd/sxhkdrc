@@ -91,10 +91,6 @@ super + shift + m
 super + shift + z
 	pkill polybar;polybar -c ~/.config/bspwm/polybar/notray -rq bar &
 
-# Keybind guide! The thing you're looking at rn!
-ctrl + h
-	bash $HOME/.config/bspwm/scripts/help.sh
-
 # Get a quick manual of all the installed programs in your machine
 ctrl + m
 	bash /home/$USER/.config/bspwm/scripts/mansplain
@@ -229,6 +225,10 @@ super + {u,i,o,p}
 # Define splitting ratio for next window on leaf/parent
 super + ctrl + {_,shift +}{1-9}
 	bspc node {_,@/} --presel-ratio 0.{1-9}
+
+# Keybind guide! The thing you're looking at rn!
+alt + h
+	bash $HOME/.config/bspwm/scripts/help.sh
 
 # Focus selected desktop
 alt + Tab
