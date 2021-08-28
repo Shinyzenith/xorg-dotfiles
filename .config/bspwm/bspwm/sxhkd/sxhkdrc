@@ -99,6 +99,10 @@ ctrl + m
 Print
 	maim -s | tee ~/Pictures/screenshots/$(date | sed 's/\s/-/g').png | xclip -selection clipboard -t image/png;notify-send 'Screenshot has been saved and copied to your clipboard' -a 'Screenshot script' -u critical -t 2000
 
+# Keybind guide! The thing you're looking at rn!
+Home
+	bash $HOME/.config/bspwm/scripts/help.sh
+
 # Re-enable the touchpad
 Delete
 	~/.config/bspwm/scripts/enabletouchpad.sh
@@ -225,10 +229,6 @@ super + {u,i,o,p}
 # Define splitting ratio for next window on leaf/parent
 super + ctrl + {_,shift +}{1-9}
 	bspc node {_,@/} --presel-ratio 0.{1-9}
-
-# Keybind guide! The thing you're looking at rn!
-alt + h
-	bash $HOME/.config/bspwm/scripts/help.sh
 
 # Focus selected desktop
 alt + Tab
