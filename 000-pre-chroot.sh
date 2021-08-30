@@ -3,6 +3,10 @@
 ########################################################################################################
 # Run the script at your own discretion!
 ########################################################################################################
+dependencies(){
+	sudo pacman -Syy
+	sudio pacman -S dialog
+}
 
 instanciate_config_files(){
 	echo "0">swap
@@ -52,5 +56,11 @@ base_system_install(){
 
 main(){
 	echo "Please load some modules to start the install process"
+	#dependencies
+	#instanciate_config_files
+	#get_drive_info
+	#drive_setup
+	#base_system_install
+	#remove_config_files
 }
 main
