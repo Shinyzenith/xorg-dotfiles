@@ -18,6 +18,7 @@ sudo pacman -S --noconfirm --needed stow
 sudo pacman -S --noconfirm --needed bspwm
 sudo pacman -S --noconfirm --needed sxhkd
 sudo pacman -S --noconfirm --needed dunst
+sudo pacman -S --noconfirm --needed zenity
 sudo pacman -S --noconfirm --needed wmname
 sudo pacman -S --noconfirm --needed polkit
 sudo pacman -S --noconfirm --needed openssh
