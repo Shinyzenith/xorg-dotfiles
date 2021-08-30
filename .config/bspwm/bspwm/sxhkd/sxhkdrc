@@ -19,7 +19,7 @@ super + c
 	mocp -G
 
 # Opens dmenu prompt
-super +  d
+super + d
 	dmenu_run -h 35 -i
 
 # Opens brave browser
