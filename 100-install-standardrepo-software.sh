@@ -25,6 +25,7 @@ sudo pacman -S --noconfirm --needed bashtop
 sudo pacman -S --noconfirm --needed zathura
 sudo pacman -S --noconfirm --needed pcmanfm
 sudo pacman -S --noconfirm --needed nitrogen
+sudo pacman -S --noconfirm --needed bbswitch
 sudo pacman -S --noconfirm --needed numlockx
 sudo pacman -S --noconfirm --needed blueberry
 sudo pacman -S --noconfirm --needed playerctl
@@ -36,7 +37,6 @@ sudo pacman -S --noconfirm --needed polkit-gnome
 sudo pacman -S --noconfirm --needed brightnessctl
 sudo pacman -S --noconfirm --needed networkmanager
 sudo pacman -S --noconfirm --needed zathura-pdf-mupdf
-sudo pacman -S --noconfirm --needed optimus-manager-qt
 sudo pacman -S --noconfirm --needed xfce4-power-manager
 sudo pacman -S --noconfirm --needed network-manager-applet
 
