@@ -7,6 +7,7 @@ sudo pacman -S --noconfirm --needed xorg-xinit
 sudo pacman -S --noconfirm --needed xorg-server
 sudo pacman -S --noconfirm --needed xorg-xmodmap
 sudo pacman -S --noconfirm --needed xorg-xsetroot
+sudo pacman -S --noconfirm --needed xorg-xclipboard
 
 sudo pacman -S --noconfirm --needed exa
 sudo pacman -S --noconfirm --needed git
@@ -38,8 +39,18 @@ sudo pacman -S --noconfirm --needed polkit-gnome
 sudo pacman -S --noconfirm --needed brightnessctl
 sudo pacman -S --noconfirm --needed networkmanager
 sudo pacman -S --noconfirm --needed zathura-pdf-mupdf
+sudo pacman -S --noconfirm --needed archlinux-keyring
 sudo pacman -S --noconfirm --needed xfce4-power-manager
 sudo pacman -S --noconfirm --needed network-manager-applet
+
+##################################################################################################################
+# Nvidia packages
+##################################################################################################################
+sudo pacman -S --noconfirm --needed nvidia
+sudo pacman -S --noconfirm --needed nvidia
+sudo pacman -S --noconfirm --needed nvidia-utils
+sudo pacman -S --noconfirm --needed nvidia-settings
+sudo pacman -S --noconfirm --needed xf86-video-nouveau
 
 ##################################################################################################################
 # Development tools
