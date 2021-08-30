@@ -5,5 +5,5 @@ cd ~/.dotfiles/.config/;bash install.sh
 echo "Symlinked all .config files"
 cd ~/.dotfiles/.home/;bash install.sh
 echo "Symlinked all .home files"
-cd ~/.dotfiles/installscripts/nord-dmenu5.0/; sudo make install
+cd ~/.dotfiles/installscripts/assets/nord-dmenu5.0/; sudo make install
 echo "Built dmenu from source"
