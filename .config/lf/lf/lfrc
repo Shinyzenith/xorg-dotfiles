@@ -113,5 +113,6 @@ map ge cd ~/Desktop
 map gc cd ~/.config
 map gm cd ~/Music
 map gv cd ~/Videos
+map gV cd ~/.local/share/virtualenvs
 
 map \;j cd ~

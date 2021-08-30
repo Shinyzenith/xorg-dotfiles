@@ -6,9 +6,9 @@
 #                     |___/
 
 #Loading prompt
-fpath+=~/.dotfiles/pure
+eval "$(starship init zsh)"
 autoload -U promptinit; promptinit
-prompt pure
+autoload -U colors && colors
 
 export KEYTIMEOUT=1
 export ZSH=/usr/share/oh-my-zsh/
@@ -16,9 +16,12 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 
+HISTSIZE=50000
 SAVEHIST=50000
 HISTFILE=~/.zsh_history
 HIST_STAMPS="dd/mm/yyyy"
+compinit
+_comp_options+=(globdots) # lets you tab complete hidden files by default
 
 #(cat ~/.cache/wal/sequences &)
 plugins=(
@@ -28,7 +31,6 @@ plugins=(
 	vi-mode
 	zsh-syntax-highlighting
 	)
-
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
