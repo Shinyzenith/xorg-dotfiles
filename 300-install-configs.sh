@@ -28,6 +28,7 @@ do
 done
 cd ~/.dotfiles/.assets/nord-dmenu5.0/; sudo make install
 cd ~/.dotfiles/.assets/nord-st/;sudo make install
+mkdir -p ~/.icons;cd ~/.icons;cp ~/.dotfiles/.assets/Breeze-Nord-Light-Icons.tar.gz;tar -zxvf Breeze-Nord-Light-Icons.tar.gz;rm Breeze-Nord-Light-Icons.tar.gz
 echo "################################################################"
 echo "################### Config files placed in the right directories"
 echo "################################################################"

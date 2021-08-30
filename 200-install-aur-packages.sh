@@ -24,6 +24,7 @@ yay -S --noconfirm --needed paper-icon-theme
 yay -S --noconfirm --needed picom-ibhagwan-git
 yay -S --noconfirm --needed polybar
 yay -S --noconfirm --needed timeshift
+yay -S --noconfirm --needed cursor-theme-macos-big-sur
 
 yay -S --noconfirm --needed adobe-source-han-sans-cn-fonts
 yay -S --noconfirm --needed adobe-source-han-sans-jp-fonts
