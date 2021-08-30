@@ -71,10 +71,15 @@ sudo pacman -S --noconfirm --needed ttf-font-awesome
 #sudo systemctl enable cups
 #sudo systemctl start cups
 
-sudo systemctl start sshd
 sudo systemctl enable sshd
-sudo systemctl start docker
 sudo systemctl enable docker
+sudo systemctl enable NetworkManager
+sudo systemctl enable systemd-timesyncd
+
+sudo systemctl start sshd
+sudo systemctl start docker
+sudo systemctl start NetworkManager
+sudo systemctl start systemd-timesyncd
 
 echo "################################################################"
 echo "################### Core Software Installed"
