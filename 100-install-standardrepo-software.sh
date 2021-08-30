@@ -10,7 +10,6 @@ sudo pacman -S --noconfirm --needed xorg-xsetroot
 
 sudo pacman -S --noconfirm --needed exa
 sudo pacman -S --noconfirm --needed git
-sudo pacman -S --noconfirm --needed tlp # laptop specific; remove it if you are on a desktop
 sudo pacman -S --noconfirm --needed zsh
 sudo pacman -S --noconfirm --needed vlc
 sudo pacman -S --noconfirm --needed maim
@@ -76,8 +75,6 @@ sudo systemctl start sshd
 sudo systemctl enable sshd
 sudo systemctl start docker
 sudo systemctl enable docker
-sudo systemctl start tlp.service
-sudo systemctl enable tlp.service
 
 echo "################################################################"
 echo "################### Core Software Installed"
