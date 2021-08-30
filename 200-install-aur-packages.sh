@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# note, set NOPASSWD in sudoers file before running this
+# Note, set NOPASSWD in sudoers file before running this
 
 ##################################################################################################################
 # Installing yay (AUR helper)
@@ -25,7 +25,7 @@ yes | yay -S --noconfirm --needed lf
 yes | yay -S --noconfirm --needed nordic-darker-theme
 yes | yay -S --noconfirm --needed optimus-manager
 yes | yay -S --noconfirm --needed optimus-manager-qt
-#yes | yay -S --noconfirm --needed paper-icon-theme-git
+#yes | yay -S --noconfirm --needed paper-icon-theme-git   # script crashes on attempting to install
 yes | yay -S --noconfirm --needed picom-ibhagwan-git
 yes | yay -S --noconfirm --needed polybar
 yes | yay -S --noconfirm --needed timeshift
