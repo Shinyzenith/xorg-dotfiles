@@ -10,6 +10,10 @@ dependencies(){
 
 instanciate_config_files(){
 	echo "0">swap
+	echo "">locale
+	echo "">timezone
+	echo "">hostname
+	echo "">temphosts
 	echo "">installdisk
 	echo "">rootpartition
 	echo "">bootpartition
@@ -19,6 +23,10 @@ instanciate_config_files(){
 
 remove_config_files(){
 	rm -rf swap
+	rm -rf locale
+	rm -rf timezone
+	rm -rf hostname
+	rm -rf temphosts
 	rm -rf installdisk
 	rm -rf rootpartition
 	rm -rf bootpartition
@@ -51,8 +59,77 @@ base_system_install(){
 	dialog --erase-on-exit --inputbox "base linux linux-firmware linux-headers base-devel vim efibootmgr grub openssh networkmanager xf86-video-intel git and mesa will be installed. Specify any extra packages you might want here separated by space." 20 60 2>extrapackages
 	pacstrap /mnt base linux linux-firmware linux-headers base-devel vim efibootmgr grub openssh networkmanager xf86-video-intel git mesa $(cat extrapackages)
 	genfstab -U /mnt >> /mnt/etc/fstab
-	arch-chroot /mnt
 }
+
+post_base_install(){
+	arch-chroot /mnt systemctl enable sshd
+	arch-chroot /mnt systemctl enable NetworkManager
+	arch-chroot /mnt systemctl enable systemd-timesyncd
+	arch-chroot /mnt hwclock --systohc
+
+	dialog --no-cancel --erase-on-exit --inputbox "Please specify your timezone, you can find it over at /usr/share/zoneinfo/. EG: Asia/Kolkata" 20 60 2>timezone
+	if [[ ! $(cat timezone) ]];then
+		echo "Please provide a valid timezone"
+		exit 1
+	fi
+	if [[ ! $(file "/usr/share/zoneinfo/"$(cat timezone)| grep "No such file or directory") ]];then
+		arch-chroot /mnt ln -sf "/usr/share/zoneinfo/"$(cat timezone) /etc/localtime
+	else
+		echo "Provided timezone binary doesn't exist. Please try again"
+		exit 1
+	fi
+	arch-chroot /mnt timedatectl set-timezone $(cat timezone)
+	arch-chroot /mnt timedatectl set-ntp true
+	dialog --no-cancel --erase-on-exit --inputbox "Please specify your locale file, you can find all possible locales by running cat /etc/locale.gen eg: en_US.UTF-8 UTF-8 for EnglishUS" 20 60 2>locale
+	if [[ ! $(cat locale) ]];then
+		echo "Please provide a valid locale file"
+		exit 1
+	fi
+	if [[ ! $(cat testfile| grep $(cat locale)) ]];then
+		echo "Provided locale file doesn't exist. Please try again"
+		exit 1
+	else
+		echo $(cat locale) >> /mnt/etc/locale.gen
+	fi
+	arch-chroot /mnt locale-gen
+
+	dialog --no-cancel --erase-on-exit --inputbox "Specify the contents of /etc/locale.conf eg: en_US.UTF-8 for english" 20 60 2>locale
+	if [[ ! $(cat locale) ]];then
+		exit 1
+	fi
+	echo "LANG="$(cat locale) >> /mnt/etc/locale.conf
+
+	dialog --erase-on-exit --no-cancel --inputbox "Enter a name for your computer." 10 60 2> hostname
+	mv comp /mnt/etc/hostname
+
+	pass1=$(dialog --erase-on-exit --no-cancel --passwordbox "Enter a root password." 10 60 3>&1 1>&2 2>&3 3>&1)
+	pass2=$(dialog --erase-on-exit --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
+	while true; do
+		[[ "$pass1" != "" && "$pass1" == "$pass2" ]] && break
+		pass1=$(dialog --no-cancel --passwordbox "Passwords do not match or are not present.\n\nEnter password again." 10 60 3>&1 1>&2 2>&3 3>&1)
+		pass2=$(dialog --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
+	done
+	export pass="$pass1"
+	arch-chroot /mnt echo "root:$pass" | chpasswd
+	arch-chroot /mnt grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+	arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg
+
+	user=$(dialog --erase-on-exit --no-cancel --inputbox "Enter the username of a normal user" 10 60 3>&1 1>&2 2>&3 3>&1)
+	arch-chroot /mnt useradd -m -g users -G wheel,storage,power $user
+	pass1=$(dialog --erase-on-exit --no-cancel --passwordbox "Enter the password for $user account." 10 60 3>&1 1>&2 2>&3 3>&1)
+	pass2=$(dialog --erase-on-exit --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
+	while true; do
+		[[ "$pass1" != "" && "$pass1" == "$pass2" ]] && break
+		pass1=$(dialog --no-cancel --passwordbox "Passwords do not match or are not present.\n\nEnter password again." 10 60 3>&1 1>&2 2>&3 3>&1)
+		pass2=$(dialog --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
+	done
+	export pass="$pass1"
+	arch-chroot /mnt echo "$user:$pass" | chpasswd
+	cp 010-live-medium-etc-hosts temphosts
+	echo "127.0.1.1	$(cat /mnt/etc/hostname)" >> temphosts
+	mv temphosts >> /mnt/etc/hosts
+}
+
 
 main(){
 	echo "Please load some modules to start the install process"
@@ -61,6 +138,7 @@ main(){
 	#get_drive_info
 	#drive_setup
 	#base_system_install
+	#post_base_install
 	#remove_config_files
 }
 main
