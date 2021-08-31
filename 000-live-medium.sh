@@ -4,8 +4,7 @@
 # Run the script at your own discretion!
 ########################################################################################################
 dependencies(){
-	sudo pacman -Syy
-	sudo pacman -S dialog
+	sudo pacman -S --noconfirm --needed dialog
 }
 
 instanciate_config_files(){
