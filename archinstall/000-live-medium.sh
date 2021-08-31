@@ -143,7 +143,7 @@ post_base_install(){
 	mv temphosts /mnt/etc/hosts
 	arch-chroot /mnt echo "root:$(cat rootpass)" | chpasswd
 	if [[ $(cat douseracc) == 1 ]];then
-		arch-chroot /mnt useradd -m -g users -G wheel,storage,power $(useraccount)
+		arch-chroot /mnt useradd -m -g users -G wheel,storage,power $(cat useraccount)
 		sleep 15
 		arch-chroot /mnt echo "$(cat useraccount):$(cat userpass)" | chpasswd
 	fi
