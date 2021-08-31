@@ -9,8 +9,6 @@ instanciate_config_files(){
 	echo "">locale
 	echo "">timezone
 	echo "">hostname
-	echo "">rootpass
-	echo "">userpass
 	echo "">temphosts
 	echo "">locale.conf
 	echo "">useraccount
@@ -25,8 +23,6 @@ remove_config_files(){
 	rm -rf swap
 	rm -rf locale
 	rm -rf timezone
-	rm -rf userpass
-	rm -rf rootpass
 	rm -rf hostname
 	rm -rf douseracc
 	rm -rf temphosts
@@ -80,32 +76,6 @@ config(){
 	if [[ ! $(cat hostname) ]];then
 		echo "ArchLinux" > hostname
 	fi
-
-	pass1=$(dialog --no-cancel --passwordbox "Enter a root password." 10 60 3>&1 1>&2 2>&3 3>&1)
-	pass2=$(dialog --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
-	while true; do
-		[[ "$pass1" != "" && "$pass1" == "$pass2" ]] && break
-		pass1=$(dialog --no-cancel --passwordbox "Passwords do not match or are not present.\n\nEnter password again." 10 60 3>&1 1>&2 2>&3 3>&1)
-		pass2=$(dialog --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
-	done
-	echo $pass1 > rootpass
-
-	dialog --erase-on-exit --title "User accounts" --yesno "Do you want a normal user account?" 10 20 && echo "1">douseracc
-	if [[ $(cat douseracc) == 1 ]];then
-		dialog --erase-on-exit --no-cancel --inputbox "Enter the username of a normal user" 10 60 2>useraccount
-		if [[ ! $(cat useraccount) ]];then
-			echo "Provide a valid user account name";exit 1
-		fi
-		pass1=$(dialog --no-cancel --passwordbox "Enter a user password." 10 60 3>&1 1>&2 2>&3 3>&1)
-		pass2=$(dialog --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
-		while true; do
-			[[ "$pass1" != "" && "$pass1" == "$pass2" ]] && break
-			pass1=$(dialog --no-cancel --passwordbox "Passwords do not match or are not present.\n\nEnter password again." 10 60 3>&1 1>&2 2>&3 3>&1)
-			pass2=$(dialog --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
-		done
-		echo $pass1 > userpass
-	fi
-
 	dialog --defaultno --title "DON'T BE STUPID" --yesno "ARE YOU ABSOLUTELY CERTAIN REGARDING YOUR DISK CONFIGURATION?\n\nYOU CAN CHECK THE DISK CONFIGURATION BY RUNNING CAT ON THE PLAIN TEXT FILES IN THE CURRENT WORKING DIRECTORY"  15 60 || exit
 }
 
@@ -141,12 +111,6 @@ post_base_install(){
 	cp 010-live-medium-etc-hosts temphosts
 	echo "127.0.1.1	$(cat /mnt/etc/hostname)" >> temphosts
 	mv temphosts /mnt/etc/hosts
-	arch-chroot /mnt echo "root:$(cat rootpass)" | chpasswd
-	if [[ $(cat douseracc) == 1 ]];then
-		arch-chroot /mnt useradd -m -g users -G wheel,storage,power $(cat useraccount)
-		sleep 15
-		arch-chroot /mnt echo "$(cat useraccount):$(cat userpass)" | chpasswd
-	fi
 	echo "DON'T FORGET TO RUN arch-chroot /mnt;passwd AND SET THE ROOT PASSWORD, YOU CAN'T BOOT WITHOUT IT\nYou can also use passwd accountname to set the password for another account, in this case being the user you setup during the installer"
 }
 
