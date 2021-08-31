@@ -5,7 +5,7 @@
 ########################################################################################################
 dependencies(){
 	sudo pacman -Syy
-	sudio pacman -S dialog
+	sudo pacman -S dialog
 }
 
 instanciate_config_files(){
