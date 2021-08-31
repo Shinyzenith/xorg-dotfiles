@@ -120,6 +120,6 @@ main(){
 	#base_system_install
 	#post_base_install
 	#remove_config_files
-	echo "DON'T FORGET TO RUN arch-chroot /mnt;passwd AND SET THE ROOT PASSWORD, YOU CAN'T BOOT WITHOUT IT\nYou can also use passwd accountname to set the password for another account, in this case being the user you setup during the installer"
+	echo "DON'T FORGET TO RUN arch-chroot /mnt;passwd AND SET THE ROOT PASSWORD, YOU CAN'T BOOT WITHOUT IT\nYou can also use arch-chroot /mnt passwd accountname to set the password for another account, in this case being the user you setup during the installer"
 }
 main
