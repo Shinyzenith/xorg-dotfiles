@@ -76,6 +76,7 @@ config(){
 	if [[ ! $(cat hostname) ]];then
 		echo "ArchLinux" > hostname
 	fi
+	cp 020-post-install.sh /mnt/root/
 	dialog --defaultno --title "DON'T BE STUPID" --yesno "ARE YOU ABSOLUTELY CERTAIN REGARDING YOUR DISK CONFIGURATION?\n\nYOU CAN CHECK THE DISK CONFIGURATION BY RUNNING CAT ON THE PLAIN TEXT FILES IN THE CURRENT WORKING DIRECTORY"  15 60 || exit
 }
 
@@ -94,7 +95,6 @@ base_install(){
 }
 
 post_base_install(){
-	sed -i 's/^#%wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/g' /mnt/etc/sudoers
 	arch-chroot /mnt systemctl enable sshd
 	arch-chroot /mnt systemctl enable NetworkManager
 	arch-chroot /mnt systemctl enable systemd-timesyncd
