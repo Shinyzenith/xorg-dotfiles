@@ -101,31 +101,11 @@ post_base_install(){
 	echo "LANG="$(cat locale) >> /mnt/etc/locale.conf
 
 	dialog --erase-on-exit --no-cancel --inputbox "Enter a name for your computer." 10 60 2> hostname
-	mv comp /mnt/etc/hostname
-
-	pass1=$(dialog --erase-on-exit --no-cancel --passwordbox "Enter a root password." 10 60 3>&1 1>&2 2>&3 3>&1)
-	pass2=$(dialog --erase-on-exit --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
-	while true; do
-		[[ "$pass1" != "" && "$pass1" == "$pass2" ]] && break
-		pass1=$(dialog --no-cancel --passwordbox "Passwords do not match or are not present.\n\nEnter password again." 10 60 3>&1 1>&2 2>&3 3>&1)
-		pass2=$(dialog --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
-	done
-	export pass="$pass1"
-	arch-chroot /mnt echo "root:$pass" | chpasswd
+	mv hostname /mnt/etc/hostname
 	arch-chroot /mnt grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 	arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg
-
 	user=$(dialog --erase-on-exit --no-cancel --inputbox "Enter the username of a normal user" 10 60 3>&1 1>&2 2>&3 3>&1)
 	arch-chroot /mnt useradd -m -g users -G wheel,storage,power $user
-	pass1=$(dialog --erase-on-exit --no-cancel --passwordbox "Enter the password for $user account." 10 60 3>&1 1>&2 2>&3 3>&1)
-	pass2=$(dialog --erase-on-exit --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
-	while true; do
-		[[ "$pass1" != "" && "$pass1" == "$pass2" ]] && break
-		pass1=$(dialog --no-cancel --passwordbox "Passwords do not match or are not present.\n\nEnter password again." 10 60 3>&1 1>&2 2>&3 3>&1)
-		pass2=$(dialog --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
-	done
-	export pass="$pass1"
-	arch-chroot /mnt echo "$user:$pass" | chpasswd
 	cp 010-live-medium-etc-hosts temphosts
 	echo "127.0.1.1	$(cat /mnt/etc/hostname)" >> temphosts
 	mv temphosts >> /mnt/etc/hosts
@@ -141,5 +121,6 @@ main(){
 	#base_system_install
 	#post_base_install
 	#remove_config_files
+	echo "DON'T FORGET TO RUN arch-chroot /mnt;passwd AND SET THE ROOT PASSWORD, YOU CAN'T BOOT WITHOUT IT\nYou can also use passwd accountname to set the password for another account, in this case being the user you setup during the installer"
 }
 main
