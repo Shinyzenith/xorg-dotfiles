@@ -112,6 +112,7 @@ post_base_install(){
 	echo "127.0.1.1	$(cat /mnt/etc/hostname)" >> temphosts
 	mv temphosts /mnt/etc/hosts
 	echo "DON'T FORGET TO RUN arch-chroot /mnt;passwd AND SET THE ROOT PASSWORD, YOU CAN'T BOOT WITHOUT IT\nYou can also use passwd accountname to set the password for another account, in this case being the user you setup during the installer"
+	arch-chroot /mnt
 }
 
 
