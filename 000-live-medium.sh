@@ -86,7 +86,7 @@ post_base_install(){
 		echo "Please provide a valid locale file"
 		exit 1
 	fi
-	if [[ ! $(cat testfile| grep $(cat locale)) ]];then
+	if [[ ! $(cat /mnt/etc/locale.gen| grep $(cat locale)) ]];then
 		echo "Provided locale file doesn't exist. Please try again"
 		exit 1
 	else
