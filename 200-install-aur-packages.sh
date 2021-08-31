@@ -7,7 +7,7 @@
 ##################################################################################################################
 git clone https://aur.archlinux.org/yay.git /tmp/yay-git-cloned
 cd /tmp/yay-git-cloned/
-makepkg -sfci
+makepkg -sfci --noconfirm --needed
 rm -rf /tmp/yay-git-cloned
 
 ##################################################################################################################
