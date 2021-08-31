@@ -94,6 +94,8 @@ base_install(){
 }
 
 post_base_install(){
+	echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /mnt/etc/sudoers
+	echo "Defaults !tty_tickets" >> /mnt/etc/sudoers
 	arch-chroot /mnt systemctl enable sshd
 	arch-chroot /mnt systemctl enable NetworkManager
 	arch-chroot /mnt systemctl enable systemd-timesyncd
