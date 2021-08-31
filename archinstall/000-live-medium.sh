@@ -91,8 +91,11 @@ config(){
 	echo $pass1 > rootpass
 
 	dialog --erase-on-exit --title "User accounts" --yesno "Do you want a normal user account?" 10 20 && echo "1">douseracc
-	dialog --erase-on-exit --no-cancel --inputbox "Enter the username of a normal user" 10 60 2>useraccount
 	if [[ $(cat douseracc) == 1 ]];then
+		dialog --erase-on-exit --no-cancel --inputbox "Enter the username of a normal user" 10 60 2>useraccount
+		if [[ ! $(cat useraccount) ]];then
+			echo "Provide a valid user account name";exit 1
+		fi
 		pass1=$(dialog --no-cancel --passwordbox "Enter a user password." 10 60 3>&1 1>&2 2>&3 3>&1)
 		pass2=$(dialog --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
 		while true; do
@@ -151,7 +154,7 @@ post_base_install(){
 main(){
 	echo "Please load some modules to start the install process"
 	#instanciate_config_files
-	#config
+	config
 	#base_install
 	#post_base_install
 	#remove_config_files
