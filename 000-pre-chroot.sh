@@ -62,6 +62,7 @@ base_system_install(){
 }
 
 post_base_install(){
+	sed -i 's/^#%wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/g' /etc/sudoers
 	arch-chroot /mnt systemctl enable sshd
 	arch-chroot /mnt systemctl enable NetworkManager
 	arch-chroot /mnt systemctl enable systemd-timesyncd
