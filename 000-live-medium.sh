@@ -62,7 +62,7 @@ base_system_install(){
 }
 
 post_base_install(){
-	sed -i 's/^#%wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/g' /etc/sudoers
+	arch-chroot /mnt sed -i 's/^#%wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/g' /etc/sudoers
 	arch-chroot /mnt systemctl enable sshd
 	arch-chroot /mnt systemctl enable NetworkManager
 	arch-chroot /mnt systemctl enable systemd-timesyncd
@@ -86,7 +86,7 @@ post_base_install(){
 		echo "Please provide a valid locale file"
 		exit 1
 	fi
-	if [[ ! $(cat /mnt/etc/locale.gen| grep $(cat locale)) ]];then
+	if [[ ! $(cat /mnt/etc/locale.gen| grep "$(cat locale)") ]];then
 		echo "Provided locale file doesn't exist. Please try again"
 		exit 1
 	else
