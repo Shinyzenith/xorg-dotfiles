@@ -182,10 +182,6 @@ super + alt + {_,shift + }{Left,Down,Up,Right}
 super + shift + r
 	~/.config/bspwm/bspwmrc
 
-# quickly kill any process with dmenu
-super + shift + k
-	~/.config/bspwm/scripts/killprocess
-
 # Focus/swap windows by direction
 super + {_,shift + }{h,j,k,l}
 	bspc node --{focus,swap} {west,south,north,east}
