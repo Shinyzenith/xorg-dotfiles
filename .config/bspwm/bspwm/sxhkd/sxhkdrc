@@ -69,7 +69,7 @@ super + shift + Escape
 
 # FreeTube - YouTube but better
 super + shift + f
-	freetube
+	pcmanfm
 
 # Discord Canary
 super + shift + d
