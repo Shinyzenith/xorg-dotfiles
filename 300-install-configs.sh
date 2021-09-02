@@ -27,6 +27,7 @@ do
 	stow $dot -t ~/
 done
 cd ~/.dotfiles/.assets/nord-dmenu5.0/; sudo make install
+cd ~/.dotfiles/.assets/mocicon/; sudo make install
 cd ~/.dotfiles/.assets/nord-st/;sudo make install
 echo "################################################################"
 echo "################### Config files placed in the right directories"

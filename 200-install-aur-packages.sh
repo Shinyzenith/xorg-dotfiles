@@ -50,6 +50,7 @@ yay -S --noconfirm --needed ttf-font-logos
 yay -S --noconfirm --needed ttf-mac-fonts
 yay -S --noconfirm --needed ttf-mac-fonts
 yay -S --noconfirm --needed ttf-ubuntu-font-family
+yay -S --noconfirm --needed moc-pulse
 
 echo "################################################################"
 echo "################### AUR packages installed"
