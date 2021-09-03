@@ -22,11 +22,13 @@ sudo pacman -S --noconfirm --needed dunst
 sudo pacman -S --noconfirm --needed zenity
 sudo pacman -S --noconfirm --needed wmname
 sudo pacman -S --noconfirm --needed polkit
+sudo pacman -S --noconfirm --needed ranger
 sudo pacman -S --noconfirm --needed openssh
 sudo pacman -S --noconfirm --needed bashtop
 sudo pacman -S --noconfirm --needed zathura
 sudo pacman -S --noconfirm --needed pcmanfm
 sudo pacman -S --noconfirm --needed nitrogen
+sudo pacman -S --noconfirm --needed ueberzug
 sudo pacman -S --noconfirm --needed bbswitch
 sudo pacman -S --noconfirm --needed numlockx
 sudo pacman -S --noconfirm --needed blueberry

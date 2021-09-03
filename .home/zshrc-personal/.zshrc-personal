@@ -74,6 +74,20 @@ ex ()
   fi
 }
 
+rangercd () {
+    tmp="$(mktemp)"
+    ranger --choosedir="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        if [ -d "$dir" ]; then
+            if [ "$dir" != "$(pwd)" ]; then
+                cd "$dir"
+            fi
+        fi
+    fi
+}
+
 lfcd () {
     tmp="$(mktemp)"
     lf -last-dir-path="$tmp" "$@"
@@ -129,7 +143,7 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
-bindkey -s '^o' 'lfcd\n'
-bindkey '^e' edit-command-line
+bindkey -s '^o' 'rangercd\n'
+bindkey -s '^e' 'lfcd\n'
 bindkey '^R' history-incremental-search-backward
 bindkey -v 
