@@ -1,4 +1,5 @@
 #!/bin/bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 sudo python3 -m pip install neovim
 sudo npm install neovim --global
 mkdir -p ~/.config/neofetch
