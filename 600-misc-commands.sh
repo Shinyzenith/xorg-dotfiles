@@ -3,6 +3,7 @@ sudo python3 -m pip install neovim
 sudo npm install neovim --global
 mkdir -p ~/.config/neofetch
 touch -p ~/.config/neofetch/neofetchcache
+mkdir -p ~/.vim/undodir
 sudo chown $USER /usr/share/backgrounds/
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
