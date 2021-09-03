@@ -31,7 +31,6 @@ sudo pacman -S --noconfirm --needed bbswitch
 sudo pacman -S --noconfirm --needed numlockx
 sudo pacman -S --noconfirm --needed blueberry
 sudo pacman -S --noconfirm --needed playerctl
-sudo pacman -S --noconfirm --needed alacritty
 sudo pacman -S --noconfirm --needed pulsemixer
 sudo pacman -S --noconfirm --needed intel-ucode
 sudo pacman -S --noconfirm --needed lxappearance
