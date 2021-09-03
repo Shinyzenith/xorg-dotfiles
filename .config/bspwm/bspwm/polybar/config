@@ -37,7 +37,7 @@ tray-position=right
 tray-detached=false
 line-size = 2
 padding=1
-font-0 =JetBrainsMono Nerd Font:size=10;2
+font-0 =JetBrainsMono Nerd Font:size=9;2
 modules-left = powermenu launcher battery cpu temperature
 modules-center = bspwm
 modules-right =  backlight pulseaudio time
@@ -186,7 +186,7 @@ adapter = ${config.battery-adp}
 content-padding=5
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = ${colors.primary-alt}
+format-charging-underline = ${colors.background}
 animation-charging-0 = " "
 animation-charging-1 = " "
 animation-charging-2 = " "
@@ -195,7 +195,7 @@ animation-charging-4 = " "
 animation-charging-framerate = 750
 
 format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-underline = ${colors.primary-alt}
+format-discharging-underline = ${colors.background}
 ramp-capacity-0 = " "
 ramp-capacity-1 = " "
 ramp-capacity-2 = " "
@@ -205,7 +205,7 @@ ramp-capacity-foreground = ${colors.notify}
 
 label-full = " "
 label-full-foreground = ${colors.success}
-label-full-underline = ${colors.primary-alt}
+label-full-underline = ${colors.background}
 
 [settings]
 screenchange-reload = true
