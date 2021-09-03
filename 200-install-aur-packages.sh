@@ -24,7 +24,6 @@ yay -S --noconfirm --needed discord-canary
 yay -S --noconfirm --needed freetube-bin
 yay -S --noconfirm --needed glxinfo
 yay -S --noconfirm --needed gotop
-yay -S --noconfirm --needed lf
 yay -S --noconfirm --needed nordic-darker-theme
 yay -S --noconfirm --needed optimus-manager
 yay -S --noconfirm --needed optimus-manager-qt

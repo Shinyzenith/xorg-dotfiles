@@ -4,6 +4,7 @@
 # Basic needs for a functional setup (specific to my setup)
 ##################################################################################################################
 sudo pacman -S --noconfirm --needed xorg-xinit
+sudo pacman -S --noconfirm --needed xorg-xprop
 sudo pacman -S --noconfirm --needed xorg-server
 sudo pacman -S --noconfirm --needed xorg-xmodmap
 sudo pacman -S --noconfirm --needed xorg-xsetroot
