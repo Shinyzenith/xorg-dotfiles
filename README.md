@@ -5,3 +5,4 @@
 ![rice5](https://cdn.discordapp.com/attachments/871816083219284018/878038296813506612/oned2.png)
 ![rice6](https://cdn.discordapp.com/attachments/871816083219284018/878038293126709268/one3.png)
 ![rice7](https://cdn.discordapp.com/attachments/871816083219284018/878038306682728508/rajesh2.png)
+![rice8](https://media.discordapp.net/attachments/858833948398583838/883245720403070976/rice.png)

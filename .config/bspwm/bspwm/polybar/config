@@ -27,7 +27,7 @@ enable-ipc=true
 height = 35
 width = 99%
 offset-x = 9
-offset-y = 4
+offset-y = 5
 ;radius = 10
 border-size = 0
 border-color = ${colors.foreground}
@@ -158,12 +158,12 @@ type = custom/menu
 expand-left = true
 label-open = 
 label-open-foreground = ${colors.foreground}
-label-open-background = "#BF616A"
+label-open-background = "#5E9EE5"
 label-open-padding = 3
 label-close = 
 label-close-foreground = ${colors.foreground}
-label-close-background = "#BF616A"
-label-close-padding = 4
+label-close-background = "#5E9EE5"
+label-close-padding = 3
 
 menu-0-0 = 
 menu-0-0-foreground = ${colors.foreground}
@@ -204,7 +204,7 @@ ramp-capacity-4 = " "
 ramp-capacity-foreground = "#BF616A"
 
 label-full = " "
-label-full-foreground = "#A3BE8C"
+label-full-foreground = "#FFFFFF"
 label-full-underline = ${colors.background}
 
 [settings]

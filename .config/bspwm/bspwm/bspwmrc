@@ -17,7 +17,7 @@ bspc config border_width         2
 bspc config window_gap           5
 
 ################# Screen specific config ########################
-bspc config top_padding			 39
+bspc config top_padding			 43
 bspc config left_padding         5
 bspc config right_padding        3
 #################################################################
