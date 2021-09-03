@@ -12,7 +12,6 @@
 ;==========================================================
 
 [colors]
-
 ;background = ${xrdb:background:#e92E3440}
 background = ${xrdb:background:#ff2E3440}
 foreground = ${xrdb:color7:#ffffff}
@@ -34,19 +33,12 @@ border-size = 0
 border-color = ${colors.foreground}
 background = ${colors.background}
 foreground = ${colors.foreground}
-;tray-position=right
-;tray-detached=false
 line-size = 2
-padding=2
-font-0=cherry:size=14;3
-font-1=Font Awesome 5 Free Solid:size=8;2
-font-2=Font Awesome 5 Free Regular:size=8;2
-font-3=Font Awesome 5 Brands:size=8;2
-font-4=font\-logos:size=10;2
-font-5=JetBrainsMono Nerd Font:size=11;2
+padding=1
+font-0 =JetBrainsMono Nerd Font:size=10;2
 modules-left = powermenu launcher battery cpu temperature
 modules-center = bspwm
-modules-right =  time backlight pulseaudio 
+modules-right =  backlight pulseaudio time
 scroll-up = bspwn-wsnext 
 scroll-down = bspwn-wsprev
 override-redirect = false
@@ -59,16 +51,15 @@ wm-restack = bspwm
                                          
 [module/launcher]
 type=custom/text
-content = 
-content-font=5
+content = 
 content-foreground=${colors.foreground}
 ;content-background = "#D08770"
-content-padding=7
-click-left=dmenu_run -h 39 -i
+content-padding=3
+click-left=dmenu_run -h 35 -i
 
 [module/backlight]
 type = internal/backlight
-format-prefix = " "
+format-prefix = " "
 ; Use the following command to list available cards:
 ; $ ls -1 /sys/class/backlight/
 card = intel_backlight
@@ -100,7 +91,7 @@ label-urgent-padding = 2
 label-urgent-foreground = ${colors.background}
 label-urgent-background = ${colors.foreground}
 label-urgent-overline = ${colors.background}
-label-urgent-font = 5
+label-urgent-font = 0
 
 [module/cpu]
 type = internal/cpu
@@ -112,16 +103,15 @@ label = %percentage%%
 
 [module/time]
 type = internal/date
-interval = 10
+interval = 1
 format-margin = 0
-
-time = "%H:%M"
+time = "%H:%M:%S"
 date = "%d %b"
 
 label =  %date%, %time%
 label-foreground = ${colors.foreground}
 label-background = ${colors.background}
-label-padding = 2
+label-padding = 1
 
 
 [module/pulseaudio]
@@ -132,19 +122,18 @@ format-volume = <ramp-volume><label-volume>
 label-volume = %percentage:4:4%%
 format-volume-foreground = ${colors.foreground}
 format-volume-background = ${colors.background}
-format-volume-padding = 2
+format-volume-padding = 1
 use-ui-max = false
 interval = 5
 
-ramp-volume-0 = ""
-ramp-volume-1 = ""
-ramp-volume-2 = ""
-
-
-label-muted = ""   
+ramp-volume-0 = 奄
+ramp-volume-1 = 奔
+ramp-volume-2 = 墳
+ramp-volume-3 = 墳
+label-muted = 婢 0%
 label-muted-background = ${colors.background}
 label-muted-foreground = ${colors.foreground}
-label-muted-padding = 2
+label-muted-padding = 1
 
 [module/temperature]
 type = internal/temperature
@@ -162,12 +151,9 @@ ramp-0 = 
 ramp-1 = 
 ramp-2 = 
 
-
 [module/powermenu]
 type = custom/menu
-
 expand-left = true
-
 label-open = 
 label-open-foreground = ${colors.foreground}
 label-open-background = "#BF616A"
@@ -192,42 +178,35 @@ menu-0-2-exec = systemctl suspend
 
 [module/battery]
 type = internal/battery
-
 full-at = ${config.battery-full-at}
-
 battery = ${config.battery-bat}
 adapter = ${config.battery-adp}
+content-padding=5
 
 format-charging = <animation-charging> <label-charging>
 format-charging-underline = ${colors.primary-alt}
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-3 = 
-animation-charging-4 = 
+animation-charging-0 = " "
+animation-charging-1 = " "
+animation-charging-2 = " "
+animation-charging-3 = " "
+animation-charging-4 = " "
 animation-charging-framerate = 750
 
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline = ${colors.primary-alt}
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
+ramp-capacity-0 = " "
+ramp-capacity-1 = " "
+ramp-capacity-2 = " "
+ramp-capacity-3 = " "
+ramp-capacity-4 = " "
 ramp-capacity-foreground = ${colors.notify}
 
-label-full = 
+label-full = " "
 label-full-foreground = ${colors.success}
 label-full-underline = ${colors.primary-alt}
 
-
 [settings]
 screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-;pseudo-transparency = true
 
 [config]
 battery-full-at = 100
@@ -238,5 +217,3 @@ battery-adp = AC
 [global/wm]
 margin-top = 0
 margin-bottom = 0
-
-; vim:ft=dosini
