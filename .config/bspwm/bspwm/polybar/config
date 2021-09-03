@@ -211,9 +211,10 @@ label-full-underline = ${colors.background}
 screenchange-reload = true
 
 [config]
+; You can find these details from xfce4-power-manager-settings or atleast that's what i use.
 battery-full-at = 100
 battery-bat = BAT1
-battery-adp = AC
+battery-adp = ACAD
 
 
 [global/wm]

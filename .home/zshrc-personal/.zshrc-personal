@@ -43,7 +43,7 @@ alias mirrora="sudo reflector --latest 30 --number 10 --sort age --save /etc/pac
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl" #Recent Installed Packages
 alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq);yay -c' #Cleanup orphaned packages
-alias rg="rg --sort path" #search content with ripgrep
+alias rg="rg --sort path --no-ignore --hidden" #search content with ripgrep
 alias jctl="journalctl -p 3 -xb" #get the error messages from journalctl
 alias merge="xrdb -merge ~/.Xresources"
 
