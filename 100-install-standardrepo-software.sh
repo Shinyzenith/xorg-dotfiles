@@ -70,8 +70,6 @@ sudo pacman -S --noconfirm --needed zathura-ps
 sudo pacman -S --noconfirm --needed virtualbox
 sudo pacman -S --noconfirm --needed obs-studio
 sudo pacman -S --noconfirm --needed imagemagick
-sudo pacman -S --noconfirm --needed otf-font-awesome
-sudo pacman -S --noconfirm --needed ttf-font-awesome
 
 ##################################################################################################################
 # Printer support (uncomment if needed)
