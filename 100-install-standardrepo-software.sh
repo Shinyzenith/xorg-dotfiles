@@ -15,6 +15,7 @@ sudo pacman -S --noconfirm --needed git
 sudo pacman -S --noconfirm --needed zsh
 sudo pacman -S --noconfirm --needed vlc
 sudo pacman -S --noconfirm --needed maim
+sudo pacman -S --noconfirm --needed meld
 sudo pacman -S --noconfirm --needed sxiv
 sudo pacman -S --noconfirm --needed stow
 sudo pacman -S --noconfirm --needed bspwm
