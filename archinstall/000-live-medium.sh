@@ -88,7 +88,7 @@ base_install(){
 	mkfs.fat -F32 "/dev/"$(cat bootpartition)
 	mount "/dev/"$(cat rootpartition) /mnt;mkdir -p /mnt/boot
 	mount "/dev/"$(cat bootpartition) /mnt/boot
-	dialog --erase-on-exit --inputbox "base linux linux-firmware linux-headers base-devel vim efibootmgr grub openssh networkmanager xf86-video-intel git and mesa will be installed. Specify any extra packages you might want here separated by space." 20 60 2>extrapackages
+	dialog --erase-on-exit --inputbox "base os-prober linux linux-firmware linux-headers base-devel vim efibootmgr grub openssh networkmanager xf86-video-intel git and mesa will be installed. Specify any extra packages you might want here separated by space." 20 60 2>extrapackages
 	pacstrap /mnt base linux linux-firmware linux-headers base-devel vim efibootmgr grub openssh networkmanager xf86-video-intel git mesa $(cat extrapackages)
 	genfstab -U /mnt >> /mnt/etc/fstab
 }
@@ -107,6 +107,7 @@ post_base_install(){
 	arch-chroot /mnt locale-gen
 	echo "LANG="$(cat locale.conf) >> /mnt/etc/locale.conf
 	mv hostname /mnt/etc/hostname
+	#Do this:  GRUB_DISABLE_OS_PROBER=false to /etc/default/grub and run sudo grub-mkconfig -o /boot/grub/grub.cfg
 	arch-chroot /mnt grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 	arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg
 	cp 010-live-medium-etc-hosts temphosts

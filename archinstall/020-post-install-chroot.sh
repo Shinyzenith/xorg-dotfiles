@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-echo "Defaults !tty_tickets" >> /etc/sudoers
+sudo echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+sudo echo "Defaults !tty_tickets" >> /etc/sudoers
 pass1=$(dialog --no-cancel --passwordbox "Enter a root password." 10 60 3>&1 1>&2 2>&3 3>&1)
 pass2=$(dialog --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
 while true; do
@@ -12,7 +12,7 @@ echo "root:$pass1" | chpasswd
 
 usr=$(dialog --no-cancel --inputbox "Enter the username of normal user account." 10 60 3>&1 1>&2 2>&3 3>&1)
 useradd -m -g users -G wheel,storage,power $usr
-pass1=$(dialog --no-cancel --passwordbox "Enter a root password." 10 60 3>&1 1>&2 2>&3 3>&1)
+pass1=$(dialog --no-cancel --passwordbox "Enter a user password." 10 60 3>&1 1>&2 2>&3 3>&1)
 pass2=$(dialog --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
 while true; do
 	[[ "$pass1" != "" && "$pass1" == "$pass2" ]] && break
@@ -24,3 +24,4 @@ dots=$(dialog --no-cancel --inputbox "Do you want my dotfiles in /home/$usr/.dot
 if [[ $dots == "yes" ]]; then
 	git clone https://github.com/AakashSharma7269/dotfiles /home/$usr/.dotfiles
 fi
+
