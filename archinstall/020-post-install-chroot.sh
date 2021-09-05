@@ -23,4 +23,3 @@ dots=$(dialog --no-cancel --inputbox "Do you want my dotfiles in /home/$usr/.dot
 if [[ $dots == "yes" ]]; then
 	git clone https://github.com/AakashSharma7269/dotfiles /home/$usr/.dotfiles
 fi
-sudo rm -rf /020-post-install-chroot.sh
