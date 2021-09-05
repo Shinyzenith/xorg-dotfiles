@@ -94,8 +94,6 @@ base_install(){
 }
 
 post_base_install(){
-	echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /mnt/etc/sudoers
-	echo "Defaults !tty_tickets" >> /mnt/etc/sudoers
 	arch-chroot /mnt systemctl enable sshd
 	arch-chroot /mnt systemctl enable NetworkManager
 	arch-chroot /mnt systemctl enable systemd-timesyncd
@@ -107,23 +105,24 @@ post_base_install(){
 	arch-chroot /mnt locale-gen
 	echo "LANG="$(cat locale.conf) >> /mnt/etc/locale.conf
 	mv hostname /mnt/etc/hostname
-	#Do this:  GRUB_DISABLE_OS_PROBER=false to /etc/default/grub and run sudo grub-mkconfig -o /boot/grub/grub.cfg
 	arch-chroot /mnt grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+	mv 012-live-medium-grub /mnt/etc/default/grub
 	arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg
 	cp 010-live-medium-etc-hosts temphosts
 	echo "127.0.1.1	$(cat /mnt/etc/hostname)" >> temphosts
 	mv temphosts /mnt/etc/hosts
-	cp 020-post-install-chroot.sh /mnt/root/020-post-install.sh
+	mv 020-post-install-chroot.sh /mnt/020-post-install.sh
+	mv 011-live-medium-etc-sudoers /mnt/etc/sudoers
 	arch-chroot /mnt
 }
 
 
 main(){
 	echo "Please load some modules to start the install process"
-	#instanciate_config_files
-	#config
-	#base_install
-	#post_base_install
-	#remove_config_files
+	instanciate_config_files
+	config
+	base_install
+	post_base_install
+	remove_config_files
 }
 main

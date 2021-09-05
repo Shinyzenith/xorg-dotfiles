@@ -1,6 +1,4 @@
 #!/bin/bash
-sudo echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-sudo echo "Defaults !tty_tickets" >> /etc/sudoers
 sudo pacman -S --noconfirm --needed dialog
 pass1=$(dialog --no-cancel --passwordbox "Enter a root password." 10 60 3>&1 1>&2 2>&3 3>&1)
 pass2=$(dialog --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
@@ -25,4 +23,4 @@ dots=$(dialog --no-cancel --inputbox "Do you want my dotfiles in /home/$usr/.dot
 if [[ $dots == "yes" ]]; then
 	git clone https://github.com/AakashSharma7269/dotfiles /home/$usr/.dotfiles
 fi
-
+sudo rm -rf /020-post-install-chroot.sh
