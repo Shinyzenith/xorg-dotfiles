@@ -114,7 +114,6 @@ post_base_install(){
 	arch-chroot /mnt
 }
 
-
 main(){
 	echo "Please load some modules to start the install process"
 	instanciate_config_files

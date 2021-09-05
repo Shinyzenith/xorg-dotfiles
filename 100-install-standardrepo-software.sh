@@ -68,10 +68,9 @@ sudo pacman -S --noconfirm --needed network-manager-applet
 # Nvidia packages
 ##################################################################################################################
 sudo pacman -S --noconfirm --needed nvidia
-sudo pacman -S --noconfirm --needed nvidia
 sudo pacman -S --noconfirm --needed nvidia-utils
 sudo pacman -S --noconfirm --needed nvidia-settings
-sudo pacman -S --noconfirm --needed xf86-video-nouveau
+#sudo pacman -S --noconfirm --needed xf86-video-nouveau
 
 ##################################################################################################################
 # Development tools
