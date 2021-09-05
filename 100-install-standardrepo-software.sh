@@ -36,6 +36,7 @@ sudo pacman -S --noconfirm --needed numlockx
 sudo pacman -S --noconfirm --needed blueberry
 sudo pacman -S --noconfirm --needed playerctl
 sudo pacman -S --noconfirm --needed pulsemixer
+sudo pacman -S --noconfirm --needed noto-fonts
 sudo pacman -S --noconfirm --needed intel-ucode
 sudo pacman -S --noconfirm --needed lxappearance
 sudo pacman -S --noconfirm --needed polkit-gnome

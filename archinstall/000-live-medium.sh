@@ -5,7 +5,6 @@
 sudo pacman -S --noconfirm --needed dialog
 instanciate_config_files(){
 	echo "0">swap
-	echo "0">douseracc
 	echo "">locale
 	echo "">timezone
 	echo "">hostname
@@ -24,7 +23,6 @@ remove_config_files(){
 	rm -rf locale
 	rm -rf timezone
 	rm -rf hostname
-	rm -rf douseracc
 	rm -rf temphosts
 	rm -rf locale.conf
 	rm -rf useraccount
