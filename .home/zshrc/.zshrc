@@ -11,7 +11,7 @@ autoload -U promptinit; promptinit
 autoload -U colors && colors
 
 export KEYTIMEOUT=1
-export ZSH=/usr/share/oh-my-zsh/
+export ZSH=~/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim

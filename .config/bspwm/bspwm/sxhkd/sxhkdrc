@@ -8,7 +8,7 @@ super + Print
 
 # Disable the touchpad
 super + Delete
-	~/.config/bspwm/scripts/disabletouchpad.sh
+	~/.config/bspwm/scripts/toggletouchpad.sh
 
 # Kill polybar
 super + z
@@ -103,10 +103,6 @@ Print
 Home
 	bash $HOME/.config/bspwm/scripts/help.sh
 
-# Re-enable the touchpad
-Delete
-	~/.config/bspwm/scripts/enabletouchpad.sh
-
 XF86AudioPlay
 	playerctl play-pause
 
@@ -120,13 +116,13 @@ XF86AudioStop
 	playerctl stop
 
 XF86AudioRaiseVolume
-    amixer set Master 5%+
+    pactl set-sink-volume 0 +5%
 
 XF86AudioLowerVolume
-    amixer set Master 5%-
+	pactl set-sink-volume 0 -5%
 
 XF86AudioMute
-    amixer -D pulse set Master 1+ toggle
+	pactl set-sink-mute 0 toggle
 
 XF86MonBrightnessUp
     brightnessctl set 5%+

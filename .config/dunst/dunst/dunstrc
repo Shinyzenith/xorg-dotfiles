@@ -1,5 +1,5 @@
 [global]
-    font = JetBrainsMono 9
+    font = JetBrainsMono Nerd Font 9
 	class = Dunst
 	corner_radius=9
 	mouse_left_click = close_all

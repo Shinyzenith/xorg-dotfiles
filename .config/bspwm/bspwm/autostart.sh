@@ -25,6 +25,9 @@ xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 #killall mocicon
 #mocicon &
 
+# fix mouse on arch
+~/.dotfiles/.config/bspwm/bspwm/scripts/enableclickontap.sh
+
 #draw your wallpaper
 nitrogen --restore
 

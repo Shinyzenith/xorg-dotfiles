@@ -14,7 +14,6 @@ sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 sudo mkdir -p /usr/share/zsh/plugins
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions /usr/share/zsh/plugins/zsh-autosuggestions
 sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/share/zsh/plugins/zsh-syntax-highlighting
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo "################################################################"
 echo "################### Misc commands: execution finished."
 echo "################################################################"

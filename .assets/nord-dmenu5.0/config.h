@@ -6,7 +6,7 @@ static int centered = 0;  /*use the -c flag to get it to center*/
 static int min_width = 750;
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"JetBrainsMono:regular:pixelsize=15"
+	"JetBrainsMono Nerd Font:regular:pixelsize=15"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {

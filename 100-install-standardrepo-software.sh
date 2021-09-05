@@ -3,9 +3,11 @@
 ##################################################################################################################
 # Basic needs for a functional setup (specific to my setup)
 ##################################################################################################################
+sudo pacman -S --noconfirm --needed xorg-xev
 sudo pacman -S --noconfirm --needed xorg-xinit
 sudo pacman -S --noconfirm --needed xorg-xprop
 sudo pacman -S --noconfirm --needed xorg-server
+sudo pacman -S --noconfirm --needed xorg-xinput
 sudo pacman -S --noconfirm --needed xorg-xmodmap
 sudo pacman -S --noconfirm --needed xorg-xsetroot
 sudo pacman -S --noconfirm --needed xorg-xclipboard
@@ -17,11 +19,15 @@ sudo pacman -S --noconfirm --needed vlc
 sudo pacman -S --noconfirm --needed maim
 sudo pacman -S --noconfirm --needed meld
 sudo pacman -S --noconfirm --needed sxiv
+sudo pacman -S --noconfirm --needed tmux
 sudo pacman -S --noconfirm --needed stow
 sudo pacman -S --noconfirm --needed bspwm
+sudo pacman -S --noconfirm --needed expac
+sudo pacman -S --noconfirm --needed xclip
 sudo pacman -S --noconfirm --needed sxhkd
 sudo pacman -S --noconfirm --needed dunst
 sudo pacman -S --noconfirm --needed zenity
+sudo pacman -S --noconfirm --needed man-db
 sudo pacman -S --noconfirm --needed wmname
 sudo pacman -S --noconfirm --needed polkit
 sudo pacman -S --noconfirm --needed ranger
@@ -37,6 +43,7 @@ sudo pacman -S --noconfirm --needed blueberry
 sudo pacman -S --noconfirm --needed playerctl
 sudo pacman -S --noconfirm --needed pulsemixer
 sudo pacman -S --noconfirm --needed noto-fonts
+sudo pacman -S --noconfirm --needed youtube-dl
 sudo pacman -S --noconfirm --needed intel-ucode
 sudo pacman -S --noconfirm --needed kvantum-qt5
 sudo pacman -S --noconfirm --needed lxappearance
