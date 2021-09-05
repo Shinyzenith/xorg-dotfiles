@@ -44,6 +44,7 @@ sudo pacman -S --noconfirm --needed polkit-gnome
 sudo pacman -S --noconfirm --needed brightnessctl
 sudo pacman -S --noconfirm --needed speedtest-cli
 sudo pacman -S --noconfirm --needed networkmanager
+sudo pacman -S --noconfirm --needed discord-canary
 sudo pacman -S --noconfirm --needed zathura-pdf-mupdf
 sudo pacman -S --noconfirm --needed archlinux-keyring
 sudo pacman -S --noconfirm --needed papirus-icon-theme
