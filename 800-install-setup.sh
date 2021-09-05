@@ -7,3 +7,4 @@ cd ~/.dotfiles/
 sudo mkdir -p /usr/share/backgrounds
 sudo cp ~/.dotfiles/.assets/wallpapers/* /usr/share/backgrounds/
 sudo pacman -Rns --noconfirm iwd dhcpcd # i don't need these anymore
+yay -c
