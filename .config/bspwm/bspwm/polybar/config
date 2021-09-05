@@ -26,9 +26,10 @@ foreground = ${xrdb:color7:#ffffff}
 enable-ipc=true
 height = 35
 width = 99%
+font-0 =JetBrainsMono Nerd Font:size=9;2
 offset-x = 9
 offset-y = 6
-;radius = 10
+radius = 5
 border-size = 0
 border-color = ${colors.foreground}
 background = ${colors.background}
@@ -37,7 +38,6 @@ tray-position=right
 tray-detached=false
 line-size = 2
 padding=1
-font-0 =JetBrainsMono Nerd Font:size=9;2
 modules-left = powermenu launcher battery cpu temperature
 modules-center = bspwm
 modules-right =  backlight pulseaudio time
