@@ -21,7 +21,7 @@ while true; do
 	pass2=$(dialog --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
 done
 echo "$usr:$pass1" | chpasswd
-dots=$(dialog --no-cancel --inputbox "Do you want my dotfiles in /home/$usr/.dotfiles?\nLeave the field empty to skip it." 10 60 3>&1 1>&2 2>&3 3>&1)
+dots=$(dialog --no-cancel --inputbox "Do you want my dotfiles in /home/$usr/.dotfiles?\nLeave the field empty to skip it, type yes if you want it." 10 60 3>&1 1>&2 2>&3 3>&1)
 if [[ $dots == "yes" ]]; then
 	git clone https://github.com/AakashSharma7269/dotfiles /home/$usr/.dotfiles
 fi
