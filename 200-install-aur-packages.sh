@@ -13,7 +13,6 @@ rm -rf /tmp/yay-git-cloned
 ##################################################################################################################
 # Installing AUR packages
 ##################################################################################################################
-#yay -S --noconfirm --needed paper-icon-theme-git   # script crashes on attempting to install
 yay -S --noconfirm --needed bat
 yay -S --noconfirm --needed alacritty-ligatures
 yay -S --noconfirm --needed betterlockscreen
