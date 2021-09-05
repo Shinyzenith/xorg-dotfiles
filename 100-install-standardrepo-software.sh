@@ -20,6 +20,7 @@ sudo pacman -S --noconfirm --needed maim
 sudo pacman -S --noconfirm --needed meld
 sudo pacman -S --noconfirm --needed sxiv
 sudo pacman -S --noconfirm --needed tmux
+sudo pacman -S --noconfirm --needed tldr
 sudo pacman -S --noconfirm --needed stow
 sudo pacman -S --noconfirm --needed bspwm
 sudo pacman -S --noconfirm --needed expac
