@@ -35,7 +35,6 @@ alias fgrep='fgrep --color=auto'
 alias df='df -h'
 alias wget="wget -c" # continue the download
 alias updatefonts='sudo fc-cache -fv'
-alias hardwareinfo="hwinfo --short"
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist" # update your mirrors
 alias mirrord="sudo reflector --latest 30 --number 10 --sort delay --save /etc/pacman.d/mirrorlist"
 alias mirrors="sudo reflector --latest 30 --number 10 --sort score --save /etc/pacman.d/mirrorlist"

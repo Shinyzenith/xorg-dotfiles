@@ -41,11 +41,13 @@ sudo pacman -S --noconfirm --needed nitrogen
 sudo pacman -S --noconfirm --needed ueberzug
 sudo pacman -S --noconfirm --needed bbswitch
 sudo pacman -S --noconfirm --needed numlockx
+sudo pacman -S --noconfirm --needed reflector
 sudo pacman -S --noconfirm --needed blueberry
 sudo pacman -S --noconfirm --needed playerctl
 sudo pacman -S --noconfirm --needed pulsemixer
 sudo pacman -S --noconfirm --needed noto-fonts
 sudo pacman -S --noconfirm --needed youtube-dl
+sudo pacman -S --noconfirm --needed dosfstools
 sudo pacman -S --noconfirm --needed intel-ucode
 sudo pacman -S --noconfirm --needed kvantum-qt5
 sudo pacman -S --noconfirm --needed lxappearance
