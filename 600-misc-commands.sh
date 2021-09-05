@@ -3,6 +3,8 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 sudo python3 -m pip install neovim
 sudo npm install neovim --global
 mkdir -p ~/.config/neofetch
+mkdir -p ~/Videos/recordings
+mkdir -p ~/Pictures/screenshots
 touch -p ~/.config/neofetch/neofetchcache
 mkdir -p ~/.vim/undodir
 sudo chown $USER /usr/share/backgrounds/
