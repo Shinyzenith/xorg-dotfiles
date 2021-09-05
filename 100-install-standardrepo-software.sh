@@ -32,6 +32,7 @@ sudo pacman -S --noconfirm --needed wmname
 sudo pacman -S --noconfirm --needed polkit
 sudo pacman -S --noconfirm --needed ranger
 sudo pacman -S --noconfirm --needed openssh
+sudo pacman -S --noconfirm --needed xdotool
 sudo pacman -S --noconfirm --needed bashtop
 sudo pacman -S --noconfirm --needed zathura
 sudo pacman -S --noconfirm --needed pcmanfm
