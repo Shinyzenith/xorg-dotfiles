@@ -60,10 +60,20 @@ sudo pacman -S --noconfirm --needed speedtest-cli
 sudo pacman -S --noconfirm --needed networkmanager
 sudo pacman -S --noconfirm --needed discord-canary
 sudo pacman -S --noconfirm --needed pulseaudio-alsa
+sudo pacman -S --noconfirm --needed noto-fonts-emoji # enable emoji support
 sudo pacman -S --noconfirm --needed zathura-pdf-mupdf
 sudo pacman -S --noconfirm --needed archlinux-keyring
 sudo pacman -S --noconfirm --needed papirus-icon-theme
 sudo pacman -S --noconfirm --needed network-manager-applet
+
+##################################################################################################################
+# Asian font support
+##################################################################################################################
+sudo pacman -S --noconfirm --needed adobe-source-han-serif-cn-fonts 
+sudo pacman -S --noconfirm --needed adobe-source-han-serif-jp-fonts 
+sudo pacman -S --noconfirm --needed adobe-source-han-serif-kr-fonts 
+sudo pacman -S --noconfirm --needed adobe-source-han-serif-otc-fonts 
+sudo pacman -S --noconfirm --needed adobe-source-han-serif-tw-fonts
 
 ##################################################################################################################
 # Nvidia packages
