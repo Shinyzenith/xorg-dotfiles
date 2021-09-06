@@ -15,11 +15,13 @@ sudo mkdir -p /usr/share/zsh/plugins
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions /usr/share/zsh/plugins/zsh-autosuggestions
 sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/share/zsh/plugins/zsh-syntax-highlighting
 mkdir -p ~/.icons/default
+mkdir -p /usr/share/backgrounds
 sudo chown $USER /usr/share/backgrounds/
 touch ~/.icons/default/index.theme
 echo "[icon theme]" >> ~/.icons/default/index.theme
 echo "Inherits macOSBigSur" >> ~/.icons/default/index.theme
 ln -s /usr/share/icons/macOSBigSur/cursors ~/.icons/default/cursors
+cp ~/.config/bspwm/scripts/piratesong ~/.bin/
 echo "################################################################"
 echo "################### Misc commands: execution finished."
 echo "################################################################"
