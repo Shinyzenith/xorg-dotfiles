@@ -25,6 +25,7 @@ sudo pacman -S --noconfirm --needed tldr
 sudo pacman -S --noconfirm --needed stow
 sudo pacman -S --noconfirm --needed bspwm
 sudo pacman -S --noconfirm --needed expac
+sudo pacman -S --noconfirm --needed qt5ct
 sudo pacman -S --noconfirm --needed xclip
 sudo pacman -S --noconfirm --needed sxhkd
 sudo pacman -S --noconfirm --needed dunst
@@ -43,6 +44,7 @@ sudo pacman -S --noconfirm --needed ueberzug
 sudo pacman -S --noconfirm --needed bbswitch
 sudo pacman -S --noconfirm --needed numlockx
 sudo pacman -S --noconfirm --needed reflector
+sudo pacman -S --noconfirm --needed xarchiver # for archive support in pcmanfm
 sudo pacman -S --noconfirm --needed blueberry
 sudo pacman -S --noconfirm --needed playerctl
 sudo pacman -S --noconfirm --needed pulsemixer

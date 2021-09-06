@@ -3,7 +3,7 @@
 ##################################################################################################################
 # Remove all current configs to avoid conflict, will probably make this dynamic later on
 ##################################################################################################################
-rm -rf ~/.config/ranger ~/.moc ~/.config/dunst/ ~/.zprofile ~/.xinitrc ~/.config/alacritty ~/.config/bashtop ~/.config/bspwm ~/.config/nvim ~/.config/bspwm/polybar ~/.config/zathura ~/.gitconfig ~/.gtkrc-2.0.mine ~/.tmux.conf ~/.zshrc ~/.zshrc-personal
+rm -rf ~/.config/ranger ~/.moc ~/.config/dunst/ ~/.zprofile ~/.xinitrc ~/.config/alacritty ~/.config/bashtop ~/.config/bspwm ~/.config/nvim ~/.config/bspwm/polybar ~/.config/zathura ~/.gitconfig ~/.config/gtk-3.0 ~/.tmux.conf ~/.zshrc ~/.zshrc-personal
 
 ##################################################################################################################
 # Added config files to ~/.config/
