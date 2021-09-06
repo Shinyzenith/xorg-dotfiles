@@ -61,7 +61,6 @@ sudo pacman -S --noconfirm --needed pulseaudio-alsa
 sudo pacman -S --noconfirm --needed zathura-pdf-mupdf
 sudo pacman -S --noconfirm --needed archlinux-keyring
 sudo pacman -S --noconfirm --needed papirus-icon-theme
-sudo pacman -S --noconfirm --needed xfce4-power-manager
 sudo pacman -S --noconfirm --needed network-manager-applet
 
 ##################################################################################################################

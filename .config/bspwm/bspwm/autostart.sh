@@ -35,12 +35,10 @@ xsetroot -cursor_name left_ptr &
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 
 run nm-applet &
-run xfce4-power-manager &
 numlockx on &
-#blueberry-tray &
+#blueberry-tray & # Uncomment this if you want bluetooth on boot
 picom --experimental-backends --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-#/usr/lib/xfce4/notifyd/xfce4-notifyd &
 exec dunst &
 
 #caching neofetch output
