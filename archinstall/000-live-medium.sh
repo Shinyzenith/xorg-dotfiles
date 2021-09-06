@@ -112,6 +112,9 @@ post_base_install(){
 	mv 020-post-install-chroot.sh /mnt/020-post-install.sh
 	mv 011-live-medium-etc-sudoers /mnt/etc/sudoers
 	mv 013-live-medium-pacman /mnt/etc/pacman.conf
+	echo "################################################################"
+	echo "################### Base system install complete."
+	echo "################################################################"
 	arch-chroot /mnt
 }
 

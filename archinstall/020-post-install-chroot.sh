@@ -26,3 +26,4 @@ fi
 sudo systemctl enable iwd
 sudo grub-mkconfig -o /boot/grub/grub.cfg # you need this for grub to detect windows for dual booting after ntfs-3g installation. Remove the package ntfs-3g if you don't plan to dual boot.
 # if dual booting problems persist then read https://bbs.archlinux.org/viewtopic.php?id=240117
+echo "setup your keyboard manually."
