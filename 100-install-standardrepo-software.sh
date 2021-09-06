@@ -35,6 +35,7 @@ sudo pacman -S --noconfirm --needed wmname
 sudo pacman -S --noconfirm --needed polkit
 sudo pacman -S --noconfirm --needed ranger
 sudo pacman -S --noconfirm --needed openssh
+sudo pacman -S --noconfirm --needed ntfs-3g  # ntfs windows drive support
 sudo pacman -S --noconfirm --needed xdotool
 sudo pacman -S --noconfirm --needed bashtop
 sudo pacman -S --noconfirm --needed zathura
