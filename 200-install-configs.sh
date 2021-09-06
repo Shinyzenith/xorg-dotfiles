@@ -49,8 +49,12 @@ mkdir -p ~/.icons/default
 sudo mkdir -p /usr/share/backgrounds
 sudo chown $USER /usr/share/backgrounds/
 touch ~/.icons/default/index.theme
-echo "[Icon Theme]" >> ~/.icons/default/index.theme
+echo "[Icon Theme]" > ~/.icons/default/index.theme
 echo "Inherits macOSBigSur" >> ~/.icons/default/index.theme
+sudo mkdir -p /usr/share/icons/default
+sudo touch /usr/share/icons/default/index.theme
+sudo echo "[Icon Theme]" > ~/.icons/default/index.theme
+sudo echo "Inherits macOSBigSur" >> ~/.icons/default/index.theme
 sudo ln -s /usr/share/icons/macOSBigSur/cursors ~/.icons/default/cursors
 cp ~/.config/bspwm/scripts/piratesong ~/.bin/
 sudo rm -rf ~/go

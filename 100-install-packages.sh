@@ -16,6 +16,7 @@ sudo pacman -S --noconfirm --needed exa
 sudo pacman -S --noconfirm --needed git
 sudo pacman -S --noconfirm --needed zsh
 sudo pacman -S --noconfirm --needed vlc
+sudo pacman -S --noconfirm --needed mpv
 sudo pacman -S --noconfirm --needed maim
 sudo pacman -S --noconfirm --needed wget
 sudo pacman -S --noconfirm --needed sxiv
