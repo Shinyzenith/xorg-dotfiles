@@ -33,12 +33,18 @@ cd ~/.dotfiles/.assets/nord-dmenu5.0/; sudo make install
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 sudo python3 -m pip install neovim
 sudo npm install neovim --global
-mkdir -p ~/.config/neofetch
 mkdir -p ~/.bin
-mkdir -p ~/Videos/recordings
-mkdir -p ~/Pictures/screenshots
-touch -p ~/.config/neofetch/neofetchcache
+mkdir -p ~/.config/neofetch
+mkdir -p ~/.config/nitrogen
 mkdir -p ~/.vim/undodir
+mkdir -p ~/Desktop
+mkdir -p ~/Documents
+mkdir -p ~/Downloads
+mkdir -p ~/Music
+mkdir -p ~/Pictures/screenshots
+mkdir -p ~/Videos/recordings
+sudo cp bg-saved.cfg ~/.config/nitrogen/bg-saved.cfg
+touch -p ~/.config/neofetch/neofetchcache
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
