@@ -63,6 +63,7 @@ sudo pacman -S --noconfirm --needed networkmanager
 sudo pacman -S --noconfirm --needed discord-canary
 sudo pacman -S --noconfirm --needed pulseaudio-alsa
 sudo pacman -S --noconfirm --needed noto-fonts-emoji # enable emoji support
+sudo pacman -S --noconfirm --needed otf-san-francisco
 sudo pacman -S --noconfirm --needed zathura-pdf-mupdf
 sudo pacman -S --noconfirm --needed archlinux-keyring
 sudo pacman -S --noconfirm --needed papirus-icon-theme
@@ -156,7 +157,7 @@ yay -S --noconfirm --needed optimus-manager
 yay -S --noconfirm --needed picom-ibhagwan-git
 yay -S --noconfirm --needed polybar
 yay -S --noconfirm --needed spotify
-yay -S --noconfirm --needed timeshift
+yay -S --noconfirm --needed timeshift-bin
 
 echo "################################################################"
 echo "################### Core Software Installed"
