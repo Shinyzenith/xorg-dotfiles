@@ -7,6 +7,7 @@ git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 sudo pacman -S --noconfirm --needed xorg-xev
 sudo pacman -S --noconfirm --needed xorg-xinit
 sudo pacman -S --noconfirm --needed xorg-xprop
+sudo pacman -S --noconfirm --needed xorg-xkill
 sudo pacman -S --noconfirm --needed xorg-server
 sudo pacman -S --noconfirm --needed xorg-xinput
 sudo pacman -S --noconfirm --needed xorg-xmodmap
@@ -40,6 +41,7 @@ sudo pacman -S --noconfirm --needed polkit
 sudo pacman -S --noconfirm --needed ranger
 sudo pacman -S --noconfirm --needed openssh
 sudo pacman -S --noconfirm --needed ntfs-3g  # ntfs windows drive support
+sudo pacman -S --noconfirm --needed mlocate
 sudo pacman -S --noconfirm --needed xdotool
 sudo pacman -S --noconfirm --needed bashtop
 sudo pacman -S --noconfirm --needed zathura
@@ -59,7 +61,6 @@ sudo pacman -S --noconfirm --needed youtube-dl
 sudo pacman -S --noconfirm --needed dosfstools
 sudo pacman -S --noconfirm --needed intel-ucode
 sudo pacman -S --noconfirm --needed kvantum-qt5
-sudo pacman -S --noconfirm --needed lxappearance
 sudo pacman -S --noconfirm --needed polkit-gnome
 sudo pacman -S --noconfirm --needed brightnessctl
 sudo pacman -S --noconfirm --needed speedtest-cli

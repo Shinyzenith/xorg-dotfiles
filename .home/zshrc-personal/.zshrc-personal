@@ -27,7 +27,6 @@ alias mirrora="sudo reflector --latest 30 --number 10 --sort age --save /etc/pac
 alias mirrord="sudo reflector --latest 30 --number 10 --sort delay --save /etc/pacman.d/mirrorlist"
 alias mirrors="sudo reflector --latest 30 --number 10 --sort score --save /etc/pacman.d/mirrorlist"
 alias mpv='devour mpv'
-alias neofetch='/usr/bin/cat ~/.config/neofetch/neofetchcache'
 alias nvidia='~/.config/bspwm/scripts/switchnvidia'
 alias p='devour pcmanfm .'
 alias pdw="pwd"

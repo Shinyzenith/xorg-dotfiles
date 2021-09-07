@@ -158,11 +158,11 @@ type = custom/menu
 expand-left = true
 label-open = 
 label-open-foreground = ${colors.foreground}
-label-open-background = "#5E9EE5"
+label-open-background = "#4F6570"
 label-open-padding = 3
 label-close = 
 label-close-foreground = ${colors.foreground}
-label-close-background = "#5E9EE5"
+label-close-background = "#4F6570"
 label-close-padding = 3
 
 menu-0-0 = 

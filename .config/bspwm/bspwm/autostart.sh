@@ -41,10 +41,6 @@ picom --experimental-backends --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec dunst &
 
-#caching neofetch output
-touch /home/$USER/.config/neofetch/neofetchcache
-neofetch > /home/$USER/.config/neofetch/neofetchcache
-
 # vim navigation rates
 xset r rate 350 60
 # sets the currently saved wallpaper as the betterlockscreen cache image
