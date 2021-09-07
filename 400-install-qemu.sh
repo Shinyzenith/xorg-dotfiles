@@ -23,5 +23,5 @@ sudo virsh net-autostart default
 
 echo "################################################################"
 echo "################### QEMU/KVM installed"
-echo "you might need to install ebtables manually"
+echo "################### Please install ebtables manually"
 echo "################################################################"

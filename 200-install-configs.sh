@@ -28,7 +28,7 @@ do
 done
 cd ~/.dotfiles/.assets/nord-dmenu5.0/; sudo make install
 #cd ~/.dotfiles/.assets/mocicon/; sudo make install
-#cd ~/.dotfiles/.assets/nord-st/;sudo make install
+cd ~/.dotfiles/.assets/nord-st/;sudo make install
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 sudo python3 -m pip install neovim
@@ -65,6 +65,7 @@ sudo ln -s /usr/share/icons/macOSBigSur/cursors ~/.icons/default/cursors
 cp ~/.config/bspwm/scripts/piratesong ~/.bin/
 sudo rm -rf ~/go
 sudo cp ~/.dotfiles/.assets/wallpapers/* /usr/share/backgrounds
+sudo usermod -s $(which zsh) $USER
 echo "################################################################"
 echo "################### Config files placed in the right directories"
 echo "################################################################"

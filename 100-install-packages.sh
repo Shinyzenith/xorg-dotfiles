@@ -3,6 +3,7 @@
 ##################################################################################################################
 # Basic needs for a functional setup (specific to my setup)
 ##################################################################################################################
+git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 sudo pacman -S --noconfirm --needed xorg-xev
 sudo pacman -S --noconfirm --needed xorg-xinit
 sudo pacman -S --noconfirm --needed xorg-xprop
@@ -156,7 +157,6 @@ yay -S --noconfirm --needed picom-ibhagwan-git
 yay -S --noconfirm --needed polybar
 yay -S --noconfirm --needed spotify
 yay -S --noconfirm --needed timeshift
-git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 
 echo "################################################################"
 echo "################### Core Software Installed"
