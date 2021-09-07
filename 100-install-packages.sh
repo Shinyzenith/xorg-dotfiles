@@ -13,6 +13,7 @@ sudo pacman -S --noconfirm --needed xorg-xmodmap
 sudo pacman -S --noconfirm --needed xorg-xsetroot
 sudo pacman -S --noconfirm --needed xorg-xclipboard
 
+sudo pacman -S --noconfirm --needed bat
 sudo pacman -S --noconfirm --needed exa
 sudo pacman -S --noconfirm --needed git
 sudo pacman -S --noconfirm --needed zsh
@@ -46,6 +47,7 @@ sudo pacman -S --noconfirm --needed ueberzug
 sudo pacman -S --noconfirm --needed bbswitch
 sudo pacman -S --noconfirm --needed numlockx
 sudo pacman -S --noconfirm --needed reflector
+sudo pacman -S --noconfirm --needed bitwarden
 sudo pacman -S --noconfirm --needed xarchiver # for archive support in pcmanfm
 sudo pacman -S --noconfirm --needed blueberry
 sudo pacman -S --noconfirm --needed playerctl
@@ -141,9 +143,7 @@ rm -rf /tmp/yay-git-cloned
 # Installing AUR packages
 ##################################################################################################################
 yay -S --noconfirm --needed alacritty-ligatures
-yay -S --noconfirm --needed bat
 yay -S --noconfirm --needed betterlockscreen
-yay -S --noconfirm --needed bitwarden-bin
 yay -S --noconfirm --needed brave-bin
 yay -S --noconfirm --needed cursor-theme-macos-big-sur
 yay -S --noconfirm --needed devour
