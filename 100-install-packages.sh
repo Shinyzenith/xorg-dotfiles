@@ -145,6 +145,7 @@ rm -rf /tmp/yay-git-cloned
 yay -S --noconfirm --needed alacritty-ligatures
 yay -S --noconfirm --needed betterlockscreen
 yay -S --noconfirm --needed brave-bin
+yay -S --noconfirm --needed cava
 yay -S --noconfirm --needed cursor-theme-macos-big-sur
 yay -S --noconfirm --needed devour
 yay -S --noconfirm --needed discord-ptb
