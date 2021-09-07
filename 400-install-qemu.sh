@@ -17,11 +17,14 @@ sudo pacman -S --noconfirm --needed ebtables
 sudo pacman -S --noconfirm --needed bridge-utils
 sudo pacman -S --noconfirm --needed openbsd-netcat
 sudo pacman -S --noconfirm --needed virtualbox # ik this isn't KVM but i just wanna separate it.
+sudo dkms autoinstall
+sudo modprobe vboxdrv
 
 sudo systemctl enable libvirtd.service
 sudo systemctl start libvirtd.service
 sudo virsh net-autostart default
 
+echo "A reboot might be required for all the kernel modules to work as intended"
 echo "################################################################"
 echo "################### QEMU/KVM installed"
 echo "################### Please install ebtables manually"
