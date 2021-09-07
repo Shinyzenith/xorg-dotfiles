@@ -16,6 +16,7 @@ sudo pacman -S --noconfirm --needed dnsmasq
 sudo pacman -S --noconfirm --needed ebtables
 sudo pacman -S --noconfirm --needed bridge-utils
 sudo pacman -S --noconfirm --needed openbsd-netcat
+sudo pacman -S --noconfirm --needed virtualbox # ik this isn't KVM but i just wanna separate it.
 
 sudo systemctl enable libvirtd.service
 sudo systemctl start libvirtd.service

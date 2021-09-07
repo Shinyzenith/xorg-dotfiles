@@ -107,7 +107,6 @@ sudo pacman -S --noconfirm --needed python-pip
 ##################################################################################################################
 sudo pacman -S --noconfirm --needed neofetch
 sudo pacman -S --noconfirm --needed zathura-ps
-sudo pacman -S --noconfirm --needed virtualbox
 sudo pacman -S --noconfirm --needed obs-studio
 sudo pacman -S --noconfirm --needed imagemagick
 
