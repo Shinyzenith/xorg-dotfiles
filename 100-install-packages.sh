@@ -34,7 +34,7 @@ sudo pacman -S --noconfirm --needed qt5ct
 sudo pacman -S --noconfirm --needed xclip
 sudo pacman -S --noconfirm --needed sxhkd
 sudo pacman -S --noconfirm --needed dunst
-sudo pacman -S --noconfirm --needed zenity
+#sudo pacman -S --noconfirm --needed zenity   # good for shell scripting with a gui
 sudo pacman -S --noconfirm --needed man-db
 sudo pacman -S --noconfirm --needed wmname
 sudo pacman -S --noconfirm --needed polkit
