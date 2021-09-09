@@ -27,7 +27,6 @@ alias mirrora="sudo reflector --latest 30 --number 10 --sort age --save /etc/pac
 alias mirrord="sudo reflector --latest 30 --number 10 --sort delay --save /etc/pacman.d/mirrorlist"
 alias mirrors="sudo reflector --latest 30 --number 10 --sort score --save /etc/pacman.d/mirrorlist"
 alias mpv='devour mpv'
-alias nvidia='~/.config/bspwm/scripts/switchnvidia'
 alias p='devour pcmanfm .'
 alias pdw="pwd"
 alias piratesong='~/.config/bspwm/scripts/piratesong'
@@ -35,7 +34,6 @@ alias q='exit'
 alias rg="rg --sort path --no-ignore --hidden" #search content with ripgrep
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl" #Recent Installed Packages
 alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
-alias switchtonvidia='~/.config/bspwm/scripts/switchnvidia'
 alias sxiv='devour sxiv'
 alias udpate='sudo pacman -Syyu'
 alias upate='sudo pacman -Syyu'

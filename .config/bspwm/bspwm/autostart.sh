@@ -32,13 +32,16 @@ xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 nitrogen --restore
 
 xsetroot -cursor_name left_ptr &
+killall sxhkd
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 
 run nm-applet &
 numlockx on &
 #blueberry-tray & # Uncomment this if you want bluetooth on boot
+killall picom
 picom --experimental-backends --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+killall dunst
 exec dunst &
 
 # vim navigation rates

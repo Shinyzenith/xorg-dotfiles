@@ -87,6 +87,7 @@ sudo pacman -S --noconfirm --needed adobe-source-han-serif-tw-fonts
 # Nvidia packages
 ##################################################################################################################
 sudo pacman -S --noconfirm --needed nvidia
+sudo pacman -S --noconfirm --needed nvidia-prime
 sudo pacman -S --noconfirm --needed nvidia-utils
 sudo pacman -S --noconfirm --needed nvidia-settings
 #sudo pacman -S --noconfirm --needed xf86-video-nouveau
