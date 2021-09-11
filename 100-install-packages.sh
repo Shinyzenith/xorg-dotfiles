@@ -153,7 +153,7 @@ yay -S --noconfirm --needed cursor-theme-macos-big-sur
 yay -S --noconfirm --needed devour
 yay -S --noconfirm --needed discord-ptb
 yay -S --noconfirm --needed freetube-bin
-yay -S --noconfirm --needed gotop
+yay -S --noconfirm --needed gotop-bin
 yay -S --noconfirm --needed moc-pulse
 yay -S --noconfirm --needed nerd-fonts-jetbrains-mono
 yay -S --noconfirm --needed nordic-darker-theme
