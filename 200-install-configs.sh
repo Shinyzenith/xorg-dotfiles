@@ -26,7 +26,9 @@ do
 	stow -D $dot -t ~/
 	stow $dot -t ~/
 done
-cd ~/.dotfiles/.assets/nord-dmenu5.0/; sudo make install
+git clone https://github.com/AakashSharma7269/nord-dmenu-git.git /tmp/dmenugit
+cd /tmp/dmenugit
+sudo make install
 #cd ~/.dotfiles/.assets/mocicon/; sudo make install
 cd ~/.dotfiles/.assets/nord-st/;sudo make install
 
