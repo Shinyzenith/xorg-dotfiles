@@ -1,6 +1,4 @@
 #EXTM3U
-#MOCSERIAL: 512
-#EXTINF:234,/home/aakash/Music/Polyphia 40oz.mp3
-/home/aakash/Music/Polyphia 40oz.mp3
+#MOCSERIAL: 256
 #EXTINF:303,/home/aakash/Music/Polyphia Finale.mp3
 /home/aakash/Music/Polyphia Finale.mp3
