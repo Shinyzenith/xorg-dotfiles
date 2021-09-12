@@ -68,7 +68,6 @@ sudo pacman -S --noconfirm --needed networkmanager
 sudo pacman -S --noconfirm --needed discord-canary
 sudo pacman -S --noconfirm --needed pulseaudio-alsa
 sudo pacman -S --noconfirm --needed noto-fonts-emoji # enable emoji support
-sudo pacman -S --noconfirm --needed otf-san-francisco
 sudo pacman -S --noconfirm --needed zathura-pdf-mupdf
 sudo pacman -S --noconfirm --needed archlinux-keyring
 sudo pacman -S --noconfirm --needed papirus-icon-theme
@@ -158,6 +157,7 @@ yay -S --noconfirm --needed moc-pulse
 yay -S --noconfirm --needed nerd-fonts-jetbrains-mono
 yay -S --noconfirm --needed nordic-darker-theme
 yay -S --noconfirm --needed optimus-manager
+yay -S --noconfirm --needed otf-san-francisco
 yay -S --noconfirm --needed picom-ibhagwan-git
 yay -S --noconfirm --needed polybar
 yay -S --noconfirm --needed spotify
