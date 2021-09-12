@@ -10,7 +10,7 @@ done
 echo "root:$pass1" | chpasswd
 
 usr=$(dialog --no-cancel --inputbox "Enter the username of normal user account." 10 60 3>&1 1>&2 2>&3 3>&1)
-useradd -m -g users -G wheel,storage,power $usr
+useradd -m -s $(which zsh) -g users -G wheel,storage,power $usr
 pass1=$(dialog --no-cancel --passwordbox "Enter a user password." 10 60 3>&1 1>&2 2>&3 3>&1)
 pass2=$(dialog --no-cancel --passwordbox "Retype password." 10 60 3>&1 1>&2 2>&3 3>&1)
 while true; do

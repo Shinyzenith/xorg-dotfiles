@@ -119,7 +119,6 @@ post_base_install(){
 }
 
 main(){
-	echo "Please load some modules to start the install process"
 	instanciate_config_files
 	config
 	base_install
