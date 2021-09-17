@@ -48,6 +48,7 @@ sudo pacman -S --noconfirm --needed zathura
 sudo pacman -S --noconfirm --needed pcmanfm
 sudo pacman -S --noconfirm --needed nitrogen
 sudo pacman -S --noconfirm --needed ueberzug
+sudo pacman -S --noconfirm --needed polybar
 sudo pacman -S --noconfirm --needed bbswitch
 sudo pacman -S --noconfirm --needed numlockx
 sudo pacman -S --noconfirm --needed reflector
@@ -65,11 +66,13 @@ sudo pacman -S --noconfirm --needed polkit-gnome
 sudo pacman -S --noconfirm --needed brightnessctl
 sudo pacman -S --noconfirm --needed speedtest-cli
 sudo pacman -S --noconfirm --needed networkmanager
+sudo pacman -S --noconfirm --needed nord-dmenu-git
 sudo pacman -S --noconfirm --needed discord-canary
 sudo pacman -S --noconfirm --needed pulseaudio-alsa
 sudo pacman -S --noconfirm --needed noto-fonts-emoji # enable emoji support
 sudo pacman -S --noconfirm --needed zathura-pdf-mupdf
 sudo pacman -S --noconfirm --needed archlinux-keyring
+sudo pacman -S --noconfirm --needed picom-ibhagwan-git
 sudo pacman -S --noconfirm --needed papirus-icon-theme
 sudo pacman -S --noconfirm --needed network-manager-applet
 
@@ -136,7 +139,7 @@ sudo systemctl start systemd-timesyncd
 ##################################################################################################################
 # Installing yay (AUR helper)
 ##################################################################################################################
-git clone https://aur.archlinux.org/yay.git /tmp/yay-git-cloned
+git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-git-cloned
 cd /tmp/yay-git-cloned/
 makepkg -sfci --noconfirm --needed
 rm -rf /tmp/yay-git-cloned
@@ -144,7 +147,8 @@ rm -rf /tmp/yay-git-cloned
 ##################################################################################################################
 # Installing AUR packages
 ##################################################################################################################
-yay -S --noconfirm --needed alacritty-ligatures
+yay -S --noconfirm --needed alacritty
+yay -S --noconfirm --needed aura-bin # i'm learning this package manager
 yay -S --noconfirm --needed betterlockscreen
 yay -S --noconfirm --needed brave-bin
 yay -S --noconfirm --needed cava
@@ -158,8 +162,6 @@ yay -S --noconfirm --needed nerd-fonts-jetbrains-mono
 yay -S --noconfirm --needed nordic-darker-theme
 yay -S --noconfirm --needed optimus-manager
 yay -S --noconfirm --needed otf-san-francisco
-yay -S --noconfirm --needed picom-ibhagwan-git
-yay -S --noconfirm --needed polybar
 yay -S --noconfirm --needed spotify
 yay -S --noconfirm --needed timeshift-bin
 

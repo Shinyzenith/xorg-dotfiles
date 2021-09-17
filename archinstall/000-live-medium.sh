@@ -86,8 +86,8 @@ base_install(){
 	mkfs.fat -F32 "/dev/"$(cat bootpartition)
 	mount "/dev/"$(cat rootpartition) /mnt;mkdir -p /mnt/boot
 	mount "/dev/"$(cat bootpartition) /mnt/boot
-	dialog --erase-on-exit --inputbox "base iwd dhcpcd os-prober linux linux-firmware linux-headers base-devel vim efibootmgr grub openssh networkmanager xf86-video-intel git and mesa will be installed. Specify any extra packages you might want here separated by space." 20 60 2>extrapackages
-	pacstrap /mnt base iwd dhcpcd os-prober linux linux-firmware linux-headers base-devel vim efibootmgr grub openssh networkmanager xf86-video-intel git mesa $(cat extrapackages)
+	dialog --erase-on-exit --inputbox "base iwd zsh dhcpcd os-prober linux linux-firmware linux-headers base-devel vim efibootmgr grub openssh networkmanager xf86-video-intel git and mesa will be installed. Specify any extra packages you might want here separated by space." 20 60 2>extrapackages
+	pacstrap /mnt base iwd zsh dhcpcd os-prober linux linux-firmware linux-headers base-devel vim efibootmgr grub openssh networkmanager xf86-video-intel git mesa $(cat extrapackages)
 	genfstab -U /mnt >> /mnt/etc/fstab
 }
 

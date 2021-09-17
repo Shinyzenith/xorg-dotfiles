@@ -60,7 +60,7 @@ cp ~/.config/bspwm/scripts/piratesong ~/.bin/
 sudo rm -rf ~/go
 sudo cp ~/.dotfiles/.assets/wallpapers/* /usr/share/backgrounds
 sudo mkdir -p ~/.config/nitrogen/
-cp bg-saved.cfg ~/.config/nitrogen/bg-saved.cfg
+cp ~/.dotfiles/bg-saved.cfg ~/.config/nitrogen/bg-saved.cfg
 echo "################################################################"
 echo "################### Config files placed in the right directories"
 echo "################################################################"
