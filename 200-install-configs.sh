@@ -54,8 +54,10 @@ sudo mkdir -p /usr/share/backgrounds
 sudo chown $USER /usr/share/backgrounds/
 sudo mkdir -p /usr/share/icons/default
 sudo touch /usr/share/icons/default/index.theme
+sudo chown $USER /usr/share/icons/default/index.theme
 sudo echo "[Icon Theme]" > /usr/share/icons/default/index.theme
 sudo echo "Inherits macOSBigSur" >> /usr/share/icons/default/index.theme
+sudo chown root /usr/share/icons/default/index.theme
 cp ~/.config/bspwm/scripts/piratesong ~/.bin/
 sudo rm -rf ~/go
 sudo cp ~/.dotfiles/.assets/wallpapers/* /usr/share/backgrounds
