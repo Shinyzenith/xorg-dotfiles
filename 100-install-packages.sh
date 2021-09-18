@@ -34,13 +34,13 @@ sudo pacman -S --noconfirm --needed qt5ct
 sudo pacman -S --noconfirm --needed xclip
 sudo pacman -S --noconfirm --needed sxhkd
 sudo pacman -S --noconfirm --needed dunst
-#sudo pacman -S --noconfirm --needed zenity   # good for shell scripting with a gui
+sudo pacman -S --noconfirm --needed zenity
 sudo pacman -S --noconfirm --needed man-db
 sudo pacman -S --noconfirm --needed wmname
 sudo pacman -S --noconfirm --needed polkit
 sudo pacman -S --noconfirm --needed ranger
 sudo pacman -S --noconfirm --needed openssh
-sudo pacman -S --noconfirm --needed ntfs-3g  # ntfs windows drive support
+sudo pacman -S --noconfirm --needed ntfs-3g
 sudo pacman -S --noconfirm --needed mlocate
 sudo pacman -S --noconfirm --needed xdotool
 sudo pacman -S --noconfirm --needed bashtop
@@ -50,10 +50,11 @@ sudo pacman -S --noconfirm --needed nitrogen
 sudo pacman -S --noconfirm --needed ueberzug
 sudo pacman -S --noconfirm --needed polybar
 sudo pacman -S --noconfirm --needed bbswitch
+sudo pacman -S --noconfirm --needed starship
 sudo pacman -S --noconfirm --needed numlockx
 sudo pacman -S --noconfirm --needed reflector
 sudo pacman -S --noconfirm --needed bitwarden
-sudo pacman -S --noconfirm --needed xarchiver # for archive support in pcmanfm
+sudo pacman -S --noconfirm --needed xarchiver
 sudo pacman -S --noconfirm --needed blueberry
 sudo pacman -S --noconfirm --needed playerctl
 sudo pacman -S --noconfirm --needed pulsemixer
@@ -69,7 +70,7 @@ sudo pacman -S --noconfirm --needed networkmanager
 sudo pacman -S --noconfirm --needed nord-dmenu-git
 sudo pacman -S --noconfirm --needed discord-canary
 sudo pacman -S --noconfirm --needed pulseaudio-alsa
-sudo pacman -S --noconfirm --needed noto-fonts-emoji # enable emoji support
+sudo pacman -S --noconfirm --needed noto-fonts-emoji
 sudo pacman -S --noconfirm --needed zathura-pdf-mupdf
 sudo pacman -S --noconfirm --needed archlinux-keyring
 sudo pacman -S --noconfirm --needed picom-ibhagwan-git
@@ -164,7 +165,10 @@ yay -S --noconfirm --needed optimus-manager
 yay -S --noconfirm --needed otf-san-francisco
 yay -S --noconfirm --needed spotify
 yay -S --noconfirm --needed timeshift-bin
-
+yay -S --noconfirm --needed tmux-plugin-manager
+yay -S --noconfirm --needed zsh-syntax-highlighting-git
+yay -S --noconfirm --needed zsh-autosuggestions-git
+yay -S --noconfirm --needed oh-my-zsh-git
 echo "################################################################"
 echo "################### Core Software Installed"
 echo "################################################################"

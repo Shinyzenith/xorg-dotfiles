@@ -17,34 +17,22 @@ $HOME/.config/bspwm/polybar/launch.sh &
 #change your keyboard if you need it
 #setxkbmap -layout be
 
-# switching out capslock with escape key
 xmodmap -e "keycode 9 = Caps_Lock"; xmodmap -e "keycode 66 = Escape"
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
-
-#music server icon
-#killall mocicon
-#mocicon &
-
-# fix mouse on arch
+killall mocicon
+mocicon &
 ~/.dotfiles/.config/bspwm/bspwm/scripts/enableclickontap.sh
-
-#draw your wallpaper
 nitrogen --restore
-
 xsetroot -cursor_name left_ptr &
 killall sxhkd
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
-
 run nm-applet &
 numlockx on &
-#blueberry-tray & # Uncomment this if you want bluetooth on boot
+#blueberry-tray &
 killall picom
 picom --experimental-backends --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 killall dunst
 exec dunst &
-
-# vim navigation rates
 xset r rate 350 60
-# sets the currently saved wallpaper as the betterlockscreen cache image
 betterlockscreen -u $(cat ~/.config/nitrogen/bg-saved.cfg | grep file | sed 's/file=//g')

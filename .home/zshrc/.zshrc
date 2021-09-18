@@ -11,7 +11,7 @@ autoload -U promptinit; promptinit
 autoload -U colors && colors
 
 export KEYTIMEOUT=1
-export ZSH=~/.oh-my-zsh
+export ZSH=/usr/share/oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
@@ -31,8 +31,8 @@ plugins=(
 	vi-mode
 	zsh-syntax-highlighting
 	)
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 if [ -d "$HOME/.bin" ] ;
   then PATH="$HOME/.bin:$PATH"
