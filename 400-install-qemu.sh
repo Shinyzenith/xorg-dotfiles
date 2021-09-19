@@ -12,8 +12,8 @@ sudo pacman -S --noconfirm --needed qemu-arch-extra
 # Networking packages for QEMU/KVM
 ##################################################################################################################
 sudo pacman -S --noconfirm --needed vde2
-sudo pacman -S --noconfirm --needed dnsmasq
-sudo pacman -S --noconfirm --needed ebtables
+yes | sudo pacman -S --noconfirm --needed dnsmasq
+yes | sudo pacman -S --noconfirm --needed ebtables
 sudo pacman -S --noconfirm --needed bridge-utils
 sudo pacman -S --noconfirm --needed openbsd-netcat
 sudo pacman -S --noconfirm --needed virtualbox # ik this isn't KVM but i just wanna separate it.
