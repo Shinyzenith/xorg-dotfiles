@@ -20,6 +20,7 @@ sudo pacman -S --noconfirm --needed zsh
 sudo pacman -S --noconfirm --needed vlc
 sudo pacman -S --noconfirm --needed mpv
 sudo pacman -S --noconfirm --needed maim
+sudo pacman -S --noconfirm --needed meld
 sudo pacman -S --noconfirm --needed wget
 sudo pacman -S --noconfirm --needed sxiv
 sudo pacman -S --noconfirm --needed tmux
@@ -42,7 +43,6 @@ sudo pacman -S --noconfirm --needed openssh
 sudo pacman -S --noconfirm --needed ntfs-3g
 sudo pacman -S --noconfirm --needed mlocate
 sudo pacman -S --noconfirm --needed xdotool
-sudo pacman -S --noconfirm --needed bashtop
 sudo pacman -S --noconfirm --needed zathura
 sudo pacman -S --noconfirm --needed pcmanfm
 sudo pacman -S --noconfirm --needed nitrogen
@@ -151,6 +151,7 @@ yay -S --noconfirm --needed alacritty
 yay -S --noconfirm --needed aura-bin # i'm learning this package manager
 yay -S --noconfirm --needed betterlockscreen
 yay -S --noconfirm --needed brave-bin
+yay -S --noconfirm --needed btop
 yay -S --noconfirm --needed cava
 yay -S --noconfirm --needed cursor-theme-macos-big-sur
 yay -S --noconfirm --needed devour
@@ -160,14 +161,14 @@ yay -S --noconfirm --needed gotop-bin
 yay -S --noconfirm --needed moc-pulse
 yay -S --noconfirm --needed nerd-fonts-jetbrains-mono
 yay -S --noconfirm --needed nordic-darker-theme
+yay -S --noconfirm --needed oh-my-zsh-git
 yay -S --noconfirm --needed optimus-manager
 yay -S --noconfirm --needed otf-san-francisco
 yay -S --noconfirm --needed spotify
 yay -S --noconfirm --needed timeshift-bin
 yay -S --noconfirm --needed tmux-plugin-manager
-yay -S --noconfirm --needed zsh-syntax-highlighting-git
 yay -S --noconfirm --needed zsh-autosuggestions-git
-yay -S --noconfirm --needed oh-my-zsh-git
+yay -S --noconfirm --needed zsh-syntax-highlighting-git
 echo "################################################################"
 echo "################### Core Software Installed"
 echo "################################################################"

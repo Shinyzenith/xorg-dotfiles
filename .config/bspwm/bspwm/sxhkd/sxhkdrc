@@ -38,9 +38,9 @@ super + m
 super + g
 	alacritty -e gotop
 
-# Bashtop process viewer
+# btop++ process viewer
 super + b
-	alacritty -e bashtop 
+	alacritty -e btop
 
 # Quickly record your screen with ffmpeg
 super + r
