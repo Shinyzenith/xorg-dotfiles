@@ -174,7 +174,7 @@ menu-0-1-exec = reboot
 menu-0-2 = ⏾
 menu-0-2-foreground = ${colors.foreground}
 menu-0-2-padding = 2
-menu-0-2-exec = systemctl suspend
+menu-0-2-exec = "systemctl suspend; betterlockscreen -l blur"
 
 [module/battery]
 type = internal/battery
