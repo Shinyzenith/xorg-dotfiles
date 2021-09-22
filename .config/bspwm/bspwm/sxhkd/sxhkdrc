@@ -116,13 +116,13 @@ XF86AudioStop
 	playerctl stop
 
 XF86AudioRaiseVolume
-	pactl set-sink-volume 0 +5%
+	amixer set Master 5%+
 
 XF86AudioLowerVolume
-	pactl set-sink-volume 0 -5%
+	amixer set Master 5%-
 
 XF86AudioMute
-	pactl set-sink-mute 0 toggle
+	amixer -D pulse set Master 1+ toggle
 
 XF86MonBrightnessUp
     brightnessctl set 5%+
