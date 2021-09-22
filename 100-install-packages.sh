@@ -55,6 +55,7 @@ sudo pacman -S --noconfirm --needed reflector
 sudo pacman -S --noconfirm --needed bitwarden
 sudo pacman -S --noconfirm --needed xarchiver
 sudo pacman -S --noconfirm --needed blueberry
+sudo pacman -S --noconfirm --needed bluez bluez-utils
 sudo pacman -S --noconfirm --needed playerctl
 sudo pacman -S --noconfirm --needed pulsemixer
 sudo pacman -S --noconfirm --needed noto-fonts
