@@ -25,6 +25,8 @@ let mapleader=" "
 nnoremap / /\v
 vnoremap / /\v
 autocmd BufWritePost *.tex silent! !pdflatex %
+"make a compile script for groff documents and complie on save
+autocmd BufWritePost *.ms silent! !./compile.sh
 nnoremap Y y$
 nnoremap Q <Nop>
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
