@@ -26,6 +26,7 @@ sudo pacman -S --noconfirm --needed sxiv
 sudo pacman -S --noconfirm --needed tmux
 sudo pacman -S --noconfirm --needed tldr
 sudo pacman -S --noconfirm --needed stow
+sudo pacman -S --noconfirm --needed gvfs
 sudo pacman -S --noconfirm --needed unzip
 sudo pacman -S --noconfirm --needed p7zip
 sudo pacman -S --noconfirm --needed bspwm
