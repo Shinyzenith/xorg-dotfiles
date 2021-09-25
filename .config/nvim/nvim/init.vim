@@ -61,7 +61,7 @@ nmap <C-n> :NERDTreeToggle<CR>
 vmap cc <Plug>NERDCommenterToggle
 nmap cc <Plug>NERDCommenterToggle
 set scrolloff=999
-"let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=1
 let g:airline_theme = 'nord'
 let g:smoothe_enabled = 1
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
