@@ -130,7 +130,7 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
     brightnessctl set 5%-
 
-# Toggle compositor (picom-ibhagwan-git)
+# Toggle compositor (picom-jonaburg-git)
 ctrl + alt + o
     ~/.config/bspwm/scripts/picom-toggle.sh
 
