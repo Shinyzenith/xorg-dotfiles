@@ -74,7 +74,7 @@ sudo pacman -S --noconfirm --needed pulseaudio-alsa
 sudo pacman -S --noconfirm --needed noto-fonts-emoji
 sudo pacman -S --noconfirm --needed zathura-pdf-mupdf
 sudo pacman -S --noconfirm --needed archlinux-keyring
-sudo pacman -S --noconfirm --needed picom-ibhagwan-git
+sudo pacman -S --noconfirm --needed picom-jonaburg-git
 sudo pacman -S --noconfirm --needed papirus-icon-theme
 sudo pacman -S --noconfirm --needed network-manager-applet
 
