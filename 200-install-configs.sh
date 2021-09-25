@@ -28,8 +28,12 @@ done
 git clone https://github.com/xelphlinux/xelph-dmenu-git.git /tmp/dmenugit
 cd /tmp/dmenugit
 sudo make install
-cd ~/.dotfiles/.assets/mocicon/; sudo make install
-cd ~/.dotfiles/.assets/nord-st/;sudo make install
+git clone https://github.com/xelphlinux/xelph-mocicon-git.git /tmp/mocicongit
+cd /tmp/mocicongit
+sudo make install
+git clone https://github.com/xelphlinux/xelph-st-git.git /tmp/stgit
+cd /tmp/stgit
+sudo make install
 
 sudo python3 -m pip install neovim
 sudo npm install neovim --global

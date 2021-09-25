@@ -126,15 +126,15 @@ endfunction
 autocmd BufEnter * call SyncTree()
 let g:coc_global_extensions = [
   \ 'coc-snippets',
-  \ 'coc-java',
-  \ 'coc-go',
+  "\ 'coc-java',
+  "\ 'coc-go',
   \ 'coc-discord-rpc',
   \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-eslint', 
   \ 'coc-prettier', 
   \ 'coc-json', 
-  \ 'coc-pyright'
+  "\ 'coc-pyright'
   \ ]
 set hidden
 set updatetime=300
