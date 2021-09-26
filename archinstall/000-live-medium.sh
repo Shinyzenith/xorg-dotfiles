@@ -109,6 +109,7 @@ post_base_install(){
 	cp 010-live-medium-etc-hosts temphosts
 	echo "127.0.1.1	$(cat /mnt/etc/hostname)" >> temphosts
 	mv temphosts /mnt/etc/hosts
+	mv 014-live-touchpad-ttc.conf /mnt/etc/X11/xorg.conf.d/02-touchpad-ttc.conf
 	mv 020-post-install-chroot.sh /mnt/020-post-install.sh
 	mv 011-live-medium-etc-sudoers /mnt/etc/sudoers
 	mv 013-live-medium-pacman /mnt/etc/pacman.conf
