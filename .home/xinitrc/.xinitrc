@@ -3,5 +3,4 @@
 # Executed by startx (run your window manager from here)
 /usr/bin/prime-offload &
 exec bspwm -c ~/.config/bspwm/bspwmrc
-#exec qtile start
 sudo /usr/bin/prime-switch &
