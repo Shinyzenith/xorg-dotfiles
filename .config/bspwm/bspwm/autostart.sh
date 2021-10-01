@@ -24,8 +24,8 @@ mocicon &
 nitrogen --restore
 xsetroot -cursor_name left_ptr &
 killall sxhkd
-run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
-run nm-applet &
+sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
+nm-applet &
 numlockx on &
 #blueberry-tray &
 killall picom

@@ -27,7 +27,7 @@ vnoremap / /\v
 autocmd BufWritePost *.tex silent! !pdflatex %
 "make a compile script for groff documents and complie on save
 autocmd BufWritePost *.ms silent! !./compile.sh
-autocmd BufWritePost config.h !sudo make clean install
+autocmd BufWritePost config.*h !sudo make clean install
 nnoremap Y y$
 nnoremap Q <Nop>
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
