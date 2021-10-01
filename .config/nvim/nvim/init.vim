@@ -27,6 +27,7 @@ vnoremap / /\v
 autocmd BufWritePost *.tex silent! !pdflatex %
 "make a compile script for groff documents and complie on save
 autocmd BufWritePost *.ms silent! !./compile.sh
+autocmd BufWritePost config.h !sudo make clean install
 nnoremap Y y$
 nnoremap Q <Nop>
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
@@ -91,7 +92,7 @@ let g:prettier#quickfix_enabled = 0
 let g:prettier#quickfix_auto_focus = 0
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html,*.py PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.yaml,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html,*.py PrettierAsync
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 set completeopt=menuone,noselect
