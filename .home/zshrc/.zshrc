@@ -15,6 +15,9 @@ export ZSH=/usr/share/oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
+export _JAVA_AWT_WM_NONREPARENTING=1
+export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 HISTSIZE=50000
 SAVEHIST=50000
