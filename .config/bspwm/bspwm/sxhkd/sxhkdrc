@@ -1,6 +1,6 @@
 # Opens the NeoVim text editor
 super + e
-    alacritty -e nvim
+    st -e nvim
 
 # Take a screenshot of your entire screen
 super + Print 
@@ -32,15 +32,15 @@ super + BackSpace
 
 # MOCP (Music player)
 super + m
-	alacritty -e mocp
+	st -e mocp
 
 # Gotop process viewer
 super + g
-	alacritty -e gotop
+	st -e gotop
 
 # btop++ process viewer
 super + b
-	alacritty -e btop
+	st -e btop
 
 # Quickly record your screen with ffmpeg
 super + r
@@ -49,11 +49,11 @@ super + r
 
 # Pulsemixer - Terminal audio manager
 super + v
-    alacritty -e pulsemixer
+    st -e pulsemixer
 
 # Alacritty (terminal)
 super + Return
-    alacritty
+    st
 
 # WinMask script to quick hide windows
 super + shift + i

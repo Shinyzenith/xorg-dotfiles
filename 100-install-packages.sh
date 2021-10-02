@@ -149,7 +149,6 @@ rm -rf /tmp/yay-git-cloned
 ##################################################################################################################
 # Installing AUR packages
 ##################################################################################################################
-yay -S --noconfirm --needed alacritty
 yay -S --noconfirm --needed aura-bin # i'm learning this package manager
 yay -S --noconfirm --needed betterlockscreen
 yay -S --noconfirm --needed brave-bin

@@ -1,8 +1,7 @@
 #!/bin/sh
 
-EDITOR="alacritty -e nvim"
+EDITOR="st -e nvim"
 declare -a options=(
-"Alacritty - $HOME/.config/alacritty/alacritty.yml"
 "AutoStart Script - $HOME/.config/bspwm/autostart.sh"
 "Bspwm - $HOME/.config/bspwm/bspwmrc"
 "Bspwm scripts - $HOME/.config/bspwm/scripts/"
