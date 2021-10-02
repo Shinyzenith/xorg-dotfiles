@@ -9,7 +9,8 @@
 eval "$(starship init zsh)"
 autoload -U promptinit; promptinit
 autoload -U colors && colors
-cd /home/$USER
+export PWD=/home/$USER
+export OLDPWD=/home/$USER
 
 export KEYTIMEOUT=1
 export ZSH=/usr/share/oh-my-zsh
