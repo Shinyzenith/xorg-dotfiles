@@ -34,6 +34,12 @@ sudo make install
 git clone https://github.com/xelphlinux/xelph-st-git.git /tmp/stgit
 cd /tmp/stgit
 sudo make install
+git clone https://github.com/xelphlinux/xelph-dwm-git.git /tmp/dwmgit
+cd /tmp/dwmgit
+sudo make install
+git clone https://github.com/xelphlinux/xelph-dwmblocks-git.git /tmp/dwmblocksgit
+cd /tmp/dwmblocksgit
+sudo make install
 
 sudo python3 -m pip install neovim
 sudo npm install neovim --global
