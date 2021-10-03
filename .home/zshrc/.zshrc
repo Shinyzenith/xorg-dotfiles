@@ -5,7 +5,7 @@
 #|____/|_| |_|_|_| |_|\__, /___\___|_| |_|_|\__|_| |_| (_)____|___/_| |_|_|  \___|
 #                     |___/
 
-#Loading prompt
+fm6000 -phb -n -c cyan
 eval "$(starship init zsh)"
 autoload -U promptinit; promptinit
 autoload -U colors && colors
