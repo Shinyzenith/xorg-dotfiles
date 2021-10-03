@@ -11,6 +11,7 @@ autoload -U promptinit; promptinit
 autoload -U colors && colors
 export PWD=/home/$USER
 export OLDPWD=/home/$USER
+export BAT_THEME="Nord"
 
 export KEYTIMEOUT=1
 export ZSH=/usr/share/oh-my-zsh
