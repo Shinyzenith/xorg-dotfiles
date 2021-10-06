@@ -46,6 +46,7 @@ alias updte='sudo pacman -Syyu'
 alias vlc='devour vlc'
 alias wget="wget -c" # continue the download
 alias zathura='devour zathura'
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
 # required functions
 
