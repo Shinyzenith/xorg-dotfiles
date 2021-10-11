@@ -13,7 +13,7 @@ fi
 if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
-fm6000 -phb -n -de DWM -os XelphLinux -c cyan
+#fm6000 -phb -n -de DWM -os XelphLinux -c cyan
 eval "$(starship init zsh)"
 autoload -U promptinit; promptinit
 autoload -U colors && colors
