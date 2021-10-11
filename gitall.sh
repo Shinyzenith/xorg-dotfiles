@@ -1,3 +1,4 @@
+sudo pacman -S --needed jq
 curl -s "https://api.github.com/users/XelphLinux/repos?per_page=100" | jq -r ".[].git_url" | xargs -L1 git clone
 count=0
 for name in $(ls -d */); do
