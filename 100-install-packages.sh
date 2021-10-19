@@ -1,126 +1,135 @@
 #!/bin/bash
 
 ##################################################################################################################
+# Installing aura (package manager)
+##################################################################################################################
+sudo pacman -S --noconfirm --needed git 
+git clone https://aur.archlinux.org/aura-bin.git /tmp/aura-git-cloned
+cd /tmp/aura-git-cloned/
+makepkg -sfci --noconfirm --needed
+
+##################################################################################################################
 # Basic needs for a functional setup (specific to my setup)
 ##################################################################################################################
-sudo pacman -S --noconfirm --needed xorg-xev
-sudo pacman -S --noconfirm --needed xorg-xinit
-sudo pacman -S --noconfirm --needed xorg-xprop
-sudo pacman -S --noconfirm --needed xorg-xkill
-sudo pacman -S --noconfirm --needed xorg-server
-sudo pacman -S --noconfirm --needed xorg-xinput
-sudo pacman -S --noconfirm --needed xorg-xmodmap
-sudo pacman -S --noconfirm --needed xorg-xsetroot
-sudo pacman -S --noconfirm --needed xorg-xclipboard
+sudo aura -S --noconfirm --needed xorg-xev
+sudo aura -S --noconfirm --needed xorg-xinit
+sudo aura -S --noconfirm --needed xorg-xprop
+sudo aura -S --noconfirm --needed xorg-xkill
+sudo aura -S --noconfirm --needed xorg-server
+sudo aura -S --noconfirm --needed xorg-xinput
+sudo aura -S --noconfirm --needed xorg-xmodmap
+sudo aura -S --noconfirm --needed xorg-xsetroot
+sudo aura -S --noconfirm --needed xorg-xclipboard
 
-sudo pacman -S --noconfirm --needed bat
-sudo pacman -S --noconfirm --needed exa
-sudo pacman -S --noconfirm --needed git
-sudo pacman -S --noconfirm --needed zsh
-sudo pacman -S --noconfirm --needed vlc
-sudo pacman -S --noconfirm --needed mpv
-sudo pacman -S --noconfirm --needed maim
-sudo pacman -S --noconfirm --needed meld
-sudo pacman -S --noconfirm --needed wget
-sudo pacman -S --noconfirm --needed sxiv
-sudo pacman -S --noconfirm --needed tmux
-sudo pacman -S --noconfirm --needed tldr
-sudo pacman -S --noconfirm --needed stow
-sudo pacman -S --noconfirm --needed gvfs
-sudo pacman -S --noconfirm --needed unzip
-sudo pacman -S --noconfirm --needed p7zip
-sudo pacman -S --noconfirm --needed bspwm
-sudo pacman -S --noconfirm --needed expac
-sudo pacman -S --noconfirm --needed qt5ct
-sudo pacman -S --noconfirm --needed xclip
-sudo pacman -S --noconfirm --needed sxhkd
-sudo pacman -S --noconfirm --needed dunst
-sudo pacman -S --noconfirm --needed zenity
-sudo pacman -S --noconfirm --needed man-db
-sudo pacman -S --noconfirm --needed wmname
-sudo pacman -S --noconfirm --needed polkit
-sudo pacman -S --noconfirm --needed ranger
-sudo pacman -S --noconfirm --needed openssh
-sudo pacman -S --noconfirm --needed ntfs-3g
-sudo pacman -S --noconfirm --needed mlocate
-sudo pacman -S --noconfirm --needed xdotool
-sudo pacman -S --noconfirm --needed zathura
-sudo pacman -S --noconfirm --needed pcmanfm
-sudo pacman -S --noconfirm --needed nitrogen
-sudo pacman -S --noconfirm --needed ueberzug
-sudo pacman -S --noconfirm --needed polybar
-sudo pacman -S --noconfirm --needed bbswitch
-sudo pacman -S --noconfirm --needed starship
-sudo pacman -S --noconfirm --needed numlockx
-sudo pacman -S --noconfirm --needed reflector
-sudo pacman -S --noconfirm --needed bitwarden
-sudo pacman -S --noconfirm --needed xarchiver
-sudo pacman -S --noconfirm --needed blueberry
-sudo pacman -S --noconfirm --needed bluez bluez-utils
-sudo pacman -S --noconfirm --needed playerctl
-sudo pacman -S --noconfirm --needed pulsemixer
-sudo pacman -S --noconfirm --needed noto-fonts
-sudo pacman -S --noconfirm --needed youtube-dl
-sudo pacman -S --noconfirm --needed dosfstools
-sudo pacman -S --noconfirm --needed intel-ucode
-sudo pacman -S --noconfirm --needed kvantum-qt5
-sudo pacman -S --noconfirm --needed polkit-gnome
-sudo pacman -S --noconfirm --needed brightnessctl
-sudo pacman -S --noconfirm --needed speedtest-cli
-sudo pacman -S --noconfirm --needed networkmanager
-sudo pacman -S --noconfirm --needed nord-dmenu-git
-sudo pacman -S --noconfirm --needed discord-canary
-sudo pacman -S --noconfirm --needed pulseaudio-alsa
-sudo pacman -S --noconfirm --needed noto-fonts-emoji
-sudo pacman -S --noconfirm --needed zathura-pdf-mupdf
-sudo pacman -S --noconfirm --needed archlinux-keyring
-sudo pacman -S --noconfirm --needed picom-jonaburg-git
-sudo pacman -S --noconfirm --needed papirus-icon-theme
-sudo pacman -S --noconfirm --needed network-manager-applet
+sudo aura -S --noconfirm --needed bat
+sudo aura -S --noconfirm --needed exa
+sudo aura -S --noconfirm --needed git
+sudo aura -S --noconfirm --needed zsh
+sudo aura -S --noconfirm --needed vlc
+sudo aura -S --noconfirm --needed mpv
+sudo aura -S --noconfirm --needed maim
+sudo aura -S --noconfirm --needed meld
+sudo aura -S --noconfirm --needed btop
+sudo aura -S --noconfirm --needed wget
+sudo aura -S --noconfirm --needed sxiv
+sudo aura -S --noconfirm --needed tmux
+sudo aura -S --noconfirm --needed tldr
+sudo aura -S --noconfirm --needed stow
+sudo aura -S --noconfirm --needed gvfs
+sudo aura -S --noconfirm --needed unzip
+sudo aura -S --noconfirm --needed p7zip
+sudo aura -S --noconfirm --needed bspwm
+sudo aura -S --noconfirm --needed expac
+sudo aura -S --noconfirm --needed qt5ct
+sudo aura -S --noconfirm --needed xclip
+sudo aura -S --noconfirm --needed sxhkd
+sudo aura -S --noconfirm --needed dunst
+sudo aura -S --noconfirm --needed zenity
+sudo aura -S --noconfirm --needed man-db
+sudo aura -S --noconfirm --needed wmname
+sudo aura -S --noconfirm --needed polkit
+sudo aura -S --noconfirm --needed ranger
+sudo aura -S --noconfirm --needed openssh
+sudo aura -S --noconfirm --needed ntfs-3g
+sudo aura -S --noconfirm --needed mlocate
+sudo aura -S --noconfirm --needed xdotool
+sudo aura -S --noconfirm --needed zathura
+sudo aura -S --noconfirm --needed pcmanfm
+sudo aura -S --noconfirm --needed nitrogen
+sudo aura -S --noconfirm --needed ueberzug
+sudo aura -S --noconfirm --needed polybar
+sudo aura -S --noconfirm --needed bbswitch
+sudo aura -S --noconfirm --needed starship
+sudo aura -S --noconfirm --needed numlockx
+sudo aura -S --noconfirm --needed reflector
+sudo aura -S --noconfirm --needed bitwarden
+sudo aura -S --noconfirm --needed xarchiver
+sudo aura -S --noconfirm --needed blueberry
+sudo aura -S --noconfirm --needed bluez bluez-utils
+sudo aura -S --noconfirm --needed playerctl
+sudo aura -S --noconfirm --needed pulsemixer
+sudo aura -S --noconfirm --needed noto-fonts
+sudo aura -S --noconfirm --needed youtube-dl
+sudo aura -S --noconfirm --needed dosfstools
+sudo aura -S --noconfirm --needed intel-ucode
+sudo aura -S --noconfirm --needed kvantum-qt5
+sudo aura -S --noconfirm --needed polkit-gnome
+sudo aura -S --noconfirm --needed brightnessctl
+sudo aura -S --noconfirm --needed speedtest-cli
+sudo aura -S --noconfirm --needed networkmanager
+sudo aura -S --noconfirm --needed nord-dmenu-git
+sudo aura -S --noconfirm --needed discord-canary
+sudo aura -S --noconfirm --needed pulseaudio-alsa
+sudo aura -S --noconfirm --needed noto-fonts-emoji
+sudo aura -S --noconfirm --needed zathura-pdf-mupdf
+sudo aura -S --noconfirm --needed archlinux-keyring
+sudo aura -S --noconfirm --needed picom-jonaburg-git
+sudo aura -S --noconfirm --needed papirus-icon-theme
+sudo aura -S --noconfirm --needed network-manager-applet
 
 ##################################################################################################################
 # Asian font support
 ##################################################################################################################
-sudo pacman -S --noconfirm --needed adobe-source-han-serif-cn-fonts 
-sudo pacman -S --noconfirm --needed adobe-source-han-serif-jp-fonts 
-sudo pacman -S --noconfirm --needed adobe-source-han-serif-kr-fonts 
-sudo pacman -S --noconfirm --needed adobe-source-han-serif-otc-fonts 
-sudo pacman -S --noconfirm --needed adobe-source-han-serif-tw-fonts
+sudo aura -S --noconfirm --needed adobe-source-han-serif-cn-fonts 
+sudo aura -S --noconfirm --needed adobe-source-han-serif-jp-fonts 
+sudo aura -S --noconfirm --needed adobe-source-han-serif-kr-fonts 
+sudo aura -S --noconfirm --needed adobe-source-han-serif-otc-fonts 
+sudo aura -S --noconfirm --needed adobe-source-han-serif-tw-fonts
 
 ##################################################################################################################
 # Nvidia packages
 ##################################################################################################################
-sudo pacman -S --noconfirm --needed nvidia
-sudo pacman -S --noconfirm --needed nvidia-prime
-sudo pacman -S --noconfirm --needed nvidia-utils
-sudo pacman -S --noconfirm --needed nvidia-settings
-#sudo pacman -S --noconfirm --needed xf86-video-nouveau
+sudo aura -S --noconfirm --needed nvidia
+sudo aura -S --noconfirm --needed nvidia-prime
+sudo aura -S --noconfirm --needed nvidia-utils
+sudo aura -S --noconfirm --needed nvidia-settings
+#sudo aura -S --noconfirm --needed xf86-video-nouveau
 
 ##################################################################################################################
 # Development tools
 ##################################################################################################################
-sudo pacman -S --noconfirm --needed npm
-sudo pacman -S --noconfirm --needed docker
-sudo pacman -S --noconfirm --needed neovim
-sudo pacman -S --noconfirm --needed nodejs
-sudo pacman -S --noconfirm --needed python3
-sudo pacman -S --noconfirm --needed ripgrep
-sudo pacman -S --noconfirm --needed python-pip
+sudo aura -S --noconfirm --needed npm
+sudo aura -S --noconfirm --needed docker
+sudo aura -S --noconfirm --needed neovim
+sudo aura -S --noconfirm --needed nodejs
+sudo aura -S --noconfirm --needed python3
+sudo aura -S --noconfirm --needed ripgrep
+sudo aura -S --noconfirm --needed python-pip
 
 ##################################################################################################################
 # Extra programs
 ##################################################################################################################
-sudo pacman -S --noconfirm --needed neofetch
-sudo pacman -S --noconfirm --needed zathura-ps
-sudo pacman -S --noconfirm --needed obs-studio
-sudo pacman -S --noconfirm --needed imagemagick
+sudo aura -S --noconfirm --needed neofetch
+sudo aura -S --noconfirm --needed zathura-ps
+sudo aura -S --noconfirm --needed obs-studio
+sudo aura -S --noconfirm --needed imagemagick
 
 ##################################################################################################################
 # Printer support (uncomment if needed)
 ##################################################################################################################
-#sudo pacman -S --noconfirm --needed cups
-#sudo pacman -S --noconfirm --needed cups-pdf
-#sudo pacman -S --noconfirm --needed gutenprint
+#sudo aura -S --noconfirm --needed cups
+#sudo aura -S --noconfirm --needed cups-pdf
+#sudo aura -S --noconfirm --needed gutenprint
 #sudo systemctl enable cups
 #sudo systemctl start cups
 
@@ -138,39 +147,30 @@ sudo systemctl start systemd-timesyncd
 # AUR packages
 ##################################################################################################################
 
-##################################################################################################################
-# Installing yay (AUR helper)
-##################################################################################################################
-git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-git-cloned
-cd /tmp/yay-git-cloned/
-makepkg -sfci --noconfirm --needed
-rm -rf /tmp/yay-git-cloned
 
 ##################################################################################################################
 # Installing AUR packages
 ##################################################################################################################
-yay -S --noconfirm --needed alacritty
-yay -S --noconfirm --needed aura-bin # i'm learning this package manager
-yay -S --noconfirm --needed betterlockscreen
-yay -S --noconfirm --needed brave-bin
-yay -S --noconfirm --needed btop
-yay -S --noconfirm --needed cava
-yay -S --noconfirm --needed cursor-theme-macos-big-sur
-yay -S --noconfirm --needed devour
-yay -S --noconfirm --needed discord-ptb
-yay -S --noconfirm --needed freetube-bin
-yay -S --noconfirm --needed gotop-bin
-yay -S --noconfirm --needed moc-pulse
-yay -S --noconfirm --needed nerd-fonts-jetbrains-mono
-yay -S --noconfirm --needed nordic-darker-theme
-yay -S --noconfirm --needed oh-my-zsh-git
-yay -S --noconfirm --needed optimus-manager
-yay -S --noconfirm --needed otf-san-francisco
-yay -S --noconfirm --needed spotify
-yay -S --noconfirm --needed timeshift-bin
-yay -S --noconfirm --needed tmux-plugin-manager
-yay -S --noconfirm --needed zsh-autosuggestions-git
-yay -S --noconfirm --needed zsh-syntax-highlighting-git
+sudo aura -Aca --noconfirm --needed alacritty
+sudo aura -Aca --noconfirm --needed betterlockscreen
+sudo aura -Aca --noconfirm --needed brave-bin
+sudo aura -Aca --noconfirm --needed cava
+sudo aura -Aca --noconfirm --needed cursor-theme-macos-big-sur
+sudo aura -Aca --noconfirm --needed devour
+sudo aura -Aca --noconfirm --needed discord-ptb
+sudo aura -Aca --noconfirm --needed freetube-bin
+sudo aura -Aca --noconfirm --needed gotop-bin
+sudo aura -Aca --noconfirm --needed moc-pulse
+sudo aura -Aca --noconfirm --needed nerd-fonts-jetbrains-mono
+sudo aura -Aca --noconfirm --needed nordic-darker-theme
+sudo aura -Aca --noconfirm --needed oh-my-zsh-git
+sudo aura -Aca --noconfirm --needed optimus-manager
+sudo aura -Aca --noconfirm --needed otf-san-francisco
+sudo aura -Aca --noconfirm --needed spotify
+sudo aura -Aca --noconfirm --needed timeshift-bin
+sudo aura -Aca --noconfirm --needed tmux-plugin-manager
+sudo aura -Aca --noconfirm --needed zsh-autosuggestions-git
+sudo aura -Aca --noconfirm --needed zsh-syntax-highlighting-git
 echo "################################################################"
 echo "################### Core Software Installed"
 echo "################################################################"
