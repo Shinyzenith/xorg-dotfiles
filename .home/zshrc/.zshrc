@@ -15,7 +15,7 @@ if [ -d "$HOME/.local/bin" ] ;
 fi
 #fm6000 -phb -n -de DWM -os XelphLinux -c cyan
 eval "$(starship init zsh)"
-#export PROMPT='%F{078} %~ ❯%f '
+#export PROMPT="%F{078}%."$'\n'" ❯ %f"
 autoload -U promptinit; promptinit
 autoload -U colors && colors
 export PWD=/home/$USER
