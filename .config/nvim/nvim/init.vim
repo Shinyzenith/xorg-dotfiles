@@ -137,7 +137,7 @@ let g:coc_global_extensions = [
   \ 'coc-eslint', 
   \ 'coc-prettier', 
   \ 'coc-json', 
-  "\ 'coc-pyright'
+  \ 'coc-pyright'
   \ ]
 set hidden
 set updatetime=300

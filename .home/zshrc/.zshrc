@@ -13,7 +13,7 @@ fi
 if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
-export PROMPT="%F{078}%."$'\n'" ❯ %f"
+export PROMPT="%F{078}%~"$'\n'" ❯ %f"
 autoload -U promptinit; promptinit
 autoload -U colors && colors
 export PWD=/home/$USER
@@ -48,3 +48,4 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 [[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
 #find /home/$USER/.config/bspwm/scripts/color-scripts -type f | shuf | head -n 1 | xargs bash -c
+precmd(){print""}
