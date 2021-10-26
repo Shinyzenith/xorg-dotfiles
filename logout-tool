@@ -7,5 +7,5 @@ case "$choice" in
   1) sudo systemctl suspend ;;
   2) sudo poweroff			;;
   3) sudo reboot 			;;
-  4) pkill -SIGTERM -f dwm	;;
+  4) pkill -KILL -u $USER	;;
 esac
