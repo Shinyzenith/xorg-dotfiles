@@ -22,7 +22,6 @@ sudo aura -S --noconfirm --needed xorg-xclipboard
 
 sudo aura -S --noconfirm --needed bat
 sudo aura -S --noconfirm --needed exa
-sudo aura -S --noconfirm --needed git
 sudo aura -S --noconfirm --needed zsh
 sudo aura -S --noconfirm --needed vlc
 sudo aura -S --noconfirm --needed mpv
