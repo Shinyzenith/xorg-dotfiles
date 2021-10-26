@@ -82,22 +82,24 @@ base_install(){
 		mkswap "/dev/"$(cat swappartition)
 		swapon "/dev/"$(cat swappartition)
 	fi
+	mv 013-live-medium-pacman /etc/pacman.conf
+	reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist
+	pacman -Sy
 	mkfs.ext4 "/dev/"$(cat rootpartition)
 	mkfs.fat -F32 "/dev/"$(cat bootpartition)
 	mount "/dev/"$(cat rootpartition) /mnt;mkdir -p /mnt/boot
 	mount "/dev/"$(cat bootpartition) /mnt/boot
-	dialog --erase-on-exit --inputbox "base iwd zsh dhcpcd os-prober linux linux-firmware linux-headers base-devel vim efibootmgr grub openssh networkmanager xf86-video-intel git and mesa will be installed. Specify any extra packages you might want here separated by space." 20 60 2>extrapackages
-	pacstrap /mnt base iwd zsh dhcpcd os-prober linux linux-firmware linux-headers base-devel vim efibootmgr grub openssh networkmanager xf86-video-intel git mesa $(cat extrapackages)
+	dialog --erase-on-exit --inputbox "xelph-ranger-devicons-git xelph-grub-config-git xelph-config-dwm-git xdg-user-dirs base linux linux-firmware linux-headers base-devel efibootmgr grub and networkmanager will be installed. Specify any extra packages you might want here separated by space." 20 60 2>extrapackages
+	pacstrap /mnt xelph-ranger-devicons-git xelph-config-dwm-git xelph-grub-config-git xdg-user-dirs base linux linux-firmware linux-headers base-devel efibootmgr grub networkmanager $(cat extrapackages)
 	genfstab -U /mnt >> /mnt/etc/fstab
 }
 
 post_base_install(){
-	arch-chroot /mnt systemctl enable sshd
 	arch-chroot /mnt systemctl enable NetworkManager
-	arch-chroot /mnt systemctl enable systemd-timesyncd
 	arch-chroot /mnt hwclock --systohc
-	arch-chroot /mnt timedatectl set-timezone $(cat timezone)
 	arch-chroot /mnt timedatectl set-ntp true
+	arch-chroot /mnt reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist
+	arch-chroot /mnt pacman -Syy
 	echo $(cat locale) >> /mnt/etc/locale.gen
 	arch-chroot /mnt ln -sf "/usr/share/zoneinfo/"$(cat timezone) /etc/localtime
 	arch-chroot /mnt locale-gen
