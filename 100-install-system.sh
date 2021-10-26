@@ -2,10 +2,14 @@
 ##################################################################################################################
 # Installing aura (package manager)
 ##################################################################################################################
-sudo pacman -S --noconfirm --needed git 
-git clone https://aur.archlinux.org/aura-bin.git /tmp/aura-git-cloned
-cd /tmp/aura-git-cloned/
-makepkg -sfci --noconfirm --needed
+if ! command -v aura &> /dev/null
+then
+	sudo pacman -S --noconfirm --needed git
+	git clone https://aur.archlinux.org/aura-bin.git /tmp/aura-git-cloned
+	cd /tmp/aura-git-cloned/
+	makepkg -sfci --noconfirm --needed
+fi
+
 
 ##################################################################################################################
 # Basic needs for a functional setup (specific to my setup)
