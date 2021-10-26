@@ -213,6 +213,8 @@ sudo cp ~/.dotfiles/bg-saved.cfg ~/.config/nitrogen/bg-saved.cfg
 mkdir ~/.dwm
 cp ~/.dotfiles/dwmautostart ~/.dwm/autostart_personal.sh
 sudo chmod 755 ~/.dwm/autostart_personal.sh
+cp -r /etc/skel/.config/ranger/plugins/ranger_devicons/ ~/.config/ranger/plugins/
+sudo chown -R aakash ~/.config/ranger/plugins/ranger_devicons/
 echo "################################################################"
 echo "################### Config files placed in the right directories"
 echo "################################################################"
