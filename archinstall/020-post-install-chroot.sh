@@ -26,7 +26,5 @@ if [[ $dots == "yes" ]]; then
 	chown -R $usr /home/$usr/.dotfiles
 fi
 sudo systemctl enable iwd
-sudo grub-mkconfig -o /boot/grub/grub.cfg # you need this for grub to detect windows for dual booting after ntfs-3g installation. Remove the package ntfs-3g if you don't plan to dual boot.
-# if dual booting problems persist then read https://bbs.archlinux.org/viewtopic.php?id=240117
-echo "setup your keyboard manually."
-# https://makandracards.com/makandra-orga/37763-gpg-extract-private-key-and-import-on-different-machine  use this guide to backup your gpg keys before the install
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo pacman -Rns dialog
