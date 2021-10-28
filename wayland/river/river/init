@@ -9,10 +9,16 @@ mod="Mod4"
 riverctl map normal $mod Return spawn st
 
 # open rofi
-riverctl map normal $mod D spawn "rofi -show drun"
+riverctl map normal $mod D spawn "dmenu_run -h 35 -i"
 
 # Open browser of choice, brave
 riverctl map normal $mod W spawn "brave"
+
+# kill waybar
+riverctl map normal $mod B spawn "killall waybar"
+
+# restart waybar after killing it ^
+riverctl map normal $mod+Shift B spawn "setsid -f waybar"
 
 # Open Pulsemixer in terminal, might siwtch to foot terminal soon
 riverctl map normal $mod V spawn "st -e pulsemixer"
@@ -187,11 +193,9 @@ riverctl csd-filter-add app-id "gedit"
 # River will send the process group of the init executable SIGTERM on exit.
 killall swaybg
 swaybg -i /usr/share/backgrounds/wall.jpg &
-killall dunst
-dunst &
+killall mako
+mako &
 killall waybar
 waybar &
-killall nm-applet
-nm-applet &
 riverctl default-layout rivertile
-exec rivertile -outer-padding 20
+exec rivertile -view-padding 5 -outer-padding 8

@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
 # window manager minimum needs
+sudo aura -S --needed --noconfirm dmenu
+sudo aura -S --needed --noconfirm mako
 sudo aura -S --needed --noconfirm stow
 sudo aura -S --needed --noconfirm wlroots
 sudo aura -S --needed --noconfirm xorg-xwayland
 sudo aura -Aca --needed --noconfirm river-git
-sudo aura -Aca --needed --noconfirm rofi-lbonn-wayland-git
 sudo aura -Aca --needed --noconfirm swaybg-git
 sudo aura -Aca --needed --noconfirm waybar-git
 
@@ -22,10 +23,13 @@ sudo aura -S wl-clipboard --needed --noconfirm
 #cleaning up orphans
 sudo aura -Oj
 
-mv ~/.config/rofi ~/.config/rofi-backup
+mv ~/.config/mako ~/.config/mako-backup
 mv ~/.config/river ~/.config/river-backup
 mv ~/.config/waybar ~/.config/waybar-backup
 cd ~/.dotfiles/wayland
 stow river -t ~/.config/
 stow waybar -t ~/.config/
-stow rofi -t ~/.config/
+stow mako -t ~/.config/
+
+#TODO: setup dmenu alternative, possibly rofi ( yikes )
+#TODO: switch to the foot terminal?
