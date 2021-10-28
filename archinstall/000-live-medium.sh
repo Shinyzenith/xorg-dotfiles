@@ -5,17 +5,17 @@
 sudo pacman -S --noconfirm --needed dialog
 instanciate_config_files(){
 	echo "0">swap
-	echo "">locale
-	echo "">timezone
-	echo "">hostname
-	echo "">temphosts
-	echo "">locale.conf
-	echo "">useraccount
-	echo "">installdisk
-	echo "">rootpartition
-	echo "">bootpartition
-	echo "">swappartition
-	echo "">extrapackages
+	touch locale
+	touch timezone
+	touch hostname
+	touch temphosts
+	touch locale.conf
+	touch useraccount
+	touch installdisk
+	touch rootpartition
+	touch bootpartition
+	touch swappartition
+	touch extrapackages
 }
 
 remove_config_files(){
