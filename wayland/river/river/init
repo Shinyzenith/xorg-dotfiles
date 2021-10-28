@@ -183,7 +183,7 @@ riverctl csd-filter-add app-id "gedit"
 # Set and exec into the default layout generator, rivertile.
 # River will send the process group of the init executable SIGTERM on exit.
 killall swaybg
-swaybg -i /usr/share/backgrounds/wallhaven-g8myzl.jpg &
+swaybg -i /usr/share/backgrounds/wall.jpg &
 killall dunst
 dunst &
 killall waybar
