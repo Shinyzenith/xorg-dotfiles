@@ -30,6 +30,9 @@ riverctl map normal $mod+Shift D spawn "discord-canary"
 riverctl map normal None Print spawn 'IMG=~/Pictures/screenshots/$(date | sed "s/\s/-/g").png&&grim -g "$(slurp)" $IMG && cat $IMG | wl-copy && notify-send "Screenshot has been saved and copied to your clipboard" -a "grim" -u critical -t 2000'
 riverctl map normal $mod Print spawn 'IMG=~/Pictures/screenshots/$(date | sed "s/\s/-/g").png&&grim $IMG && cat $IMG | wl-copy && notify-send "Screenshot has been saved and copied to your clipboard" -a "grim" -u critical -t 2000'
 
+# Clear clipboard
+riverctl map normal $mod BackSpace spawn 'wl-copy -c && printf ''|xclip -selection c'
+
 # FileManager
 riverctl map normal $mod+Shift f spawn 'pcmanfm'
 
@@ -188,5 +191,7 @@ killall dunst
 dunst &
 killall waybar
 waybar &
+killall nm-applet
+nm-applet &
 riverctl default-layout rivertile
-exec rivertile -outer-padding 4
+exec rivertile -outer-padding 20
