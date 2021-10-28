@@ -8,12 +8,30 @@ mod="Mod4"
 # Mod+Shift+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
 riverctl map normal $mod Return spawn st
 
+# open rofi
 riverctl map normal $mod D spawn "rofi -show drun"
+
+# Open browser of choice, brave
 riverctl map normal $mod W spawn "brave"
+
+# Open Pulsemixer in terminal, might siwtch to foot terminal soon
 riverctl map normal $mod V spawn "st -e pulsemixer"
+
+# Open mocp in terminal , might switch to foot terminal soon
 riverctl map normal $mod M spawn "st -e mocp"
+
+# Reload river configuration
 riverctl map normal $mod+Shift R spawn "~/.config/river/init"
+
+# Discord canary
 riverctl map normal $mod+Shift D spawn "discord-canary"
+
+# Screenshot
+riverctl map normal None Print spawn 'IMG=~/Pictures/screenshots/$(date | sed "s/\s/-/g").png&&grim -g "$(slurp)" $IMG && cat $IMG | wl-copy && notify-send "Screenshot has been saved and copied to your clipboard" -a "grim" -u critical -t 2000'
+
+# Pause mocp
+riverctl map normal $mod C spawn 'mocp -G'
+
 # Mod+Q to close the focused view
 riverctl map normal $mod Q close
 
