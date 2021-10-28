@@ -28,6 +28,13 @@ riverctl map normal $mod+Shift D spawn "discord-canary"
 
 # Screenshot
 riverctl map normal None Print spawn 'IMG=~/Pictures/screenshots/$(date | sed "s/\s/-/g").png&&grim -g "$(slurp)" $IMG && cat $IMG | wl-copy && notify-send "Screenshot has been saved and copied to your clipboard" -a "grim" -u critical -t 2000'
+riverctl map normal $mod Print spawn 'IMG=~/Pictures/screenshots/$(date | sed "s/\s/-/g").png&&grim $IMG && cat $IMG | wl-copy && notify-send "Screenshot has been saved and copied to your clipboard" -a "grim" -u critical -t 2000'
+
+# FileManager
+riverctl map normal $mod+Shift f spawn 'pcmanfm'
+
+# PixelColor script
+riverctl map normal "Mod1" C spawn 'bash ~/.config/river/bin/pixelcolor'
 
 # Pause mocp
 riverctl map normal $mod C spawn 'mocp -G'
