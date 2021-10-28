@@ -3,3 +3,4 @@ hex=$(grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-
 
 convert -size 50x50 xc:$hex /tmp/pixelcolor.png
 notify-send "$hex" --icon="/tmp/pixelcolor.png" -t 2000 -a "Pixel Color"
+echo $hex | wl-copy -n
