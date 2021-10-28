@@ -167,7 +167,7 @@ done
 
 # Set background and border color
 riverctl background-color 0x000000
-riverctl border-color-focused 0x93a1a1
+riverctl border-color-focused 0xffffff
 riverctl border-color-unfocused 0x586e75
 
 # Set repeat rate
@@ -189,4 +189,4 @@ dunst &
 killall waybar
 waybar &
 riverctl default-layout rivertile
-exec rivertile
+exec rivertile -outer-padding 4
