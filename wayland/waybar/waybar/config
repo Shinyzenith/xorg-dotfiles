@@ -2,7 +2,7 @@
 	"layer": "top",
 	"modules-left": ["river/tags"],
 	"modules-center": [],
-	"modules-right": ["network", "backlight","pulseaudio", "cpu", "memory", "clock", "tray"],
+	"modules-right": ["custom/updates", "backlight","pulseaudio", "tray","custom/clock"],
 	"pulseaudio": {
 		"tooltip": false,
 		"scroll-step": 5,
@@ -16,16 +16,6 @@
 		"format-wifi": "  {essid} {ipaddr}",
 		"format-ethernet": " {ipaddr}"
 	},
-	"cpu": {
-		"tooltip": true,
-		"format": " {}%",
-		"interval":2
-	},
-	"memory": {
-		"tooltip": true,
-		"format": " {}%",
-		"interval":2
-	},
 	"backlight": {
 		"tooltip": true,
 		"format": "盛 {}%",
@@ -35,5 +25,18 @@
 		"icon-size":24,
 		"show-passive-items":true,
 		"spacing": 10
-	}
+	},
+    "custom/updates": {
+        "interval": 60,
+        "return-type": "string",
+        "exec": "~/.config/waybar/modules/updates.sh",
+        "tooltip": false
+    },
+    "custom/clock": {
+        "interval": 1,
+        "return-type": "string",
+        "exec": "~/.config/waybar/modules/datetime.sh",
+        "tooltip": false
+    },
 }
+

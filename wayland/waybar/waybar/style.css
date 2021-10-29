@@ -1,3 +1,4 @@
+/* TODO: fix the color scheme */
 * {
 	border: none;
 	border-radius: 0;
@@ -34,20 +35,20 @@ window#waybar.hidden {
 
 #tags button {
 	transition: none;
-	color: #f8f8f2;
+	color: #ffffff;
 	background: transparent;
 	font-size: 16px;
 }
 
 #tags button.occupied {
 	transition: none;
-	color: #FDBC9B;
+	color: #21A8D8;
 	background: transparent;
 	font-size: 16px;
 }
 
 #tags button.focused {
-	color: #21A8D8;
+	color: #FB221B;
 }
 
 #tags button:hover {
@@ -77,8 +78,8 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 15px;
 	transition: none;
-	color: #4d4d4d;
-	background: #9aedfe;
+	color: #ffffff;
+	background: #731E2A;
 }
 
 #temperature {
@@ -93,30 +94,6 @@ window#waybar.hidden {
 	background: #5af78e;
 }
 
-#cpu {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 0px;
-	border-radius: 15px;
-	transition: none;
-	color: #4d4d4d;
-	background: #f1fa8c;
-}
-
-#memory {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 0px;
-	border-radius: 15px;
-	transition: none;
-	color: #4d4d4d;
-	background: #ff6e67;
-}
-
 #backlight {
 	margin-top: 8px;
 	margin-left: 8px;
@@ -126,35 +103,41 @@ window#waybar.hidden {
 	border-radius: 15px;
 	transition: none;
 	color: #ffffff;
-	background: #165C75;
+	background: #6A3D75;
 }
-#clock {
+#custom-clock {
 	margin-top: 8px;
 	margin-left: 8px;
 	padding-left: 10px;
 	margin-bottom: 0px;
+	margin-right: 12px;
 	padding-right: 10px;
 	border-radius: 15px;
 	transition: none;
 	color: #f8f8f2;
-	background: #282a36;
+	background: #0D040A;
 }
 
 #tray {
 	margin-top: 8px;
 	margin-left: 8px;
-	margin-right: 12px;
 	padding-left: 10px;
 	margin-bottom: 0px;
 	padding-right: 10px;
 	border-radius: 15px;
 	transition: none;
 	color: #f8f8f2;
-	background: #38434E;
+	background: #0D040A;
 }
 
-/*@media all {*/
-    /*body:not(#tray) #clock {*/
-		/*margin-right:12px;*/
-    /*}*/
-/*}*/
+#custom-updates {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 15px;
+	transition: none;
+	color: #f8f8f2;
+	background: #A4333E;
+}
