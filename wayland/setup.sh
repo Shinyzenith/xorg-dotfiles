@@ -26,6 +26,7 @@ sudo aura -Oj
 mv ~/.config/mako ~/.config/mako-backup
 mv ~/.config/river ~/.config/river-backup
 mv ~/.config/waybar ~/.config/waybar-backup
+mv wall.jpg /usr/share/backgrounds/wall.jpg
 cd ~/.dotfiles/wayland
 stow river -t ~/.config/
 stow waybar -t ~/.config/
