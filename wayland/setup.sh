@@ -28,6 +28,10 @@ mv ~/.config/river ~/.config/river-backup
 mv ~/.config/waybar ~/.config/waybar-backup
 mv wall.jpg /usr/share/backgrounds/wall.jpg
 cd ~/.dotfiles/wayland
+rm -rf ~/.gtkrc-2.0
+rm -rf ~/.config/gtk-3.0
+stow gtkrc-2.0 -t ~/
+stow gtk-3.0 -t ~/.config
 stow river -t ~/.config/
 stow waybar -t ~/.config/
 stow mako -t ~/.config/
