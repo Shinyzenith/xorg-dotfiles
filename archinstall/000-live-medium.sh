@@ -89,22 +89,12 @@ base_install(){
 	mkfs.fat -F32 "/dev/"$(cat bootpartition)
 	mount "/dev/"$(cat rootpartition) /mnt;mkdir -p /mnt/boot
 	mount "/dev/"$(cat bootpartition) /mnt/boot
-	dialog --erase-on-exit --inputbox "xelph-ranger-devicons-git xelph-grub-config-git xelph-config-dwm-git xdg-user-dirs base linux linux-firmware linux-headers base-devel efibootmgr grub and networkmanager will be installed. Specify any extra packages you might want here separated by space." 20 60 2>extrapackages
-	pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
-	pacman-key --lsign-key 3056513887B78AEB
-	pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-	echo "[chaotic-aur]" >> /etc/pacman.conf
-	echo "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
-	pacstrap /mnt xelph-ranger-devicons-git xelph-config-dwm-git xelph-grub-config-git xdg-user-dirs base linux linux-firmware linux-headers base-devel efibootmgr grub networkmanager $(cat extrapackages)
+	dialog --erase-on-exit --inputbox "xelph-grub-config-git xdg-user-dirs base linux linux-firmware linux-headers base-devel efibootmgr grub and networkmanager will be installed. Specify any extra packages you might want here separated by space." 20 60 2>extrapackages
+	pacstrap /mnt xelph-grub-config-git xdg-user-dirs base linux linux-firmware linux-headers base-devel efibootmgr grub networkmanager $(cat extrapackages)
 	genfstab -U /mnt >> /mnt/etc/fstab
 }
 
 post_base_install(){
-	arch-chroot /mnt pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
-	arch-chroot /mnt pacman-key --lsign-key 3056513887B78AEB
-	arch-chroot /mnt pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-	arch-chroot /mnt echo "[chaotic-aur]" >> /etc/pacman.conf
-	arch-chroot /mnt echo "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 	arch-chroot /mnt systemctl enable NetworkManager
 	arch-chroot /mnt hwclock --systohc
 	arch-chroot /mnt timedatectl set-ntp true
