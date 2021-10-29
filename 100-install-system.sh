@@ -166,32 +166,33 @@ echo "################################################################"
 echo "################### Core Software Installed"
 echo "################################################################"
 
-##################################################################################################################
-# Remove all current configs to avoid conflict, will probably make this dynamic later on
-##################################################################################################################
-rm -rf ~/.bin ~/VirtualBox VMs ~/.config/btop ~/.config/ranger ~/.moc ~/.config/dunst/ ~/.zprofile ~/.xinitrc ~/.config/bspwm ~/.config/nvim ~/.config/bspwm/polybar ~/.config/zathura ~/.gitconfig ~/.config/gtk-3.0 ~/.gtkrc-2.0 ~/.tmux.conf ~/.zshrc ~/.zshrc-personal
+cd ~/.dotfiles
+for dir in $( find .config -maxdepth 2 -mindepth 2 | awk -F "/" '{print $NF}')
+do
+	rm -rf ~/$dir
+done
 
-##################################################################################################################
-# Added config files to ~/.config/
-##################################################################################################################
+for dir in $(find .home -mindepth 2 -maxdepth 2 | awk -F "/" '{print $NF}')
+do
+	rm -rf ~/$dir
+done
+
 cd ~/.dotfiles/.config/
 dots=$(ls -d */)
 for dot in $dots
 do
-	stow -D $dot -t ~/.config
-	stow $dot -t ~/.config
+	stow -D "$dot" -t ~/.config
+	stow "$dot" -t ~/.config
 done
 
-##################################################################################################################
-# Added config files to ~/
-##################################################################################################################
 cd ~/.dotfiles/.home/
 dots=$(ls -d */)
 for dot in $dots
 do
-	stow -D $dot -t ~/
-	stow $dot -t ~/
+	stow -D "$dot" -t ~/
+	stow "$dot" -t ~/
 done
+
 
 sudo python3 -m pip install neovim
 sudo npm install neovim --global
