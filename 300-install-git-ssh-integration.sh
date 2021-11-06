@@ -18,7 +18,7 @@ echo "################################################################"
 echo "################### Added the ssh-key to the keychain"
 echo "################################################################"
 
-xclip -selection clipboard < ~/.ssh/id_rsa.pub
+wl-copy < ~/.ssh/id_rsa.pub
 echo "################################################################"
 echo "################### The key has been copied to your clipboard. Upload this to github."
 echo "################################################################"
